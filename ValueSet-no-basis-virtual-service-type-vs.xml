@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="no-basis-virtual-service-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.4.642.4.1809</code></li><li>Include all codes defined in <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html"><code>http://hl7.org/fhir/contact-point-system</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/no-basis-virtual-service-type-vs"/>
+  <version value="0.1.0"/>
+  <name value="NoBasisVirtualServiceTypeVS"/>
+  <title value="No Basis VirtualServiceType Value Set"/>
+  <status value="draft"/>
+  <date value="2023-07-24T20:45:39+02:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Example codes for possible virtual service connection types."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.4.642.4.1809"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/contact-point-system"/>
+    </include>
+  </compose>
+</ValueSet>

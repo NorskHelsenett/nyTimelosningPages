@@ -1,0 +1,12 @@
+{
+  "url" : "http://example.org/ImplementationGuide/fhir.example",
+  "name" : "NyTimelosingIG",
+  "package-id" : "fhir.example",
+  "ig-ver" : "0.1.0",
+  "date" : "Mon, 24 Jul, 2023 20:45:39 +0200",
+  "errs" : 0,
+  "warnings" : 56,
+  "hints" : 4,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)"
+}

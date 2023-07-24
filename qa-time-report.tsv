@@ -1,0 +1,24 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+\fsh-generated\resources\ImplementationGuide-fhir.example.json	8831	-	0	0	0	0	0	0	3	627	0	0	0	0	0	0	0	1	0	0	239	189	0	0	0	3	0	0
+fsh-generated/resources/Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json	947	9	0	0	0	0	0	0	0	78	0	0	0	0	0	0	0	0	0	0	33	40	0	0	0	0	0	0
+fsh-generated/resources/AppointmentResponse-PatientAppointmentResponseExample.json	654	7	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	23	24	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-hn-appointment-flag-code-cs.json	1132	8	1	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	33	2161	0	0	1	1	0	0
+fsh-generated/resources/Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.json	209	7	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	16	27	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-hn-basis-appointment.json	12056	515	0	0	0	0	0	4486	1	2971	0	0	1	0	0	0	0	2	0	0	1461	3311	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-hn-basis-AppointmentResponse.json	6218	385	0	0	0	0	0	2962	0	2269	0	0	0	0	0	0	0	1	0	0	1168	1734	0	0	0	11	0	2
+fsh-generated/resources/StructureDefinition-hn-basis-changeConferenceType.json	1763	87	0	0	0	0	0	231	0	226	0	0	0	0	0	0	0	0	0	0	133	295	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-hn-basis-consultationType.json	2037	162	0	0	1	0	0	465	0	469	0	0	0	0	0	0	0	0	0	0	254	465	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-hn-basis-Flag.json	3204	182	0	0	0	0	0	1286	0	1284	0	0	0	0	0	0	0	0	0	0	623	1053	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-hn-basis-flagStatusPeriod.json	1568	89	0	0	0	0	0	229	0	218	0	0	0	0	0	0	0	0	0	0	151	322	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-hn-basis-postponementreason.json	1930	88	0	0	0	0	0	231	0	222	0	0	0	0	0	0	0	1	0	0	160	351	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-hn-basis-Recurring.json	1644	87	0	0	0	0	0	223	0	215	0	0	0	0	0	0	0	0	0	0	129	262	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-hn-basis-scedule.json	3435	163	0	0	0	0	0	1099	0	1071	0	0	0	0	0	0	0	0	0	0	578	851	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-hn-basis-slot.json	4415	255	0	0	0	0	0	1504	0	1591	0	0	0	0	0	0	0	1	0	0	743	979	0	0	0	6	0	0
+fsh-generated/resources/StructureDefinition-no-basis-Appointment.json	5059	186	0	0	0	0	0	0	0	1507	0	0	0	0	0	0	0	0	0	0	694	1032	0	0	0	8	0	0
+fsh-generated/resources/StructureDefinition-no-basis-AppointmentResponse.json	3037	95	1	0	0	0	0	0	0	667	0	0	0	0	0	0	0	0	0	0	318	487	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-no-basis-group.json	1432	88	0	0	0	0	0	223	0	215	0	0	0	0	0	0	0	0	0	0	115	209	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-no-basis-partof.json	2228	89	0	0	0	0	0	222	0	216	0	0	0	0	0	0	0	1	0	0	125	223	0	0	0	3	0	1
+fsh-generated/resources/StructureDefinition-no-basis-shortnotice.json	1674	88	0	0	0	0	0	221	0	222	0	0	0	0	0	0	0	0	0	0	118	234	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-no-basis-virtual-service.json	6058	507	0	0	0	0	0	1318	0	1303	0	0	0	0	0	0	0	0	0	0	585	636	0	0	1	6	1	0
+fsh-generated/resources/ValueSet-hn-appointment-flag-code-vs.json	461	2	0	0	0	0	0	0	0	81	0	0	0	0	0	0	0	0	0	0	19	6167	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-no-basis-virtual-service-type-vs.json	563	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	20	64	0	0	0	0	0	0

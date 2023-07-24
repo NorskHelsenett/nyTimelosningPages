@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hn-appointment-flag-code-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-hn-appointment-flag-code-cs.html\"><code>http://example.org/CodeSystem/hn-appointment-flag-code-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/hn-appointment-flag-code-vs",
+  "version" : "0.1.0",
+  "name" : "HnAppointmentFlagCodeVS",
+  "title" : "hn-appointment-flag-code-vs",
+  "status" : "draft",
+  "date" : "2023-07-24T20:45:39+02:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Value set for Flag codes in nytimeløsing",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/CodeSystem/hn-appointment-flag-code-cs"
+    }]
+  }
+}

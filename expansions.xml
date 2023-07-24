@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="340b2954-9a43-4111-9f04-38aec87d9d15"/>
+  <meta>
+    <lastUpdated value="2023-07-24T20:45:39.401+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/hn-appointment-flag-code-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-hn-appointment-flag-code-cs.html">hn-appointment-flag-code-cs v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-hn-appointment-flag-code-cs-cancel"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-cancel">cancel</a>
+                </td>
+                <td>http://example.org/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan kansellere timen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointmentDialog"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointmentDialog">canChangeAppointmentDialog</a>
+                </td>
+                <td>http://example.org/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan be om endret time (Dialogmeldinger)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-hn-appointment-flag-code-cs-canUseShortNotice"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canUseShortNotice">canUseShortNotice</a>
+                </td>
+                <td>http://example.org/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan komme på kort varsel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-hn-appointment-flag-code-cs-canCancelServiceRequest"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canCancelServiceRequest">canCancelServiceRequest</a>
+                </td>
+                <td>http://example.org/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan be om at behandlingsløp avsluttes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-hn-appointment-flag-code-cs-canChangeConferenceType"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeConferenceType">canChangeConferenceType</a>
+                </td>
+                <td>http://example.org/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan be om endret konferanse type</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-hn-appointment-flag-code-cs-canAcknowledge"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canAcknowledge">canAcknowledge</a>
+                </td>
+                <td>http://example.org/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Timen/opphold kan bekreftes av innbygger</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointment"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointment">canChangeAppointment</a>
+                </td>
+                <td>http://example.org/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan be om endret time</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/hn-appointment-flag-code-vs"/>
+        <version value="0.1.0"/>
+        <name value="HnAppointmentFlagCodeVS"/>
+        <title value="hn-appointment-flag-code-vs"/>
+        <status value="draft"/>
+        <date value="2023-07-24T20:45:39+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:5eec3567-7077-4464-94e0-2af729ff4ac4"/>
+          <timestamp value="2023-07-24T20:46:51+02:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/CodeSystem/hn-appointment-flag-code-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="cancel"/>
+            <display value="Innbygger kan kansellere timen"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canChangeAppointmentDialog"/>
+            <display value="Innbygger kan be om endret time (Dialogmeldinger)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canUseShortNotice"/>
+            <display value="Innbygger kan komme på kort varsel"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canCancelServiceRequest"/>
+            <display value="Innbygger kan be om at behandlingsløp avsluttes"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canChangeConferenceType"/>
+            <display value="Innbygger kan be om endret konferanse type"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canAcknowledge"/>
+            <display value="Timen/opphold kan bekreftes av innbygger"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canChangeAppointment"/>
+            <display value="Innbygger kan be om endret time"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
