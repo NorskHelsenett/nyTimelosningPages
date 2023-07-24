@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-07-24T20:45:39+02:00"/>
+  <date value="2023-07-24T23:46:56+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -440,28 +440,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hn-basis-scedule"/>
-      </reference>
-      <name value="HN basis profile for schedule"/>
-      <description value="Profile used for Sceduler in HN. Based on FHIR Schedule (R4)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hn-basis-slot"/>
-      </reference>
-      <name value="HN basis profile for slot"/>
-      <description value="Profile used for Slot in HN. Based on FHIR Slot (R4)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -489,7 +467,7 @@
       <reference>
         <reference value="StructureDefinition/hn-basis-appointment"/>
       </reference>
-      <name value="Hn-basis-Appointment"/>
+      <name value="hn-basis-appointment"/>
       <description value="Base profile for Helsenorge Appointment information. Defined by Helsenorge based on national profile."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -568,6 +546,28 @@
       </reference>
       <name value="hn-basis-recurring"/>
       <description value="Indicates that this appointment is of recurrence type. In R5 this is handled by own structure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hn-basis-scedule"/>
+      </reference>
+      <name value="hn-basis-scedule"/>
+      <description value="Profile used for Sceduler in HN. Based on FHIR Schedule (R4)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hn-basis-slot"/>
+      </reference>
+      <name value="hn-basis-slot"/>
+      <description value="Profile used for Slot in HN. Based on FHIR Slot (R4)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

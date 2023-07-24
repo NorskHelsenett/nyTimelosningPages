@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-07-24T20:45:39+02:00",
+  "date" : "2023-07-24T23:46:56+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -590,30 +590,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hn-basis-scedule"
-      },
-      "name" : "HN basis profile for schedule",
-      "description" : "Profile used for Sceduler in HN. Based on FHIR Schedule (R4)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hn-basis-slot"
-      },
-      "name" : "HN basis profile for slot",
-      "description" : "Profile used for Slot in HN. Based on FHIR Slot (R4)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -643,7 +619,7 @@
       "reference" : {
         "reference" : "StructureDefinition/hn-basis-appointment"
       },
-      "name" : "Hn-basis-Appointment",
+      "name" : "hn-basis-appointment",
       "description" : "Base profile for Helsenorge Appointment information. Defined by Helsenorge based on national profile.",
       "exampleBoolean" : false
     },
@@ -729,6 +705,30 @@
       },
       "name" : "hn-basis-recurring",
       "description" : "Indicates that this appointment is of recurrence type. In R5 this is handled by own structure.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hn-basis-scedule"
+      },
+      "name" : "hn-basis-scedule",
+      "description" : "Profile used for Sceduler in HN. Based on FHIR Schedule (R4)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hn-basis-slot"
+      },
+      "name" : "hn-basis-slot",
+      "description" : "Profile used for Slot in HN. Based on FHIR Slot (R4)",
       "exampleBoolean" : false
     },
     {

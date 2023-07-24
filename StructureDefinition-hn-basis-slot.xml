@@ -22,9 +22,9 @@
   <url value="http://example.org/StructureDefinition/hn-basis-slot"/>
   <version value="0.1.0"/>
   <name value="HnBasisSlot"/>
-  <title value="HN basis profile for slot"/>
+  <title value="hn-basis-slot"/>
   <status value="draft"/>
-  <date value="2023-07-24T20:45:39+02:00"/>
+  <date value="2023-07-24T23:46:56+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

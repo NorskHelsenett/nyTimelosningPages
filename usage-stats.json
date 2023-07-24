@@ -152,13 +152,13 @@
     "Schedule": [
       {
         "url": "http://example.org/StructureDefinition/hn-basis-scedule",
-        "title": "HN basis profile for schedule"
+        "title": "hn-basis-scedule"
       }
     ],
     "Slot": [
       {
         "url": "http://example.org/StructureDefinition/hn-basis-slot",
-        "title": "HN basis profile for slot"
+        "title": "hn-basis-slot"
       }
     ]
   },

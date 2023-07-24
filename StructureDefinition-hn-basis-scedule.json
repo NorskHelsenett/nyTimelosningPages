@@ -8,9 +8,9 @@
   "url" : "http://example.org/StructureDefinition/hn-basis-scedule",
   "version" : "0.1.0",
   "name" : "HnBasisScedule",
-  "title" : "HN basis profile for schedule",
+  "title" : "hn-basis-scedule",
   "status" : "draft",
-  "date" : "2023-07-24T20:45:39+02:00",
+  "date" : "2023-07-24T23:46:56+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",

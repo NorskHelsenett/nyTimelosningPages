@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-24T20:45:39+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-24T23:46:56+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -509,30 +509,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/hn-basis-scedule> ;
-         fhir:reference [ fhir:v "StructureDefinition/hn-basis-scedule" ]
-       ] ;
-       fhir:name [ fhir:v "HN basis profile for schedule" ] ;
-       fhir:description [ fhir:v "Profile used for Sceduler in HN. Based on FHIR Schedule (R4)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/hn-basis-slot> ;
-         fhir:reference [ fhir:v "StructureDefinition/hn-basis-slot" ]
-       ] ;
-       fhir:name [ fhir:v "HN basis profile for slot" ] ;
-       fhir:description [ fhir:v "Profile used for Slot in HN. Based on FHIR Slot (R4)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -563,7 +539,7 @@
          fhir:link <http://example.org/StructureDefinition/hn-basis-appointment> ;
          fhir:reference [ fhir:v "StructureDefinition/hn-basis-appointment" ]
        ] ;
-       fhir:name [ fhir:v "Hn-basis-Appointment" ] ;
+       fhir:name [ fhir:v "hn-basis-appointment" ] ;
        fhir:description [ fhir:v "Base profile for Helsenorge Appointment information. Defined by Helsenorge based on national profile." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -649,6 +625,30 @@
        ] ;
        fhir:name [ fhir:v "hn-basis-recurring" ] ;
        fhir:description [ fhir:v "Indicates that this appointment is of recurrence type. In R5 this is handled by own structure." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/hn-basis-scedule> ;
+         fhir:reference [ fhir:v "StructureDefinition/hn-basis-scedule" ]
+       ] ;
+       fhir:name [ fhir:v "hn-basis-scedule" ] ;
+       fhir:description [ fhir:v "Profile used for Sceduler in HN. Based on FHIR Schedule (R4)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/hn-basis-slot> ;
+         fhir:reference [ fhir:v "StructureDefinition/hn-basis-slot" ]
+       ] ;
+       fhir:name [ fhir:v "hn-basis-slot" ] ;
+       fhir:description [ fhir:v "Profile used for Slot in HN. Based on FHIR Slot (R4)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
