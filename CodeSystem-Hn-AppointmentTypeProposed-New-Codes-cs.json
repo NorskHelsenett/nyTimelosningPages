@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "Hn-AppointmentTypeProposed-New-Codes-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://example.org/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
+  "version" : "0.1.0",
+  "name" : "HnAppointmentTypeProposedNewCodesCS",
+  "title" : "New codes proposed as part of Timetype innbyggerportal ",
+  "status" : "draft",
+  "date" : "2023-08-23T23:59:47+02:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "New codes proposed as part of Timetype innbyggerportal.",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "Poliklinisktime",
+    "display" : "Behandling som gjøres uten innleggelse"
+  },
+  {
+    "code" : "Innleggelse",
+    "display" : "Innleggelse"
+  },
+  {
+    "code" : "Hjemmebesøk",
+    "display" : "Hjemmebesøk"
+  },
+  {
+    "code" : "Konsultasjon",
+    "display" : "Konsultasjon"
+  },
+  {
+    "code" : "Bildediagnostikk",
+    "display" : "Bildediagnostikk"
+  }]
+}
