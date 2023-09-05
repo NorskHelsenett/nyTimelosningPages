@@ -151,8 +151,8 @@
     ],
     "Schedule": [
       {
-        "url": "http://example.org/StructureDefinition/hn-basis-scedule",
-        "title": "hn-basis-scedule"
+        "url": "http://example.org/StructureDefinition/hn-basis-schedule",
+        "title": "hn-basis-schedule"
       }
     ],
     "Slot": [

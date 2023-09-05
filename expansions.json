@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "82ebcb33-54f6-4b1c-a1a2-707bf6522f62",
+  "id" : "5d46b2d8-67b4-4f82-b45d-edb3c49b5824",
   "meta" : {
-    "lastUpdated" : "2023-08-23T23:59:47.449+02:00"
+    "lastUpdated" : "2023-09-05T10:10:09.326+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "HnAppointmentFlagCodeVS",
       "title" : "hn-appointment-flag-code-vs",
       "status" : "draft",
-      "date" : "2023-08-23T23:59:47+02:00",
+      "date" : "2023-09-05T10:10:09+02:00",
       "expansion" : {
-        "identifier" : "urn:uuid:0561b819-b5a7-46dd-9987-b684c07c303f",
-        "timestamp" : "2023-08-24T00:00:49+02:00",
+        "identifier" : "urn:uuid:27112829-09f7-4a4f-9c81-f39da03ff06a",
+        "timestamp" : "2023-09-05T10:11:24+02:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",

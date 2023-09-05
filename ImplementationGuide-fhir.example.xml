@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-08-23T23:59:47+02:00"/>
+  <date value="2023-09-05T10:10:09+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -574,10 +574,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hn-basis-scedule"/>
+        <reference value="StructureDefinition/hn-basis-schedule"/>
       </reference>
-      <name value="hn-basis-scedule"/>
-      <description value="Profile used for Sceduler in HN. Based on FHIR Schedule (R4)"/>
+      <name value="hn-basis-schedule"/>
+      <description value="Profile used for Scheduler in HN. Based on FHIR Schedule (R4)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

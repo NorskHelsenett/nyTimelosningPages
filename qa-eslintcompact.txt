@@ -8,7 +8,7 @@ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-Hn-Appoint
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs.json: line 0, col 0, Info - CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly (BUSINESSRULE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs.json: line 1, col 1205, Warning - The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile (REQUIRED)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs.json: line 1, col 1205, Warning - The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile (REQUIRED)
-C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example.json: line 1, col 15340, Warning - value should not start or finish with whitespace 'New codes proposed as part of Timetype innbyggerportal ' (INVALID)
+C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example.json: line 1, col 15343, Warning - value should not start or finish with whitespace 'New codes proposed as part of Timetype innbyggerportal ' (INVALID)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Flag.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Recurring.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
@@ -28,7 +28,7 @@ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-h
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-postponementreason.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8446 on element Extension.value[x] could not be resolved (BUSINESSRULE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-postponementreason.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8446 on element Extension.value[x] could not be resolved (BUSINESSRULE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-postponementreason.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-scedule.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-schedule.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-slot.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 1, col 14226, Warning - value should not start or finish with whitespace 'Virtual Service ' (INVALID)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8406 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
@@ -56,5 +56,5 @@ NyTimelosingIG : Validation Results
 =========================================
 
 err = 0, warn = 59, info = 5
-IG Publisher Version: 1.4.0
-Generated Thu Aug 24 00:01:24 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+IG Publisher Version: 1.4.0 Out of date - current version is 1.4.2
+Generated Tue Sep 05 10:12:07 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)

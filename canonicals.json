@@ -77,11 +77,11 @@
     "name" : "HnBasisPostponementReason"
   },
   {
-    "id" : "hn-basis-scedule",
+    "id" : "hn-basis-schedule",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/hn-basis-scedule",
+    "url" : "http://example.org/StructureDefinition/hn-basis-schedule",
     "version" : "0.1.0",
-    "name" : "HnBasisScedule"
+    "name" : "HnBasisSchedule"
   },
   {
     "id" : "hn-basis-slot",

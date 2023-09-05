@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-23T23:59:47+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-05T10:10:09+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -656,11 +656,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/hn-basis-scedule> ;
-         fhir:reference [ fhir:v "StructureDefinition/hn-basis-scedule" ]
+         fhir:link <http://example.org/StructureDefinition/hn-basis-schedule> ;
+         fhir:reference [ fhir:v "StructureDefinition/hn-basis-schedule" ]
        ] ;
-       fhir:name [ fhir:v "hn-basis-scedule" ] ;
-       fhir:description [ fhir:v "Profile used for Sceduler in HN. Based on FHIR Schedule (R4)" ] ;
+       fhir:name [ fhir:v "hn-basis-schedule" ] ;
+       fhir:description [ fhir:v "Profile used for Scheduler in HN. Based on FHIR Schedule (R4)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
