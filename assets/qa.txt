@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 59, info = 5
-IG Publisher Version: 1.4.0
-Generated Thu Aug 24 00:01:24 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+IG Publisher Version: 1.4.0 Out of date - current version is 1.4.2
+Generated Tue Sep 05 10:12:07 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
  Build Errors : 0 / 11 / 0
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 0 / 0 / 1
@@ -19,7 +19,7 @@ Generated Thu Aug 24 00:01:24 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-consultationType : 0 / 3 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-flagStatusPeriod : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-postponementreason : 0 / 3 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-scedule : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-schedule : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-slot : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Appointment : 0 / 7 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-AppointmentResponse : 0 / 0 / 1
@@ -88,8 +88,8 @@ WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition
 WARNING: StructureDefinition/hn-basis-postponementreason: StructureDefinition.differential.element[3].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8446 on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition/hn-basis-postponementreason: StructureDefinition.snapshot.element[4].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8446 on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-postponementreason'): The Implementation Guide contains no examples for this extension
-== fsh-generated\resources\StructureDefinition-hn-basis-scedule.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-scedule'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-hn-basis-schedule.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-schedule'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-hn-basis-slot.json ==
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-slot'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-no-basis-Appointment.json ==

@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-08-23T23:59:47+02:00",
+  "date" : "2023-09-05T10:10:09+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -737,10 +737,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hn-basis-scedule"
+        "reference" : "StructureDefinition/hn-basis-schedule"
       },
-      "name" : "hn-basis-scedule",
-      "description" : "Profile used for Sceduler in HN. Based on FHIR Schedule (R4)",
+      "name" : "hn-basis-schedule",
+      "description" : "Profile used for Scheduler in HN. Based on FHIR Schedule (R4)",
       "exampleBoolean" : false
     },
     {
