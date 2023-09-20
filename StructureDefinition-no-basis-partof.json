@@ -5,12 +5,12 @@
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
-  "url" : "http://example.org/StructureDefinition/no-basis-partof",
+  "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof",
   "version" : "0.1.0",
   "name" : "NoBasisPartOf",
   "title" : "no-basis-partof",
   "status" : "draft",
-  "date" : "2023-09-05T10:10:09+02:00",
+  "date" : "2023-09-20T09:32:23+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -157,7 +157,7 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "fixedUri" : "http://example.org/StructureDefinition/no-basis-partof",
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof",
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -179,7 +179,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://example.org/StructureDefinition/no-basis-Appointment"]
+        "targetProfile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -212,7 +212,7 @@
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://example.org/StructureDefinition/no-basis-partof"
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof"
     },
     {
       "id" : "Extension.value[x]",
@@ -221,7 +221,7 @@
       "definition" : "A larger appointment of which this particular appointment is a component or step.",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://example.org/StructureDefinition/no-basis-Appointment"]
+        "targetProfile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment"]
       }]
     }]
   }

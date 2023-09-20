@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/StructureDefinition/hn-basis-schedule> a fhir:StructureDefinition ;
+<http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "hn-basis-schedule"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
-  fhir:url [ fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "HnBasisSchedule"] ; # 
   fhir:title [ fhir:v "hn-basis-schedule"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T10:10:09+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-20T09:32:23+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -511,8 +511,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs"^^xsd:anyURI ;
-           fhir:link <http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs>
+           fhir:v "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs>
          ]
        ] ;
        fhir:mapping ( [
@@ -630,8 +630,8 @@
          fhir:human [ fhir:v "If code is used in a codable consept the system and description must be used" ] ;
          fhir:expression [ fhir:v "code > '' implies (system > '' and display > '')" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/hn-basis-schedule>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
@@ -847,8 +847,8 @@
          fhir:human [ fhir:v "If code is used in a codable consept the system and description must be used" ] ;
          fhir:expression [ fhir:v "code > '' implies (system > '' and display > '')" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/hn-basis-schedule>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
@@ -1062,8 +1062,8 @@
          fhir:human [ fhir:v "If code is used in a codable consept the system and description must be used" ] ;
          fhir:expression [ fhir:v "code > '' implies (system > '' and display > '')" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/hn-basis-schedule>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
@@ -1476,8 +1476,8 @@
          fhir:human [ fhir:v "Length MUST be =<200 char for data minimization." ] ;
          fhir:expression [ fhir:v "$this.length() <= 200" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/hn-basis-schedule>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
@@ -1506,8 +1506,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs"^^xsd:anyURI ;
-           fhir:link <http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs>
+           fhir:v "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs>
          ]
        ]
      ] [
@@ -1519,8 +1519,8 @@
          fhir:human [ fhir:v "If code is used in a codable consept the system and description must be used" ] ;
          fhir:expression [ fhir:v "code > '' implies (system > '' and display > '')" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/hn-basis-schedule>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule>
          ]
        ] )
      ] [
@@ -1532,8 +1532,8 @@
          fhir:human [ fhir:v "If code is used in a codable consept the system and description must be used" ] ;
          fhir:expression [ fhir:v "code > '' implies (system > '' and display > '')" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/hn-basis-schedule>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule>
          ]
        ] )
      ] [
@@ -1545,8 +1545,8 @@
          fhir:human [ fhir:v "If code is used in a codable consept the system and description must be used" ] ;
          fhir:expression [ fhir:v "code > '' implies (system > '' and display > '')" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/hn-basis-schedule>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule>
          ]
        ] )
      ] [
@@ -1564,8 +1564,8 @@
          fhir:human [ fhir:v "Length MUST be =<200 char for data minimization." ] ;
          fhir:expression [ fhir:v "$this.length() <= 200" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/hn-basis-schedule>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule>
          ]
        ] )
      ] )

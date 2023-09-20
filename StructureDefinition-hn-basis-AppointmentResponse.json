@@ -5,12 +5,12 @@
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
-  "url" : "http://example.org/StructureDefinition/hn-basis-AppointmentResponse",
+  "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse",
   "version" : "0.1.0",
   "name" : "HnBasisAppointmentResponse",
   "title" : "hn-basis-AppointmentResponse",
   "status" : "draft",
-  "date" : "2023-09-05T10:10:09+02:00",
+  "date" : "2023-09-20T09:32:23+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -49,7 +49,7 @@
   "kind" : "resource",
   "abstract" : false,
   "type" : "AppointmentResponse",
-  "baseDefinition" : "http://example.org/StructureDefinition/no-basis-AppointmentResponse",
+  "baseDefinition" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse",
   "derivation" : "constraint",
   "snapshot" : {
     "element" : [{
@@ -125,7 +125,7 @@
         "severity" : "error",
         "human" : "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.",
         "expression" : "extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'",
-        "source" : "http://example.org/StructureDefinition/no-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -384,7 +384,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/no-basis-shortnotice"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -495,7 +495,7 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "fixedUri" : "http://example.org/StructureDefinition/no-basis-shortnotice",
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice",
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -548,7 +548,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/hn-basis-changeConferenceType"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -659,7 +659,7 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "fixedUri" : "http://example.org/StructureDefinition/hn-basis-changeConferenceType",
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType",
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -694,7 +694,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://example.org/ValueSet/no-basis-virtual-service-type-vs"
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1602,7 +1602,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1888,7 +1888,7 @@
         "severity" : "error",
         "human" : "Only urn:oid:2.16.578.1.12.4.1.4.1 (FNR) or urn:oid:2.16.578.1.12.4.1.4.2 (DNR) are allowed as systems to identify patient in this profile.",
         "expression" : "system = 'urn:oid:2.16.578.1.12.4.1.4.1' or system = 'urn:oid:2.16.578.1.12.4.1.4.2'",
-        "source" : "http://example.org/StructureDefinition/hn-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -2174,7 +2174,7 @@
         "severity" : "error",
         "human" : "Only FNR or DNR number are allowed as codes to identify patient in this profile.",
         "expression" : "code = 'FNR' or code = 'DNR'",
-        "source" : "http://example.org/StructureDefinition/hn-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -2824,7 +2824,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/hn-basis-changeConferenceType"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType"]
       }]
     },
     {
@@ -2861,7 +2861,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse"
       }]
     },
     {
@@ -2895,7 +2895,7 @@
         "severity" : "error",
         "human" : "Only urn:oid:2.16.578.1.12.4.1.4.1 (FNR) or urn:oid:2.16.578.1.12.4.1.4.2 (DNR) are allowed as systems to identify patient in this profile.",
         "expression" : "system = 'urn:oid:2.16.578.1.12.4.1.4.1' or system = 'urn:oid:2.16.578.1.12.4.1.4.2'",
-        "source" : "http://example.org/StructureDefinition/hn-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse"
       }]
     },
     {
@@ -2913,7 +2913,7 @@
         "severity" : "error",
         "human" : "Only FNR or DNR number are allowed as codes to identify patient in this profile.",
         "expression" : "code = 'FNR' or code = 'DNR'",
-        "source" : "http://example.org/StructureDefinition/hn-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse"
       }]
     },
     {

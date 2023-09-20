@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/StructureDefinition/no-basis-AppointmentResponse> a fhir:StructureDefinition ;
+<http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "no-basis-AppointmentResponse"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
-  fhir:url [ fhir:v "http://example.org/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NoBasisAppointmentResponse"] ; # 
   fhir:title [ fhir:v "no-basis-AppointmentResponse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T10:10:09+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-20T09:32:23+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -143,8 +143,8 @@
          fhir:human [ fhir:v "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'." ] ;
          fhir:expression [ fhir:v "extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/no-basis-AppointmentResponse>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
@@ -410,8 +410,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
          fhir:profile ( [
-           fhir:v "http://example.org/StructureDefinition/no-basis-shortnotice"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/no-basis-shortnotice>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -530,7 +530,7 @@
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
-       fhir:fixed [ fhir:v "http://example.org/StructureDefinition/no-basis-shortnotice"^^xsd:anyURI ] ;
+       fhir:fixed [ fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice"^^xsd:anyURI ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -992,8 +992,8 @@
          fhir:human [ fhir:v "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'." ] ;
          fhir:expression [ fhir:v "extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'" ] ;
          fhir:source [
-           fhir:v "http://example.org/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/no-basis-AppointmentResponse>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse>
          ]
        ] )
      ] [
@@ -1016,8 +1016,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
          fhir:profile ( [
-           fhir:v "http://example.org/StructureDefinition/no-basis-shortnotice"^^xsd:anyURI ;
-           fhir:link <http://example.org/StructureDefinition/no-basis-shortnotice>
+           fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice>
          ] )
        ] )
      ] [

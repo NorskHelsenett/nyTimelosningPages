@@ -5,12 +5,12 @@
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
-  "url" : "http://example.org/StructureDefinition/hn-basis-changeConferenceType",
+  "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType",
   "version" : "0.1.0",
   "name" : "HnBasisChangeConferenceType",
   "title" : "hn-basis-changeConferenceType",
   "status" : "draft",
-  "date" : "2023-09-05T10:10:09+02:00",
+  "date" : "2023-09-20T09:32:23+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -157,7 +157,7 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "fixedUri" : "http://example.org/StructureDefinition/hn-basis-changeConferenceType",
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType",
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -192,7 +192,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://example.org/ValueSet/no-basis-virtual-service-type-vs"
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -216,7 +216,7 @@
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://example.org/StructureDefinition/hn-basis-changeConferenceType"
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType"
     },
     {
       "id" : "Extension.value[x]",
@@ -227,7 +227,7 @@
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://example.org/ValueSet/no-basis-virtual-service-type-vs"
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs"
       }
     }]
   }

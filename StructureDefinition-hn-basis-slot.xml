@@ -5,12 +5,12 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
-  <url value="http://example.org/StructureDefinition/hn-basis-slot"/>
+  <url value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot"/>
   <version value="0.1.0"/>
   <name value="HnBasisSlot"/>
   <title value="hn-basis-slot"/>
   <status value="draft"/>
-  <date value="2023-09-05T10:10:09+02:00"/>
+  <date value="2023-09-20T09:32:23+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -747,7 +747,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -856,7 +856,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-slot"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -1053,7 +1053,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-slot"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -1251,7 +1251,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-slot"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -1336,7 +1336,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://example.org/ValueSet/hn-appointment-AppointmentType-code-vs"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1544,7 +1544,7 @@
       <path value="Slot.serviceCategory"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
       </binding>
     </element>
     <element id="Slot.serviceCategory.coding">
@@ -1554,7 +1554,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-slot"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot"/>
       </constraint>
     </element>
     <element id="Slot.serviceType.coding">
@@ -1564,7 +1564,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-slot"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot"/>
       </constraint>
     </element>
     <element id="Slot.specialty.coding">
@@ -1574,14 +1574,14 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-slot"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot"/>
       </constraint>
     </element>
     <element id="Slot.appointmentType">
       <path value="Slot.appointmentType"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://example.org/ValueSet/hn-appointment-AppointmentType-code-vs"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
       </binding>
     </element>
   </differential>

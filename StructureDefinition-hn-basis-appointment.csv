@@ -29,25 +29,25 @@ anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Appointment.extension:virtualService","Appointment.extension","virtualService","","",0,*,"Y","","","Extension {[CanonicalType[http://example.org/StructureDefinition/no-basis-virtual-service]]} {[]}
+"Appointment.extension:virtualService","Appointment.extension","virtualService","","",0,*,"Y","","","Extension {[CanonicalType[http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service]]} {[]}
 ","Virtual Service ","The VirtualService structure defines details of a virtual communication capability, such as a web conference call.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Appointment.extension:group","Appointment.extension","group","","",0,1,"Y","","","Extension {[CanonicalType[http://example.org/StructureDefinition/no-basis-group]]} {[]}
+"Appointment.extension:group","Appointment.extension","group","","",0,1,"Y","","","Extension {[CanonicalType[http://helsenorge.no/fhir/StructureDefinition/no-basis-group]]} {[]}
 ","no-basis-group","The appointment is a group session.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Appointment.extension:partOf","Appointment.extension","partOf","","",0,1,"Y","","","Extension {[CanonicalType[http://example.org/StructureDefinition/no-basis-partof]]} {[]}
+"Appointment.extension:partOf","Appointment.extension","partOf","","",0,1,"Y","","","Extension {[CanonicalType[http://helsenorge.no/fhir/StructureDefinition/no-basis-partof]]} {[]}
 ","no-basis-partof","This basis extension mirrors the Encounter.partOF-attribute. The partOf-attribute enables booking of a set of related appointments with a set of sub-appointments being linked to the main appointment in the same way as encounters are being linked. A larger appointment of which this particular appointment is a component or step.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Appointment.extension:recurring","Appointment.extension","recurring","","",0,1,"Y","","","Extension {[CanonicalType[http://example.org/StructureDefinition/hn-basis-Recurring]]} {[]}
+"Appointment.extension:recurring","Appointment.extension","recurring","","",0,1,"Y","","","Extension {[CanonicalType[http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring]]} {[]}
 ","no-basis-recurring","Indicates that this appointment is of recurrence type. In R5 this is handled by own structure.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Appointment.extension:postponementReason","Appointment.extension","postponementReason","","",0,1,"","","","Extension {[CanonicalType[http://example.org/StructureDefinition/hn-basis-postponementreason]]} {[]}
+"Appointment.extension:postponementReason","Appointment.extension","postponementReason","","",0,1,"","","","Extension {[CanonicalType[http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason]]} {[]}
 ","hn-basis-postponementreason","The reason code for the postponement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Appointment.extension:consultationType","Appointment.extension","consultationType","","",0,1,"Y","","","Extension {[CanonicalType[http://example.org/StructureDefinition/hn-basis-consultationType]]} {[]}
+"Appointment.extension:consultationType","Appointment.extension","consultationType","","",0,1,"Y","","","Extension {[CanonicalType[http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType]]} {[]}
 ","hn-basis-consultationType","Type of consultation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Appointment.modifierExtension","Appointment.modifierExtension","","extensions
@@ -105,8 +105,8 @@ inv-4:If code is used in a codable consept the system and description must be us
 "Appointment.cancelationReason.text","Appointment.cancelationReason.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./originalText[mediaType/code=""text/plain""]/data","C*E.9. But note many systems use C*E.2 for this"
-"Appointment.serviceCategory","Appointment.serviceCategory","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","A broad categorization of the service that is to be performed during this appointment","A broad categorization of the service that is to be performed during this appointment.","","","","","","","","","",,"required","","http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs","",,,,"Appointment.serviceCategory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Appointment.serviceCategory","Appointment.serviceCategory","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
+","A broad categorization of the service that is to be performed during this appointment","A broad categorization of the service that is to be performed during this appointment.","","","","","","","","","",,"required","","http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs","",,,,"Appointment.serviceCategory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a, might be inferred from the ServiceDeliveryLocation","CATEGORIES"
 "Appointment.serviceCategory.id","Appointment.serviceCategory.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -154,7 +154,7 @@ inv-4:If code is used in a codable consept the system and description must be us
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./originalText[mediaType/code=""text/plain""]/data","C*E.9. But note many systems use C*E.2 for this"
 "Appointment.appointmentType","Appointment.appointmentType","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","The style of appointment or patient that has been booked in the slot (not service type)","The style of appointment or patient that has been booked in the slot (not service type).","","","","","","","","","",,"required","","http://example.org/ValueSet/hn-appointment-AppointmentType-code-vs","",,,,"Appointment.appointmentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The style of appointment or patient that has been booked in the slot (not service type)","The style of appointment or patient that has been booked in the slot (not service type).","","","","","","","","","",,"preferred","","http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs","",,,,"Appointment.appointmentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".code","CLASSIFICATION","ARQ-7"
 "Appointment.appointmentType.id","Appointment.appointmentType.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -232,7 +232,7 @@ should-be-max-500-chars:Length SHOULD be <= 500 {$this.length() <= 500}",".subje
 ","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
 ","The service request this appointment is allocated to assess","The service request this appointment is allocated to assess (e.g. incoming referral or procedure request).","","","","","","","","","",,,,,"",,,,"Appointment.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.basedOn",".outboundRelationship[@typeCode = 'FLFS'].act[@classCode < 'ActCareProvisionRequestType'][@moodCode = 'RQO']"
-"Appointment.participant","Appointment.participant","","","",1,1,"","","","BackboneElement {[]} {[]}
+"Appointment.participant","Appointment.participant","","","",1,*,"","","","BackboneElement {[]} {[]}
 ","Participants involved in appointment","List of participants involved in the appointment.","","","","","","","","","",,,,,"",,,,"Appointment.participant",1,*,"","app-1:Either the type or actor on the participant SHALL be specified {type.exists() or actor.exists()}
 ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}appointment-participant-actor-patient-reference-identifier:When actor is a Patient logical reference MUST be used {actor.type = 'Patient' implies actor.identifier.exists()}appointment-participant-actor-patient-reference-reference:When actor is a Patient Literal reference, Relative, internal or absolute URL MUST not be used {(actor.type = 'Patient') implies actor.reference.exists().not()}","Request.performer, Request.subject","performer | reusableDevice | subject | location","ATTENDEE component to be created","PID, AIP, AIG, AIL"
 "Appointment.participant.id","Appointment.participant.id","","","",0,1,"","","","string {[]} {[]}

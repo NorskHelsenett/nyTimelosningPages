@@ -5,12 +5,12 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
-  <url value="http://example.org/StructureDefinition/no-basis-Appointment"/>
+  <url value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment"/>
   <version value="0.1.0"/>
   <name value="NoBasisAppointment"/>
   <title value="no-basis-Appointment"/>
   <status value="draft"/>
-  <date value="2023-09-05T10:10:09+02:00"/>
+  <date value="2023-09-20T09:32:23+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -378,7 +378,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-virtual-service"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -414,7 +414,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-group"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-group"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -450,7 +450,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-partof"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-partof"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -2056,7 +2056,7 @@
       <max value="*"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-virtual-service"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -2067,7 +2067,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-group"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-group"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -2078,7 +2078,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-partof"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-partof"/>
       </type>
       <mustSupport value="true"/>
     </element>

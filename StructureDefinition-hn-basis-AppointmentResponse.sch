@@ -13,8 +13,8 @@
     <sch:title>f:AppointmentResponse</sch:title>
     <sch:rule context="f:AppointmentResponse">
       <sch:assert test="count(f:contained) &lt;= 0">contained: maximum cardinality of 'contained' is 0</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/no-basis-shortnotice']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/no-basis-shortnotice': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/hn-basis-changeConferenceType']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/hn-basis-changeConferenceType': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:actor) &gt;= 1">actor: minimum cardinality of 'actor' is 1</sch:assert>
     </sch:rule>

@@ -1,15 +1,15 @@
 ﻿NyTimelosingIG : Validation Results
 =========================================
 
-err = 0, warn = 59, info = 5
-IG Publisher Version: 1.4.0 Out of date - current version is 1.4.2
-Generated Tue Sep 05 10:12:07 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+err = 1, warn = 60, info = 5
+IG Publisher Version: 1.4.0 Out of date - current version is 1.4.6
+Generated Wed Sep 20 09:34:53 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
  Build Errors : 0 / 11 / 0
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 0 / 0 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 1 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs : 0 / 3 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs : 0 / 2 / 2
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example : 0 / 2 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473 : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Flag : 0 / 1 / 1
@@ -46,9 +46,10 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json ==
 INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.7617' is unknown so the code cannot be validated
-INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/no-basis-Appointment|0.1.0
-INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/no-basis-Appointment|0.1.0
+INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment|0.1.0
+INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment|0.1.0
 == fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample.json ==
+ERROR: AppointmentResponse/PatientAppointmentResponseExample: AppointmentResponse: Rule inv-1: 'The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.' Failed
 == fsh-generated\resources\CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.json ==
 WARNING: CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs: CodeSystem.title: value should not start or finish with whitespace 'New codes proposed as part of Timetype innbyggerportal '
 INFORMATION: CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -59,14 +60,15 @@ INFORMATION: CodeSystem/hn-appointment-flag-code-cs: CodeSystem: CodeSystems SHO
 WARNING: CodeSystem/hn-appointment-flag-code-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 WARNING: CodeSystem/hn-appointment-flag-code-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated\resources\ImplementationGuide-fhir.example.json ==
+WARNING: C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example: Unknown Parameters: [apply-wg=true]
 WARNING: ImplementationGuide/fhir.example: ImplementationGuide.definition.resource[15].name: value should not start or finish with whitespace 'New codes proposed as part of Timetype innbyggerportal '
 == fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.json ==
 == fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-AppointmentResponse'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-hn-basis-Flag.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-Flag'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-hn-basis-Recurring.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-Recurring'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-hn-basis-appointment.json ==
 WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[8].short: value should not start or finish with whitespace 'Virtual Service '
 WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.differential.element[7].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8445 on element Appointment.cancelationReason could not be resolved
@@ -75,23 +77,23 @@ WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.
 WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[49].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8406 on element Appointment.appointmentType.coding could not be resolved
 WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[50].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8432 on element Appointment.appointmentType.coding could not be resolved
 WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[51].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.7617 on element Appointment.appointmentType.coding could not be resolved
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-appointment'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-hn-basis-changeConferenceType.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-changeConferenceType'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-hn-basis-consultationType.json ==
 WARNING: StructureDefinition/hn-basis-consultationType: StructureDefinition.differential.element[3].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9505 on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition/hn-basis-consultationType: StructureDefinition.snapshot.element[4].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9505 on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-consultationType'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-hn-basis-flagStatusPeriod.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-flagStatusPeriod'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-flagStatusPeriod'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-hn-basis-postponementreason.json ==
 WARNING: StructureDefinition/hn-basis-postponementreason: StructureDefinition.differential.element[3].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8446 on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition/hn-basis-postponementreason: StructureDefinition.snapshot.element[4].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8446 on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-postponementreason'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-hn-basis-schedule.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-schedule'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-hn-basis-slot.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hn-basis-slot'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-no-basis-Appointment.json ==
 WARNING: StructureDefinition/no-basis-Appointment: StructureDefinition.snapshot.element[8].short: value should not start or finish with whitespace 'Virtual Service '
 WARNING: StructureDefinition/no-basis-Appointment: StructureDefinition.differential.element[6].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8406 on element Appointment.appointmentType.coding could not be resolved
@@ -102,14 +104,14 @@ WARNING: StructureDefinition/no-basis-Appointment: StructureDefinition.snapshot.
 WARNING: StructureDefinition/no-basis-Appointment: StructureDefinition.snapshot.element[24].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.7617 on element Appointment.appointmentType.coding could not be resolved
 == fsh-generated\resources\StructureDefinition-no-basis-AppointmentResponse.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-group.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/no-basis-group'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-group'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-no-basis-partof.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/no-basis-partof'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-partof'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-no-basis-shortnotice.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json ==
 WARNING: StructureDefinition/no-basis-virtual-service: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace 'Virtual Service '
 WARNING: StructureDefinition/no-basis-virtual-service: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'Virtual Service '
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/no-basis-virtual-service'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs.json ==
 WARNING: ValueSet/hn-appointment-AppointmentType-code-vs: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.578.1.12.4.1.1.7617' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown (from Tx-Server))
 WARNING: ValueSet/hn-appointment-AppointmentType-code-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
@@ -122,4 +124,4 @@ WARNING: ValueSet.where(id = 'hn-appointment-ServiceCategory-code-vs'): Error fr
 WARNING: ValueSet/hn-appointment-flag-code-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json ==
 WARNING: ValueSet/no-basis-virtual-service-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: ValueSet.where(id = 'no-basis-virtual-service-type-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/virtual-service-type
+WARNING: ValueSet.where(id = 'no-basis-virtual-service-type-vs'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.4.642.4.1809

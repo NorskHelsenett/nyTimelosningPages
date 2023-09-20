@@ -5,12 +5,12 @@
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
-  "url" : "http://example.org/StructureDefinition/hn-basis-appointment",
+  "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment",
   "version" : "0.1.0",
   "name" : "HnBasisAppointment",
   "title" : "hn-basis-appointment",
   "status" : "draft",
-  "date" : "2023-09-05T10:10:09+02:00",
+  "date" : "2023-09-20T09:32:23+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -49,7 +49,7 @@
   "kind" : "resource",
   "abstract" : false,
   "type" : "Appointment",
-  "baseDefinition" : "http://example.org/StructureDefinition/no-basis-Appointment",
+  "baseDefinition" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment",
   "derivation" : "constraint",
   "snapshot" : {
     "element" : [{
@@ -141,7 +141,7 @@
         "severity" : "error",
         "human" : "Cancelation reason MUST be set when status=cancelled and serviceCategory=27 (that is Specialist Medical)",
         "expression" : "(status='canceled' and serviceCategory.coding.code='27') implies cancelationReason.exists()",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -400,7 +400,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/no-basis-virtual-service"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -437,7 +437,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/no-basis-group"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-group"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -474,7 +474,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/no-basis-partof"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-partof"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -511,7 +511,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/hn-basis-Recurring"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -548,7 +548,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/hn-basis-postponementreason"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -584,7 +584,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/hn-basis-consultationType"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1228,7 +1228,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1294,7 +1294,7 @@
       "path" : "Appointment.serviceCategory",
       "short" : "A broad categorization of the service that is to be performed during this appointment",
       "definition" : "A broad categorization of the service that is to be performed during this appointment.",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "base" : {
         "path" : "Appointment.serviceCategory",
@@ -1316,7 +1316,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs"
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1433,7 +1433,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1643,7 +1643,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1852,7 +1852,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1939,8 +1939,8 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "required",
-        "valueSet" : "http://example.org/ValueSet/hn-appointment-AppointmentType-code-vs"
+        "strength" : "preferred",
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2068,7 +2068,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -2423,7 +2423,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -2597,7 +2597,7 @@
         "severity" : "warning",
         "human" : "Length SHOULD be <=100.",
         "expression" : "$this.length() <= 100",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2928,7 +2928,7 @@
         "severity" : "warning",
         "human" : "Length SHOULD be <= 500",
         "expression" : "$this.length() <= 500",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2987,7 +2987,7 @@
       "short" : "Participants involved in appointment",
       "definition" : "List of participants involved in the appointment.",
       "min" : 1,
-      "max" : "1",
+      "max" : "*",
       "base" : {
         "path" : "Appointment.participant",
         "min" : 1,
@@ -3017,14 +3017,14 @@
         "severity" : "error",
         "human" : "When actor is a Patient logical reference MUST be used",
         "expression" : "actor.type = 'Patient' implies actor.identifier.exists()",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       },
       {
         "key" : "appointment-participant-actor-patient-reference-reference",
         "severity" : "error",
         "human" : "When actor is a Patient Literal reference, Relative, internal or absolute URL MUST not be used",
         "expression" : "(actor.type = 'Patient') implies actor.reference.exists().not()",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -3311,7 +3311,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -3867,7 +3867,7 @@
         "severity" : "error",
         "human" : "Cancelation reason MUST be set when status=cancelled and serviceCategory=27 (that is Specialist Medical)",
         "expression" : "(status='canceled' and serviceCategory.coding.code='27') implies cancelationReason.exists()",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
@@ -3889,7 +3889,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/hn-basis-Recurring"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring"]
       }],
       "mustSupport" : true
     },
@@ -3901,7 +3901,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/hn-basis-postponementreason"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason"]
       }]
     },
     {
@@ -3912,7 +3912,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/hn-basis-consultationType"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType"]
       }],
       "mustSupport" : true
     },
@@ -3939,16 +3939,17 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
       "id" : "Appointment.serviceCategory",
       "path" : "Appointment.serviceCategory",
+      "min" : 1,
       "max" : "1",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs"
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"
       }
     },
     {
@@ -3959,7 +3960,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
@@ -3970,7 +3971,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
@@ -3981,15 +3982,15 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
       "id" : "Appointment.appointmentType",
       "path" : "Appointment.appointmentType",
       "binding" : {
-        "strength" : "required",
-        "valueSet" : "http://example.org/ValueSet/hn-appointment-AppointmentType-code-vs"
+        "strength" : "preferred",
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"
       }
     },
     {
@@ -4000,7 +4001,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
@@ -4011,7 +4012,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
@@ -4022,7 +4023,7 @@
         "severity" : "warning",
         "human" : "Length SHOULD be <=100.",
         "expression" : "$this.length() <= 100",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
@@ -4040,26 +4041,25 @@
         "severity" : "warning",
         "human" : "Length SHOULD be <= 500",
         "expression" : "$this.length() <= 500",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
       "id" : "Appointment.participant",
       "path" : "Appointment.participant",
-      "max" : "1",
       "constraint" : [{
         "key" : "appointment-participant-actor-patient-reference-identifier",
         "severity" : "error",
         "human" : "When actor is a Patient logical reference MUST be used",
         "expression" : "actor.type = 'Patient' implies actor.identifier.exists()",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       },
       {
         "key" : "appointment-participant-actor-patient-reference-reference",
         "severity" : "error",
         "human" : "When actor is a Patient Literal reference, Relative, internal or absolute URL MUST not be used",
         "expression" : "(actor.type = 'Patient') implies actor.reference.exists().not()",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {
@@ -4077,7 +4077,7 @@
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
-        "source" : "http://example.org/StructureDefinition/hn-basis-appointment"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       }]
     },
     {

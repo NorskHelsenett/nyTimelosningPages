@@ -68,7 +68,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Flag.status.extension:statusPeriod","Flag.status.extension","statusPeriod","","",0,1,"","","","Extension {[CanonicalType[http://example.org/StructureDefinition/hn-basis-flagStatusPeriod]]} {[]}
+"Flag.status.extension:statusPeriod","Flag.status.extension","statusPeriod","","",0,1,"","","","Extension {[CanonicalType[http://helsenorge.no/fhir/StructureDefinition/hn-basis-flagStatusPeriod]]} {[]}
 ","hn-basis-flagStatusPeriod","Setting valid period for Flag status if needed","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -79,7 +79,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Flag.status.extension:statusPeriod.url","Flag.status.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://example.org/StructureDefinition/hn-basis-flagStatusPeriod""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://helsenorge.no/fhir/StructureDefinition/hn-basis-flagStatusPeriod""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "Flag.status.extension:statusPeriod.value[x]","Flag.status.extension.value[x]","","","",0,1,"","","","Period {[]} {[]}
 ","Period for flag status","Setting valid period for Flag status if needed","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
@@ -102,7 +102,7 @@ inv-4:If code is used in a codable consept the system and description must be us
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./originalText[mediaType/code=""text/plain""]/data"
 "Flag.code","Flag.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Coded or textual message to display to user","The coded value or textual component of the flag to display to the user.","If non-coded, use CodeableConcept.text.  This element should always be included in the narrative.","","","","","","","","",,"extensible","","http://example.org/ValueSet/hn-appointment-flag-code-vs","",,,,"Flag.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Coded or textual message to display to user","The coded value or textual component of the flag to display to the user.","If non-coded, use CodeableConcept.text.  This element should always be included in the narrative.","","","","","","","","",,"extensible","","http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs","",,,,"Flag.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".value","FiveWs.what[x]"
 "Flag.code.id","Flag.code.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"

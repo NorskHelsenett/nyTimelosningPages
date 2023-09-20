@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/StructureDefinition/no-basis-virtual-service> a fhir:StructureDefinition ;
+<http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "no-basis-virtual-service"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
-  fhir:url [ fhir:v "http://example.org/StructureDefinition/no-basis-virtual-service"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NoBasisVirtualService"] ; # 
   fhir:title [ fhir:v "no-basis-Virtual-Service"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-05T10:10:09+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-20T09:32:23+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -329,8 +329,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "example" ] ;
          fhir:valueSet [
-           fhir:v "http://example.org/ValueSet/no-basis-virtual-service-type-vs"^^xsd:anyURI ;
-           fhir:link <http://example.org/ValueSet/no-basis-virtual-service-type-vs>
+           fhir:v "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs>
          ]
        ] ;
        fhir:mapping ( [
@@ -1046,7 +1046,7 @@
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
-       fhir:fixed [ fhir:v "http://example.org/StructureDefinition/no-basis-virtual-service"^^xsd:anyURI ] ;
+       fhir:fixed [ fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service"^^xsd:anyURI ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -1218,8 +1218,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "example" ] ;
          fhir:valueSet [
-           fhir:v "http://example.org/ValueSet/no-basis-virtual-service-type-vs"^^xsd:anyURI ;
-           fhir:link <http://example.org/ValueSet/no-basis-virtual-service-type-vs>
+           fhir:v "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs>
          ]
        ]
      ] [
@@ -1317,7 +1317,7 @@
      ] [
        fhir:id [ fhir:v "Extension.url" ] ;
        fhir:path [ fhir:v "Extension.url" ] ;
-       fhir:fixed [ fhir:v "http://example.org/StructureDefinition/no-basis-virtual-service"^^xsd:anyURI ]
+       fhir:fixed [ fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service"^^xsd:anyURI ]
      ] [
        fhir:id [ fhir:v "Extension.value[x]" ] ;
        fhir:path [ fhir:v "Extension.value[x]" ] ;

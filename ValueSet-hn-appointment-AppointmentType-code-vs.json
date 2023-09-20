@@ -5,12 +5,12 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
-  "url" : "http://example.org/ValueSet/hn-appointment-AppointmentType-code-vs",
+  "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs",
   "version" : "0.1.0",
   "name" : "HnAppointmentAppointmentTypeVS",
   "title" : "hn-appointment-AppointmentType-code-vs",
   "status" : "draft",
-  "date" : "2023-09-05T10:10:09+02:00",
+  "date" : "2023-09-20T09:32:23+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -33,7 +33,7 @@
       }]
     },
     {
-      "system" : "http://example.org/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"
+      "system" : "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"
     }]
   }
 }

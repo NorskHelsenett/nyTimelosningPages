@@ -5,12 +5,12 @@
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
-  "url" : "http://example.org/StructureDefinition/no-basis-virtual-service",
+  "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service",
   "version" : "0.1.0",
   "name" : "NoBasisVirtualService",
   "title" : "no-basis-Virtual-Service",
   "status" : "draft",
-  "date" : "2023-09-05T10:10:09+02:00",
+  "date" : "2023-09-20T09:32:23+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -303,7 +303,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "example",
-        "valueSet" : "http://example.org/ValueSet/no-basis-virtual-service-type-vs"
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -989,7 +989,7 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "fixedUri" : "http://example.org/StructureDefinition/no-basis-virtual-service",
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service",
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -1211,7 +1211,7 @@
       }],
       "binding" : {
         "strength" : "example",
-        "valueSet" : "http://example.org/ValueSet/no-basis-virtual-service-type-vs"
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs"
       }
     },
     {
@@ -1327,7 +1327,7 @@
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://example.org/StructureDefinition/no-basis-virtual-service"
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service"
     },
     {
       "id" : "Extension.value[x]",

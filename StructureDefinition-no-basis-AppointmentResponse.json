@@ -5,12 +5,12 @@
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
-  "url" : "http://example.org/StructureDefinition/no-basis-AppointmentResponse",
+  "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse",
   "version" : "0.1.0",
   "name" : "NoBasisAppointmentResponse",
   "title" : "no-basis-AppointmentResponse",
   "status" : "draft",
-  "date" : "2023-09-05T10:10:09+02:00",
+  "date" : "2023-09-20T09:32:23+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -125,7 +125,7 @@
         "severity" : "error",
         "human" : "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.",
         "expression" : "extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'",
-        "source" : "http://example.org/StructureDefinition/no-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -384,7 +384,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/no-basis-shortnotice"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -495,7 +495,7 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "fixedUri" : "http://example.org/StructureDefinition/no-basis-shortnotice",
+      "fixedUri" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice",
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -929,7 +929,7 @@
         "severity" : "error",
         "human" : "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.",
         "expression" : "extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'",
-        "source" : "http://example.org/StructureDefinition/no-basis-AppointmentResponse"
+        "source" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse"
       }]
     },
     {
@@ -952,7 +952,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://example.org/StructureDefinition/no-basis-shortnotice"]
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice"]
       }]
     },
     {

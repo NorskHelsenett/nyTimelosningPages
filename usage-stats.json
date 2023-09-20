@@ -4,21 +4,21 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://example.org/StructureDefinition/hn-basis-Recurring",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring",
       "title": "hn-basis-recurring",
       "types": [
         "boolean"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/hn-basis-changeConferenceType",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType",
       "title": "hn-basis-changeConferenceType",
       "types": [
         "Coding"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/hn-basis-consultationType",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType",
       "title": "hn-basis-consultationType",
       "types": [
         "Coding",
@@ -32,42 +32,42 @@
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/hn-basis-flagStatusPeriod",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-flagStatusPeriod",
       "title": "hn-basis-flagStatusPeriod",
       "types": [
         "Period"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/hn-basis-postponementreason",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason",
       "title": "hn-basis-postponementreason",
       "types": [
         "Coding"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/no-basis-group",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-group",
       "title": "no-basis-group",
       "types": [
         "boolean"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/no-basis-partof",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof",
       "title": "no-basis-partof",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/no-basis-shortnotice",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice",
       "title": "no-basis-shortnotice",
       "types": [
         "boolean"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/no-basis-virtual-service",
+      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service",
       "title": "no-basis-Virtual-Service",
       "types": [
         "Coding",
@@ -133,61 +133,61 @@
   "profiles": {
     "AppointmentResponse": [
       {
-        "url": "http://example.org/StructureDefinition/no-basis-AppointmentResponse",
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse",
         "title": "no-basis-AppointmentResponse"
       }
     ],
     "Flag": [
       {
-        "url": "http://example.org/StructureDefinition/hn-basis-Flag",
+        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag",
         "title": "hn-basis-Flag"
       }
     ],
     "Appointment": [
       {
-        "url": "http://example.org/StructureDefinition/no-basis-Appointment",
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment",
         "title": "no-basis-Appointment"
       }
     ],
     "Schedule": [
       {
-        "url": "http://example.org/StructureDefinition/hn-basis-schedule",
+        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule",
         "title": "hn-basis-schedule"
       }
     ],
     "Slot": [
       {
-        "url": "http://example.org/StructureDefinition/hn-basis-slot",
+        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot",
         "title": "hn-basis-slot"
       }
     ]
   },
   "usage": {
-    "http://example.org/StructureDefinition/hn-basis-Recurring": [
+    "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring": [
       "Appointment"
     ],
-    "http://example.org/StructureDefinition/hn-basis-changeConferenceType": [
+    "http://helsenorge.no/fhir/StructureDefinition/hn-basis-changeConferenceType": [
       "AppointmentResponse"
     ],
-    "http://example.org/StructureDefinition/hn-basis-consultationType": [
+    "http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType": [
       "Appointment"
     ],
-    "http://example.org/StructureDefinition/hn-basis-flagStatusPeriod": [
+    "http://helsenorge.no/fhir/StructureDefinition/hn-basis-flagStatusPeriod": [
       "Flag.status"
     ],
-    "http://example.org/StructureDefinition/hn-basis-postponementreason": [
+    "http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason": [
       "Appointment"
     ],
-    "http://example.org/StructureDefinition/no-basis-group": [
+    "http://helsenorge.no/fhir/StructureDefinition/no-basis-group": [
       "Appointment"
     ],
-    "http://example.org/StructureDefinition/no-basis-partof": [
+    "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof": [
       "Appointment"
     ],
-    "http://example.org/StructureDefinition/no-basis-shortnotice": [
+    "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice": [
       "AppointmentResponse"
     ],
-    "http://example.org/StructureDefinition/no-basis-virtual-service": [
+    "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service": [
       "Appointment"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [

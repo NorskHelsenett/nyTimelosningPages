@@ -5,12 +5,12 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
-  <url value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+  <url value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
   <version value="0.1.0"/>
   <name value="HnBasisAppointment"/>
   <title value="hn-basis-appointment"/>
   <status value="draft"/>
-  <date value="2023-09-05T10:10:09+02:00"/>
+  <date value="2023-09-20T09:32:23+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -49,7 +49,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Appointment"/>
-  <baseDefinition value="http://example.org/StructureDefinition/no-basis-Appointment"/>
+  <baseDefinition value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Appointment">
@@ -138,7 +138,7 @@
         <severity value="error"/>
         <human value="Cancelation reason MUST be set when status=cancelled and serviceCategory=27 (that is Specialist Medical)"/>
         <expression value="(status='canceled' and serviceCategory.coding.code='27') implies cancelationReason.exists()"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -385,7 +385,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-virtual-service"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -421,7 +421,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-group"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-group"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -457,7 +457,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/no-basis-partof"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-partof"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -493,7 +493,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/hn-basis-Recurring"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -529,7 +529,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/hn-basis-postponementreason"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -564,7 +564,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/hn-basis-consultationType"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1187,7 +1187,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -1250,7 +1250,7 @@
       <path value="Appointment.serviceCategory"/>
       <short value="A broad categorization of the service that is to be performed during this appointment"/>
       <definition value="A broad categorization of the service that is to be performed during this appointment."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Appointment.serviceCategory"/>
@@ -1272,7 +1272,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1385,7 +1385,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -1587,7 +1587,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -1788,7 +1788,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -1872,8 +1872,8 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
-        <strength value="required"/>
-        <valueSet value="http://example.org/ValueSet/hn-appointment-AppointmentType-code-vs"/>
+        <strength value="preferred"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1997,7 +1997,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -2341,7 +2341,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -2510,7 +2510,7 @@
         <severity value="warning"/>
         <human value="Length SHOULD be &lt;=100."/>
         <expression value="$this.length() &lt;= 100"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -2833,7 +2833,7 @@
         <severity value="warning"/>
         <human value="Length SHOULD be &lt;= 500"/>
         <expression value="$this.length() &lt;= 500"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -2890,7 +2890,7 @@
       <short value="Participants involved in appointment"/>
       <definition value="List of participants involved in the appointment."/>
       <min value="1"/>
-      <max value="1"/>
+      <max value="*"/>
       <base>
         <path value="Appointment.participant"/>
         <min value="1"/>
@@ -2920,14 +2920,14 @@
         <severity value="error"/>
         <human value="When actor is a Patient logical reference MUST be used"/>
         <expression value="actor.type = 'Patient' implies actor.identifier.exists()"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <constraint>
         <key value="appointment-participant-actor-patient-reference-reference"/>
         <severity value="error"/>
         <human value="When actor is a Patient Literal reference, Relative, internal or absolute URL MUST not be used"/>
         <expression value="(actor.type = 'Patient') implies actor.reference.exists().not()"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -3204,7 +3204,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -3741,7 +3741,7 @@
         <severity value="error"/>
         <human value="Cancelation reason MUST be set when status=cancelled and serviceCategory=27 (that is Specialist Medical)"/>
         <expression value="(status='canceled' and serviceCategory.coding.code='27') implies cancelationReason.exists()"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.meta">
@@ -3760,7 +3760,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/hn-basis-Recurring"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3771,7 +3771,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/hn-basis-postponementreason"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason"/>
       </type>
     </element>
     <element id="Appointment.extension:consultationType">
@@ -3781,7 +3781,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://example.org/StructureDefinition/hn-basis-consultationType"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3805,15 +3805,16 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.serviceCategory">
       <path value="Appointment.serviceCategory"/>
+      <min value="1"/>
       <max value="1"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://example.org/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
       </binding>
     </element>
     <element id="Appointment.serviceCategory.coding">
@@ -3823,7 +3824,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.serviceType.coding">
@@ -3833,7 +3834,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.specialty.coding">
@@ -3843,14 +3844,14 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType"/>
       <binding>
-        <strength value="required"/>
-        <valueSet value="http://example.org/ValueSet/hn-appointment-AppointmentType-code-vs"/>
+        <strength value="preferred"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
       </binding>
     </element>
     <element id="Appointment.appointmentType.coding">
@@ -3860,7 +3861,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.reasonCode.coding">
@@ -3870,7 +3871,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.description">
@@ -3880,7 +3881,7 @@
         <severity value="warning"/>
         <human value="Length SHOULD be &lt;=100."/>
         <expression value="$this.length() &lt;= 100"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.supportingInformation">
@@ -3896,25 +3897,24 @@
         <severity value="warning"/>
         <human value="Length SHOULD be &lt;= 500"/>
         <expression value="$this.length() &lt;= 500"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.participant">
       <path value="Appointment.participant"/>
-      <max value="1"/>
       <constraint>
         <key value="appointment-participant-actor-patient-reference-identifier"/>
         <severity value="error"/>
         <human value="When actor is a Patient logical reference MUST be used"/>
         <expression value="actor.type = 'Patient' implies actor.identifier.exists()"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
       <constraint>
         <key value="appointment-participant-actor-patient-reference-reference"/>
         <severity value="error"/>
         <human value="When actor is a Patient Literal reference, Relative, internal or absolute URL MUST not be used"/>
         <expression value="(actor.type = 'Patient') implies actor.reference.exists().not()"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.participant.type">
@@ -3930,7 +3930,7 @@
         <severity value="error"/>
         <human value="If code is used in a codable consept the system and description must be used"/>
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
-        <source value="http://example.org/StructureDefinition/hn-basis-appointment"/>
+        <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
     </element>
     <element id="Appointment.participant.type.coding.system">

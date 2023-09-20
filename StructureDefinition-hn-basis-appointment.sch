@@ -13,14 +13,14 @@
     <sch:title>f:Appointment</sch:title>
     <sch:rule context="f:Appointment">
       <sch:assert test="count(f:contained) &lt;= 0">contained: maximum cardinality of 'contained' is 0</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/no-basis-group']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/no-basis-group': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/no-basis-partof']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/no-basis-partof': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/hn-basis-Recurring']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/hn-basis-Recurring': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/hn-basis-postponementreason']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/hn-basis-postponementreason': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/hn-basis-consultationType']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/hn-basis-consultationType': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-group']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-group': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-partof']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-partof': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:serviceCategory) &gt;= 1">serviceCategory: minimum cardinality of 'serviceCategory' is 1</sch:assert>
       <sch:assert test="count(f:serviceCategory) &lt;= 1">serviceCategory: maximum cardinality of 'serviceCategory' is 1</sch:assert>
       <sch:assert test="count(f:supportingInformation) &gt;= 1">supportingInformation: minimum cardinality of 'supportingInformation' is 1</sch:assert>
-      <sch:assert test="count(f:participant) &lt;= 1">participant: maximum cardinality of 'participant' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
