@@ -129,16 +129,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Structures: Data Type Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -218,10 +221,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-no-basis-Organization.html"
+                     title="StructureDefinition/no-basis-Organization">no-basis-Organization</a>
+               </td>
+               <td>
+<p>Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-no-basis-Address.html"
+                     title="StructureDefinition/no-basis-Address">no-basis-Address</a>
+               </td>
+               <td>
+<p>Basisprofil for Norwegian Address information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
@@ -286,6 +319,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-no-basis-address-official.html"
+                     title="StructureDefinition/no-basis-address-official">no-basis-address-official</a>
+               </td>
+               <td>
+<p>Defines the concept of an officialy registered address in Norway. Usually this will be the adress registered in “Folkeregisteret” for persons or “Enhetsregisteret” for organizations.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-no-basis-group.html"
                      title="StructureDefinition/no-basis-group">no-basis-group</a>
                </td>
@@ -314,7 +356,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
@@ -362,7 +404,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
@@ -392,7 +434,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
@@ -412,17 +454,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="AppointmentResponse-PatientAppointmentResponseExample.html"
-                     title="AppointmentResponse/PatientAppointmentResponseExample">PatientAppointmentResponseExample</a>
+                  <a href="Appointment-34DDC9EC-E84A-EE11-9852-B0074B014ABB.html"
+                     title="Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB">AppointmentPolikliniskEksempel</a>
                </td>
                <td>
-<p>Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension.</p>
+<p>Utredning</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-833bad1b-e612-4593-9560-c5ea55bce912.html"
+                     title="Organization/833bad1b-e612-4593-9560-c5ea55bce912">KommunikasjonspartOrganization</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-df89a675-febe-44b9-8fe7-027169cb05a3.html"
+                     title="Organization/df89a675-febe-44b9-8fe7-027169cb05a3">ManagingOrgHosp</a>
+               </td>
+               <td>
+
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.html"
                      title="Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473">PatientExample</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-PolikliniskEksempelBundle.html"
+                     title="Bundle/PolikliniskEksempelBundle">PolikliniskEksempelBundle</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Flag-5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8.html"
+                     title="Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8">canAcknowledgeFlag</a>
                </td>
                <td>
 
@@ -455,7 +533,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 20, 2023 09:32+0200">2023-09-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 25, 2023 00:16+0200">2023-09-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

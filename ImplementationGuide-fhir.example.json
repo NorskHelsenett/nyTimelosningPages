@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-09-20T09:32:23+02:00",
+  "date" : "2023-09-25T00:16:31+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -612,6 +612,29 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB"
+      },
+      "name" : "AppointmentPolikliniskEksempel",
+      "description" : "Utredning",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Flag"
+      }],
+      "reference" : {
+        "reference" : "Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"
+      },
+      "name" : "canAcknowledgeFlag",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -780,6 +803,28 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/833bad1b-e612-4593-9560-c5ea55bce912"
+      },
+      "name" : "KommunikasjonspartOrganization",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/df89a675-febe-44b9-8fe7-027169cb05a3"
+      },
+      "name" : "ManagingOrgHosp",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -799,6 +844,30 @@
       },
       "name" : "No Basis VirtualServiceType Value Set",
       "description" : "Example codes for possible virtual service connection types.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-Address"
+      },
+      "name" : "no-basis-Address",
+      "description" : "Basisprofil for Norwegian Address information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-address-official"
+      },
+      "name" : "no-basis-address-official",
+      "description" : "Defines the concept of an officialy registered address in Norway. Usually this will be the adress registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
       "exampleBoolean" : false
     },
     {
@@ -840,6 +909,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-Organization"
+      },
+      "name" : "no-basis-Organization",
+      "description" : "Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -876,24 +957,23 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "AppointmentResponse"
-      }],
-      "reference" : {
-        "reference" : "AppointmentResponse/PatientAppointmentResponseExample"
-      },
-      "name" : "PatientAppointmentResponseExample",
-      "description" : "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension.",
-      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
         "reference" : "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"
       },
       "name" : "PatientExample",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/PolikliniskEksempelBundle"
+      },
+      "name" : "PolikliniskEksempelBundle",
       "exampleBoolean" : true
     }],
     "page" : {

@@ -1,0 +1,176 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "PolikliniskEksempelBundle",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "http://dips.no/fhir/Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8",
+    "resource" : {
+      "resourceType" : "Flag",
+      "id" : "5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8",
+      "meta" : {
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Flag</b><a name=\"5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Flag &quot;5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hn-basis-Flag.html\">hn-basis-Flag</a></p></div><p><b>identifier</b>: id:\u00a077ffceb0-4710-4241-949c-b02e1aee1385</p><p><b>status</b>: active</p><p><b>code</b>: Timen/opphold kan bekreftes av innbygger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canAcknowledge)</span></p><p><b>subject</b>: <span>id:\u00a01416601476</span></p></div>"
+      },
+      "identifier" : [{
+        "value" : "77ffceb0-4710-4241-949c-b02e1aee1385"
+      }],
+      "status" : "active",
+      "code" : {
+        "coding" : [{
+          "system" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
+          "code" : "canAcknowledge",
+          "display" : "Timen/opphold kan bekreftes av innbygger"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+          "value" : "1416601476"
+        }
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Flag"
+    }
+  },
+  {
+    "fullUrl" : "http://dips.no/fhir/Organization/833bad1b-e612-4593-9560-c5ea55bce912",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "833bad1b-e612-4593-9560-c5ea55bce912",
+      "meta" : {
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"833bad1b-e612-4593-9560-c5ea55bce912\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;833bad1b-e612-4593-9560-c5ea55bce912&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-Organization.html\">no-basis-Organization</a></p></div><p><b>identifier</b>: id:\u00a0HerIdn2_123456</p><p><b>type</b>: Avdeling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#05)</span></p><p><b>partOf</b>: <a href=\"#Organization_df89a675-febe-44b9-8fe7-027169cb05a3\">See above (Organization/df89a675-febe-44b9-8fe7-027169cb05a3)</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.578.1.12.4.1.2",
+        "value" : "HerIdn2_123456"
+      }],
+      "type" : [{
+        "coding" : [{
+          "system" : "urn:oid:2.16.578.1.12.4.1.1.8628",
+          "code" : "05",
+          "display" : "Avdeling"
+        }]
+      }],
+      "partOf" : {
+        "reference" : "Organization/df89a675-febe-44b9-8fe7-027169cb05a3"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Organization"
+    }
+  },
+  {
+    "fullUrl" : "http://dips.no/fhir/Organization/df89a675-febe-44b9-8fe7-027169cb05a3",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "df89a675-febe-44b9-8fe7-027169cb05a3",
+      "meta" : {
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"df89a675-febe-44b9-8fe7-027169cb05a3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;df89a675-febe-44b9-8fe7-027169cb05a3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-Organization.html\">no-basis-Organization</a></p></div><p><b>identifier</b>: id:\u00a0993467048</p><p><b>type</b>: Helseforetak <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#2)</span></p><p><b>name</b>: Oslo Universitetssykehus HF</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
+        "value" : "993467048"
+      }],
+      "type" : [{
+        "coding" : [{
+          "system" : "urn:oid:2.16.578.1.12.4.1.1.8628",
+          "code" : "2",
+          "display" : "Helseforetak"
+        }]
+      }],
+      "name" : "Oslo Universitetssykehus HF"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Organization"
+    }
+  },
+  {
+    "fullUrl" : "http://dips.no/fhir/Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB",
+    "resource" : {
+      "resourceType" : "Appointment",
+      "id" : "34DDC9EC-E84A-EE11-9852-B0074B014ABB",
+      "meta" : {
+        "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"],
+        "tag" : [{
+          "extension" : [{
+            "url" : "http://helsenorge.no/fhir/extension/varselorganisasjon",
+            "valueString" : "Rikshospitalet"
+          }],
+          "system" : "http://helsenorge.no/fhir/varsling",
+          "code" : "9",
+          "display" : "Benytt angitt navn som avsender i varsel til innbygger"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"34DDC9EC-E84A-EE11-9852-B0074B014ABB\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;34DDC9EC-E84A-EE11-9852-B0074B014ABB&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hn-basis-appointment.html\">hn-basis-appointment</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://helsenorge.no/fhir/varsling http://helsenorge.no/fhir/varsling}\">http://helsenorge.no/fhir/varsling</span></p></div><p><b>identifier</b>: id:\u00a034DDC9EC-E84A-EE11-9852-B0074B014ABB</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: Specialist Medical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html\">Service category</a>#27)</span></p><p><b>appointmentType</b>: Behandling som gjøres uten innleggelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html\">New codes proposed as part of Timetype innbyggerportal </a>#Poliklinisktime)</span></p><p><b>description</b>: Utredning</p><p><b>supportingInformation</b>: </p><ul><li><a href=\"#Organization_833bad1b-e612-4593-9560-c5ea55bce912\">See above (Organization/833bad1b-e612-4593-9560-c5ea55bce912)</a></li><li><a href=\"#Flag_5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8\">See above (Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8)</a></li></ul><p><b>start</b>: 3. okt. 2023, 10:30:00</p><p><b>end</b>: 3. okt. 2023, 12:00:00</p><p><b>minutesDuration</b>: 90</p><p><b>patientInstruction</b>: Se innkallingsbrev</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Participation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></td><td><span>id:\u00a01416601476</span></td><td>accepted</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/namingsystem/dips-bookingid",
+        "value" : "34DDC9EC-E84A-EE11-9852-B0074B014ABB"
+      }],
+      "status" : "booked",
+      "serviceCategory" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/service-category",
+          "code" : "27",
+          "display" : "Specialist Medical"
+        }]
+      }],
+      "appointmentType" : {
+        "coding" : [{
+          "system" : "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
+          "code" : "Poliklinisktime",
+          "display" : "Behandling som gjøres uten innleggelse"
+        }]
+      },
+      "description" : "Utredning",
+      "supportingInformation" : [{
+        "reference" : "Organization/833bad1b-e612-4593-9560-c5ea55bce912"
+      },
+      {
+        "reference" : "Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"
+      }],
+      "start" : "2023-10-03T08:30:00Z",
+      "end" : "2023-10-03T10:00:00Z",
+      "minutesDuration" : 90,
+      "patientInstruction" : "Se innkallingsbrev",
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code" : "PART",
+            "display" : "Participation"
+          }]
+        }],
+        "actor" : {
+          "type" : "Patient",
+          "identifier" : {
+            "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+            "value" : "1416601476"
+          }
+        },
+        "status" : "accepted"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Appointment"
+    }
+  }]
+}

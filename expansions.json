@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "33c849e1-1e7b-4c04-a631-a6194a0887e7",
+  "id" : "ae89f23d-1138-42d8-8520-5ae584e57665",
   "meta" : {
-    "lastUpdated" : "2023-09-20T09:32:23.583+02:00"
+    "lastUpdated" : "2023-09-25T00:16:31.174+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "HnAppointmentFlagCodeVS",
       "title" : "hn-appointment-flag-code-vs",
       "status" : "draft",
-      "date" : "2023-09-20T09:32:23+02:00",
+      "date" : "2023-09-25T00:16:31+02:00",
       "expansion" : {
-        "identifier" : "urn:uuid:61e5122d-9622-48cd-9597-e0dbfb0af796",
-        "timestamp" : "2023-09-20T09:34:03+02:00",
+        "identifier" : "urn:uuid:9fc260a9-f32c-4892-b220-f122edcda770",
+        "timestamp" : "2023-09-25T00:17:49+02:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -65,6 +65,67 @@
           "system" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
           "code" : "canChangeAppointment",
           "display" : "Innbygger kan be om endret time"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on example code system http://terminology.hl7.org/CodeSystem/service-category http://terminology.hl7.org/CodeSystem/service-category version 4.0.1</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>codesystem http://terminology.hl7.org/CodeSystem/service-category version 4.0.1</li><li>system http://terminology.hl7.org/CodeSystem/service-category version 4.0.1</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-service-category-10\"> </a>\u00a0\u00a010</td><td>http://terminology.hl7.org/CodeSystem/service-category</td><td>Dental</td><td><div><p>Dental</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-service-category-27\"> </a>\u00a0\u00a027</td><td>http://terminology.hl7.org/CodeSystem/service-category</td><td>Specialist Medical</td><td><div><p>Specialist Medical - requires referral</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-service-category-17\"> </a>\u00a0\u00a017</td><td>http://terminology.hl7.org/CodeSystem/service-category</td><td>General Practice</td><td><div><p>General Practice/GP (doctor)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-service-category-7\"> </a>\u00a0\u00a07</td><td>http://terminology.hl7.org/CodeSystem/service-category</td><td>Community Health Care</td><td><div><p>Community Health Care</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
+      "version" : "0.1.0",
+      "name" : "HnAppointmentServiceCategoryVS",
+      "title" : "hn-appointment-ServiceCategory-code-vs",
+      "status" : "draft",
+      "date" : "2023-09-25T00:03:25+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:ee5e8a32-61fe-4ca0-8f5e-2fcc6dc75c1d",
+        "timestamp" : "2023-09-24T22:04:47.488Z",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "example",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/service-category|4.0.1"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/service-category|4.0.1"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/service-category|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/service-category",
+          "code" : "10",
+          "display" : "Dental"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/service-category",
+          "code" : "27",
+          "display" : "Specialist Medical"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/service-category",
+          "code" : "17",
+          "display" : "General Practice"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/service-category",
+          "code" : "7",
+          "display" : "Community Health Care"
         }]
       }
     }

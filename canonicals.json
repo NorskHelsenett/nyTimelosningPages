@@ -91,6 +91,13 @@
     "name" : "HnBasisSlot"
   },
   {
+    "id" : "no-basis-Address",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Address",
+    "version" : "0.1.0",
+    "name" : "NoBasisAddress"
+  },
+  {
     "id" : "no-basis-Appointment",
     "type" : "StructureDefinition",
     "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment",
@@ -103,6 +110,20 @@
     "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse",
     "version" : "0.1.0",
     "name" : "NoBasisAppointmentResponse"
+  },
+  {
+    "id" : "no-basis-Organization",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization",
+    "version" : "0.1.0",
+    "name" : "NoBasisOrganization"
+  },
+  {
+    "id" : "no-basis-address-official",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-address-official",
+    "version" : "0.1.0",
+    "name" : "NoBasisAddressOfficial"
   },
   {
     "id" : "no-basis-group",

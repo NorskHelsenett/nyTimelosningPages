@@ -207,7 +207,7 @@
         
           Draft
           
-            as of 2023-09-20
+            as of 2023-09-25
           
         
       </td>
@@ -396,7 +396,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>dom-6</td><td>best practice</td><td>AppointmentResponse</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>inv-1</td><td>error</td><td>AppointmentResponse</td><td>The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.<br/>: extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'</td><td></td></tr>
+<tr><td>inv-1</td><td>error</td><td>AppointmentResponse</td><td>The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.<br/>: extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'</td><td></td></tr>
 <tr><td>inv-2</td><td>error</td><td>AppointmentResponse.actor.identifier</td><td>Only urn:oid:2.16.578.1.12.4.1.4.1 (FNR) or urn:oid:2.16.578.1.12.4.1.4.2 (DNR) are allowed as systems to identify patient in this profile.<br/>: system = 'urn:oid:2.16.578.1.12.4.1.4.1' or system = 'urn:oid:2.16.578.1.12.4.1.4.2'</td><td></td></tr>
 <tr><td>inv-3</td><td>error</td><td>AppointmentResponse.actor.identifier.type.coding</td><td>Only FNR or DNR number are allowed as codes to identify patient in this profile.<br/>: code = 'FNR' or code = 'DNR'</td><td></td></tr>
 </table>
@@ -533,7 +533,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>dom-6</td><td>best practice</td><td>AppointmentResponse</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>inv-1</td><td>error</td><td>AppointmentResponse</td><td>The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.<br/>: extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'</td><td></td></tr>
+<tr><td>inv-1</td><td>error</td><td>AppointmentResponse</td><td>The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.<br/>: extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'</td><td></td></tr>
 <tr><td>inv-2</td><td>error</td><td>AppointmentResponse.actor.identifier</td><td>Only urn:oid:2.16.578.1.12.4.1.4.1 (FNR) or urn:oid:2.16.578.1.12.4.1.4.2 (DNR) are allowed as systems to identify patient in this profile.<br/>: system = 'urn:oid:2.16.578.1.12.4.1.4.1' or system = 'urn:oid:2.16.578.1.12.4.1.4.2'</td><td></td></tr>
 <tr><td>inv-3</td><td>error</td><td>AppointmentResponse.actor.identifier.type.coding</td><td>Only FNR or DNR number are allowed as codes to identify patient in this profile.<br/>: code = 'FNR' or code = 'DNR'</td><td></td></tr>
 <tr><td>inv-4</td><td>error</td><td>AppointmentResponse.participantType.coding</td><td>If code is used in a codable consept the system and description must be used<br/>: code &gt; '' implies (system &gt; '' and display &gt; '')</td><td></td></tr>
@@ -795,7 +795,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>dom-6</td><td>best practice</td><td>AppointmentResponse</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>inv-1</td><td>error</td><td>AppointmentResponse</td><td>The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.<br/>: extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'</td><td></td></tr>
+<tr><td>inv-1</td><td>error</td><td>AppointmentResponse</td><td>The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.<br/>: extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'</td><td></td></tr>
 <tr><td>inv-2</td><td>error</td><td>AppointmentResponse.actor.identifier</td><td>Only urn:oid:2.16.578.1.12.4.1.4.1 (FNR) or urn:oid:2.16.578.1.12.4.1.4.2 (DNR) are allowed as systems to identify patient in this profile.<br/>: system = 'urn:oid:2.16.578.1.12.4.1.4.1' or system = 'urn:oid:2.16.578.1.12.4.1.4.2'</td><td></td></tr>
 <tr><td>inv-3</td><td>error</td><td>AppointmentResponse.actor.identifier.type.coding</td><td>Only FNR or DNR number are allowed as codes to identify patient in this profile.<br/>: code = 'FNR' or code = 'DNR'</td><td></td></tr>
 </table>
@@ -932,7 +932,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>dom-6</td><td>best practice</td><td>AppointmentResponse</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>inv-1</td><td>error</td><td>AppointmentResponse</td><td>The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.<br/>: extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'</td><td></td></tr>
+<tr><td>inv-1</td><td>error</td><td>AppointmentResponse</td><td>The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.<br/>: extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'</td><td></td></tr>
 <tr><td>inv-2</td><td>error</td><td>AppointmentResponse.actor.identifier</td><td>Only urn:oid:2.16.578.1.12.4.1.4.1 (FNR) or urn:oid:2.16.578.1.12.4.1.4.2 (DNR) are allowed as systems to identify patient in this profile.<br/>: system = 'urn:oid:2.16.578.1.12.4.1.4.1' or system = 'urn:oid:2.16.578.1.12.4.1.4.2'</td><td></td></tr>
 <tr><td>inv-3</td><td>error</td><td>AppointmentResponse.actor.identifier.type.coding</td><td>Only FNR or DNR number are allowed as codes to identify patient in this profile.<br/>: code = 'FNR' or code = 'DNR'</td><td></td></tr>
 <tr><td>inv-4</td><td>error</td><td>AppointmentResponse.participantType.coding</td><td>If code is used in a codable consept the system and description must be used<br/>: code &gt; '' implies (system &gt; '' and display &gt; '')</td><td></td></tr>
@@ -1130,7 +1130,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 20, 2023 09:32+0200">2023-09-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 25, 2023 00:16+0200">2023-09-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://helsenorge.no/fhir/Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8> a fhir:Flag ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"^^xsd:anyURI ;
+       fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Flag</b><a name=\"5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Flag &quot;5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hn-basis-Flag.html\">hn-basis-Flag</a></p></div><p><b>identifier</b>: id: 77ffceb0-4710-4241-949c-b02e1aee1385</p><p><b>status</b>: active</p><p><b>code</b>: Timen/opphold kan bekreftes av innbygger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canAcknowledge)</span></p><p><b>subject</b>: <span>id: 1416601476</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "77ffceb0-4710-4241-949c-b02e1aee1385" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "canAcknowledge" ] ;
+       fhir:display [ fhir:v "Timen/opphold kan bekreftes av innbygger" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1416601476" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

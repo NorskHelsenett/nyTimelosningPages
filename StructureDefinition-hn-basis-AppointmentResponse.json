@@ -10,7 +10,7 @@
   "name" : "HnBasisAppointmentResponse",
   "title" : "hn-basis-AppointmentResponse",
   "status" : "draft",
-  "date" : "2023-09-20T09:32:23+02:00",
+  "date" : "2023-09-25T00:16:31+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -124,7 +124,7 @@
         "key" : "inv-1",
         "severity" : "error",
         "human" : "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.",
-        "expression" : "extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'",
+        "expression" : "extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse"
       }],
       "isModifier" : false,

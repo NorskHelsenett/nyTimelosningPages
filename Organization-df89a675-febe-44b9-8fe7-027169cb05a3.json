@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Organization",
+  "id" : "df89a675-febe-44b9-8fe7-027169cb05a3",
+  "meta" : {
+    "profile" : ["http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"df89a675-febe-44b9-8fe7-027169cb05a3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;df89a675-febe-44b9-8fe7-027169cb05a3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-Organization.html\">no-basis-Organization</a></p></div><p><b>identifier</b>: id:\u00a0993467048</p><p><b>type</b>: Helseforetak <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#2)</span></p><p><b>name</b>: Oslo Universitetssykehus HF</p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
+    "value" : "993467048"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8628",
+      "code" : "2",
+      "display" : "Helseforetak"
+    }]
+  }],
+  "name" : "Oslo Universitetssykehus HF"
+}
