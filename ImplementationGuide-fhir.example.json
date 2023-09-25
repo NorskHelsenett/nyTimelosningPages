@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-09-25T11:50:22+02:00",
+  "date" : "2023-09-25T15:31:18+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -642,6 +642,28 @@
         "reference" : "Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"
       },
       "name" : "canAcknowledgeFlag",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Flag"
+      }],
+      "reference" : {
+        "reference" : "Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d"
+      },
+      "name" : "canHaveAppointmentDetails",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Flag"
+      }],
+      "reference" : {
+        "reference" : "Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6"
+      },
+      "name" : "canInitateDialog",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"
     },
     {

@@ -12,10 +12,10 @@
           <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Flag</b><a name="5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Flag &quot;5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hn-basis-Flag.html">hn-basis-Flag</a></p></div><p><b>identifier</b>: id: 77ffceb0-4710-4241-949c-b02e1aee1385</p><p><b>status</b>: active</p><p><b>code</b>: Timen/opphold kan bekreftes av innbygger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-hn-appointment-flag-code-cs.html">hn-appointment-flag-code-cs</a>#canAcknowledge)</span></p><p><b>subject</b>: <span>id: 1416601476</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Flag</b><a name="5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Flag &quot;5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hn-basis-Flag.html">hn-basis-Flag</a></p></div><p><b>identifier</b>: id: 5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8</p><p><b>status</b>: active</p><p><b>code</b>: Timen/opphold kan bekreftes av innbygger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-hn-appointment-flag-code-cs.html">hn-appointment-flag-code-cs</a>#canAcknowledge)</span></p><p><b>subject</b>: <span>id: 1416601476</span></p></div>
         </text>
         <identifier>
-          <value value="77ffceb0-4710-4241-949c-b02e1aee1385"/>
+          <value value="5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"/>
         </identifier>
         <status value="active"/>
         <code>
@@ -113,11 +113,15 @@
             </extension>
             <system value="http://helsenorge.no/fhir/varsling"/>
             <code value="9"/>
-            <display value="Benytt angitt navn som avsender i varsel til innbygger"/>
+            <display value="Innbygger skal ikke påminnes"/>
+          </tag>
+          <tag>
+            <system value="http://helsenorge.no/fhir/varsling"/>
+            <code value="1"/>
           </tag>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="34DDC9EC-E84A-EE11-9852-B0074B014ABB"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;34DDC9EC-E84A-EE11-9852-B0074B014ABB&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hn-basis-appointment.html">hn-basis-appointment</a></p><p style="margin-bottom: 0px">Tag: <span title="{http://helsenorge.no/fhir/varsling http://helsenorge.no/fhir/varsling}">http://helsenorge.no/fhir/varsling</span></p></div><p><b>identifier</b>: id: 34DDC9EC-E84A-EE11-9852-B0074B014ABB</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: Specialist Medical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html">Service category</a>#27)</span></p><p><b>appointmentType</b>: Behandling som gjøres uten innleggelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html">New codes proposed as part of Timetype innbyggerportal </a>#Poliklinisktime)</span></p><p><b>description</b>: Utredning</p><p><b>supportingInformation</b>: </p><ul><li><a href="#Organization_833bad1b-e612-4593-9560-c5ea55bce912">See above (Organization/833bad1b-e612-4593-9560-c5ea55bce912)</a></li><li><a href="#Flag_5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8">See above (Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8)</a></li></ul><p><b>start</b>: 3. okt. 2023, 10:30:00</p><p><b>end</b>: 3. okt. 2023, 12:00:00</p><p><b>minutesDuration</b>: 90</p><p><b>patientInstruction</b>: Se innkallingsbrev</p><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <span>id: 1416601476</span></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href="#Location_15878c66-d827-4fb9-8528-e234a0de8835">See above (Location/15878c66-d827-4fb9-8528-e234a0de8835)</a></p><p><b>status</b>: accepted</p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="34DDC9EC-E84A-EE11-9852-B0074B014ABB"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;34DDC9EC-E84A-EE11-9852-B0074B014ABB&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hn-basis-appointment.html">hn-basis-appointment</a></p><p style="margin-bottom: 0px">Tags: <span title="{http://helsenorge.no/fhir/varsling http://helsenorge.no/fhir/varsling}">http://helsenorge.no/fhir/varsling</span>, <span title="{http://helsenorge.no/fhir/varsling http://helsenorge.no/fhir/varsling}">http://helsenorge.no/fhir/varsling</span></p></div><p><b>identifier</b>: id: 34DDC9EC-E84A-EE11-9852-B0074B014ABB</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: Specialist Medical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html">Service category</a>#27)</span></p><p><b>appointmentType</b>: Behandling som gjøres uten innleggelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html">New codes proposed as part of Timetype innbyggerportal </a>#Poliklinisktime)</span></p><p><b>description</b>: Utredning</p><p><b>supportingInformation</b>: </p><ul><li><a href="#Organization_833bad1b-e612-4593-9560-c5ea55bce912">See above (Organization/833bad1b-e612-4593-9560-c5ea55bce912)</a></li><li><a href="#Flag_5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8">See above (Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8)</a></li><li><a href="#Flag_5c4fdce8-e90e-4adf-9544-0c6b684a953d">See above (Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d)</a></li><li><a href="#Flag_52469032-561f-4334-b5af-b8b5c8c4c0c6">See above (Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6)</a></li></ul><p><b>start</b>: 3. okt. 2023, 10:30:00</p><p><b>end</b>: 3. okt. 2023, 12:00:00</p><p><b>minutesDuration</b>: 90</p><p><b>patientInstruction</b>: Se innkallingsbrev</p><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <span>id: 1416601476</span></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href="#Location_15878c66-d827-4fb9-8528-e234a0de8835">See above (Location/15878c66-d827-4fb9-8528-e234a0de8835)</a></p><p><b>status</b>: accepted</p></blockquote></div>
         </text>
         <identifier>
           <system value="http://dips.no/fhir/namingsystem/dips-bookingid"/>
@@ -144,6 +148,12 @@
         </supportingInformation>
         <supportingInformation>
           <reference value="Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"/>
+        </supportingInformation>
+        <supportingInformation>
+          <reference value="Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d"/>
+        </supportingInformation>
+        <supportingInformation>
+          <reference value="Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6"/>
         </supportingInformation>
         <start value="2023-10-03T08:30:00Z"/>
         <end value="2023-10-03T10:00:00Z"/>
@@ -246,6 +256,76 @@
     <request>
       <method value="POST"/>
       <url value="Location"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d"/>
+    <resource>
+      <Flag>
+        <id value="5c4fdce8-e90e-4adf-9544-0c6b684a953d"/>
+        <meta>
+          <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Flag</b><a name="5c4fdce8-e90e-4adf-9544-0c6b684a953d"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Flag &quot;5c4fdce8-e90e-4adf-9544-0c6b684a953d&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hn-basis-Flag.html">hn-basis-Flag</a></p></div><p><b>identifier</b>: id: 5c4fdce8-e90e-4adf-9544-0c6b684a953d</p><p><b>status</b>: active</p><p><b>code</b>: Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-hn-appointment-flag-code-cs.html">hn-appointment-flag-code-cs</a>#canHaveAppointmentDetails)</span></p><p><b>subject</b>: <span>id: 1416601476</span></p></div>
+        </text>
+        <identifier>
+          <value value="5c4fdce8-e90e-4adf-9544-0c6b684a953d"/>
+        </identifier>
+        <status value="active"/>
+        <code>
+          <coding>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canHaveAppointmentDetails"/>
+            <display value="Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes"/>
+          </coding>
+        </code>
+        <subject>
+          <identifier>
+            <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+            <value value="1416601476"/>
+          </identifier>
+        </subject>
+      </Flag>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Flag"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6"/>
+    <resource>
+      <Flag>
+        <id value="52469032-561f-4334-b5af-b8b5c8c4c0c6"/>
+        <meta>
+          <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Flag</b><a name="52469032-561f-4334-b5af-b8b5c8c4c0c6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Flag &quot;52469032-561f-4334-b5af-b8b5c8c4c0c6&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hn-basis-Flag.html">hn-basis-Flag</a></p></div><p><b>identifier</b>: id: 52469032-561f-4334-b5af-b8b5c8c4c0c6</p><p><b>status</b>: active</p><p><b>code</b>: Dialog kan inisieres <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-hn-appointment-flag-code-cs.html">hn-appointment-flag-code-cs</a>#canInitateDialog)</span></p><p><b>subject</b>: <span>id: 1416601476</span></p></div>
+        </text>
+        <identifier>
+          <value value="52469032-561f-4334-b5af-b8b5c8c4c0c6"/>
+        </identifier>
+        <status value="active"/>
+        <code>
+          <coding>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canInitateDialog"/>
+            <display value="Dialog kan inisieres"/>
+          </coding>
+        </code>
+        <subject>
+          <identifier>
+            <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+            <value value="1416601476"/>
+          </identifier>
+        </subject>
+      </Flag>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Flag"/>
     </request>
   </entry>
 </Bundle>

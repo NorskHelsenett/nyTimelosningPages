@@ -10,7 +10,7 @@
   "name" : "HnAppointmentFlagCodeCS",
   "title" : "hn-appointment-flag-code-cs",
   "status" : "draft",
-  "date" : "2023-09-25T11:50:22+02:00",
+  "date" : "2023-09-25T15:31:18+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -21,7 +21,7 @@
   }],
   "description" : "Code system used for Flag codes in nytimeløsing",
   "content" : "complete",
-  "count" : 7,
+  "count" : 9,
   "concept" : [{
     "code" : "cancel",
     "display" : "Innbygger kan kansellere timen"
@@ -49,5 +49,13 @@
   {
     "code" : "canChangeAppointment",
     "display" : "Innbygger kan be om endret time"
+  },
+  {
+    "code" : "canHaveAppointmentDetails",
+    "display" : "Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes"
+  },
+  {
+    "code" : "canInitateDialog",
+    "display" : "Dialog kan inisieres"
   }]
 }

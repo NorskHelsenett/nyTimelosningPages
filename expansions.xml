@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="82f2d8aa-fac8-485e-ade6-cc48f226b856"/>
+  <id value="b3943b21-7485-4fee-b870-a0cdd2c3111c"/>
   <meta>
-    <lastUpdated value="2023-09-25T11:50:22.675+02:00"/>
+    <lastUpdated value="2023-09-25T15:31:18.136+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,7 +13,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 7 concepts</p>
+            <p>This value set contains 9 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-hn-appointment-flag-code-cs.html">codesystem hn-appointment-flag-code-cs v0.1.0 (CodeSystem)</a>
             </p>
@@ -85,6 +85,22 @@
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
                 <td>Innbygger kan be om endret time</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canHaveAppointmentDetails"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canHaveAppointmentDetails">canHaveAppointmentDetails</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canInitateDialog"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitateDialog">canInitateDialog</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Dialog kan inisieres</td>
+              </tr>
             </table>
           </div>
         </text>
@@ -93,11 +109,11 @@
         <name value="HnAppointmentFlagCodeVS"/>
         <title value="hn-appointment-flag-code-vs"/>
         <status value="draft"/>
-        <date value="2023-09-25T11:50:22+02:00"/>
+        <date value="2023-09-25T15:31:18+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:ad1a7d60-204b-4297-9578-806cf5453c2e"/>
-          <timestamp value="2023-09-25T11:51:41+02:00"/>
-          <total value="7"/>
+          <identifier value="urn:uuid:b1049ad7-abd4-4522-9876-2a0b89a66c7e"/>
+          <timestamp value="2023-09-25T15:31:53+02:00"/>
+          <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -140,6 +156,16 @@
             <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
             <code value="canChangeAppointment"/>
             <display value="Innbygger kan be om endret time"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canHaveAppointmentDetails"/>
+            <display value="Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canInitateDialog"/>
+            <display value="Dialog kan inisieres"/>
           </contains>
         </expansion>
       </ValueSet>

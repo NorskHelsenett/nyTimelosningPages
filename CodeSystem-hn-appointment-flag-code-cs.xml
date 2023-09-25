@@ -10,7 +10,7 @@
   <name value="HnAppointmentFlagCodeCS"/>
   <title value="hn-appointment-flag-code-cs"/>
   <status value="draft"/>
-  <date value="2023-09-25T11:50:22+02:00"/>
+  <date value="2023-09-25T15:31:18+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -21,7 +21,7 @@
   </contact>
   <description value="Code system used for Flag codes in nytimeløsing"/>
   <content value="complete"/>
-  <count value="7"/>
+  <count value="9"/>
   <concept>
     <code value="cancel"/>
     <display value="Innbygger kan kansellere timen"/>
@@ -49,5 +49,13 @@
   <concept>
     <code value="canChangeAppointment"/>
     <display value="Innbygger kan be om endret time"/>
+  </concept>
+  <concept>
+    <code value="canHaveAppointmentDetails"/>
+    <display value="Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes"/>
+  </concept>
+  <concept>
+    <code value="canInitateDialog"/>
+    <display value="Dialog kan inisieres"/>
   </concept>
 </CodeSystem>

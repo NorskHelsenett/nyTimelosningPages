@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "HnBasisFlag"] ; # 
   fhir:title [ fhir:v "hn-basis-Flag"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-25T11:50:22+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-25T15:31:18+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;

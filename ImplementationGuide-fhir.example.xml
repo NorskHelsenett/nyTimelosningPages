@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-09-25T11:50:22+02:00"/>
+  <date value="2023-09-25T15:31:18+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -483,6 +483,26 @@
         <reference value="Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"/>
       </reference>
       <name value="canAcknowledgeFlag"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <reference>
+        <reference value="Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d"/>
+      </reference>
+      <name value="canHaveAppointmentDetails"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <reference>
+        <reference value="Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6"/>
+      </reference>
+      <name value="canInitateDialog"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
     </resource>
     <resource>
