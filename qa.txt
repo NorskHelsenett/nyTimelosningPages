@@ -1,17 +1,19 @@
 ﻿NyTimelosingIG : Validation Results
 =========================================
 
-err = 2, warn = 81, info = 18
+err = 2, warn = 82, info = 18
 IG Publisher Version: 1.4.0 Out of date - current version is 1.4.8
-Generated Mon Sep 25 00:18:33 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
- Build Errors : 0 / 17 / 0
+Generated Mon Sep 25 11:52:31 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+ Build Errors : 0 / 18 / 0
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-34DDC9EC-E84A-EE11-9852-B0074B014ABB : 1 / 2 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Bundle-PolikliniskEksempelBundle : 1 / 6 / 15
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Bundle-PolikliniskEksempelBundle : 1 / 6 / 17
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs : 0 / 3 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs : 0 / 2 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Flag-5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8 : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example : 0 / 2 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Location-15878c66-d827-4fb9-8528-e234a0de8835 : 0 / 0 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Location-ae6a6c66-6b9c-4fa0-bf78-52915e07271f : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Organization-833bad1b-e612-4593-9560-c5ea55bce912 : 0 / 1 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Organization-df89a675-febe-44b9-8fe7-027169cb05a3 : 0 / 1 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473 : 0 / 0 / 1
@@ -52,6 +54,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/df89a675-febe-44b9-8fe7-027169cb05a3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/PolikliniskEksempelBundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -93,7 +96,9 @@ WARNING: CodeSystem/hn-appointment-flag-code-cs: CodeSystem: The ShareableCodeSy
 == fsh-generated\resources\Flag-5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8.json ==
 == fsh-generated\resources\ImplementationGuide-fhir.example.json ==
 WARNING: C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example: Unknown Parameters: [apply-wg=true]
-WARNING: ImplementationGuide/fhir.example: ImplementationGuide.definition.resource[19].name: value should not start or finish with whitespace 'New codes proposed as part of Timetype innbyggerportal '
+WARNING: ImplementationGuide/fhir.example: ImplementationGuide.definition.resource[20].name: value should not start or finish with whitespace 'New codes proposed as part of Timetype innbyggerportal '
+== fsh-generated\resources\Location-15878c66-d827-4fb9-8528-e234a0de8835.json ==
+== fsh-generated\resources\Location-ae6a6c66-6b9c-4fa0-bf78-52915e07271f.json ==
 == fsh-generated\resources\Organization-833bad1b-e612-4593-9560-c5ea55bce912.json ==
 INFORMATION: Organization/833bad1b-e612-4593-9560-c5ea55bce912: Organization.identifier[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization|0.1.0
 WARNING: Organization/833bad1b-e612-4593-9560-c5ea55bce912: Organization.type[0]: ValueSet urn:oid:2.16.578.1.12.4.1.1.8628 not found

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="ae6a6c66-6b9c-4fa0-bf78-52915e07271f"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="ae6a6c66-6b9c-4fa0-bf78-52915e07271f"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;ae6a6c66-6b9c-4fa0-bf78-52915e07271f&quot; </p></div><p><b>identifier</b>: id: resh12345</p><p><b>name</b>: Rikshospitalet</p><p><b>type</b>: Hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#HOSP)</span></p><p><b>managingOrganization</b>: <a href="Organization-df89a675-febe-44b9-8fe7-027169cb05a3.html">Organization/df89a675-febe-44b9-8fe7-027169cb05a3</a> &quot;Oslo Universitetssykehus HF&quot;</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+    <value value="resh12345"/>
+  </identifier>
+  <name value="Rikshospitalet"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+    </coding>
+  </type>
+  <managingOrganization>
+    <reference value="Organization/df89a675-febe-44b9-8fe7-027169cb05a3"/>
+  </managingOrganization>
+</Location>

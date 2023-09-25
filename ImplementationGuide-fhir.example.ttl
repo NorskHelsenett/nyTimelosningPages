@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-25T00:16:31+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-25T11:50:22+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -542,6 +542,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Location/15878c66-d827-4fb9-8528-e234a0de8835> ;
+         fhir:reference [ fhir:v "Location/15878c66-d827-4fb9-8528-e234a0de8835" ]
+       ] ;
+       fhir:name [ fhir:v "Avdeling" ] ;
+       fhir:description [ fhir:v "Sognsvannveien 20, Glassgaten, D3b, 1. etg" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Flag" ]
        ] ) ;
        fhir:reference [
@@ -902,6 +914,17 @@
          fhir:reference [ fhir:v "Bundle/PolikliniskEksempelBundle" ]
        ] ;
        fhir:name [ fhir:v "PolikliniskEksempelBundle" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f> ;
+         fhir:reference [ fhir:v "Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f" ]
+       ] ;
+       fhir:name [ fhir:v "Sjukehus" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [

@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-09-25T00:16:31+02:00"/>
+  <date value="2023-09-25T11:50:22+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -466,6 +466,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/15878c66-d827-4fb9-8528-e234a0de8835"/>
+      </reference>
+      <name value="Avdeling"/>
+      <description value="Sognsvannveien 20, Glassgaten, D3b, 1. etg"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Flag"/>
       </extension>
       <reference>
@@ -787,6 +798,16 @@
         <reference value="Bundle/PolikliniskEksempelBundle"/>
       </reference>
       <name value="PolikliniskEksempelBundle"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f"/>
+      </reference>
+      <name value="Sjukehus"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-09-25T00:16:31+02:00",
+  "date" : "2023-09-25T11:50:22+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -624,6 +624,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/15878c66-d827-4fb9-8528-e234a0de8835"
+      },
+      "name" : "Avdeling",
+      "description" : "Sognsvannveien 20, Glassgaten, D3b, 1. etg",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Flag"
       }],
       "reference" : {
@@ -974,6 +986,17 @@
         "reference" : "Bundle/PolikliniskEksempelBundle"
       },
       "name" : "PolikliniskEksempelBundle",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f"
+      },
+      "name" : "Sjukehus",
       "exampleBoolean" : true
     }],
     "page" : {
