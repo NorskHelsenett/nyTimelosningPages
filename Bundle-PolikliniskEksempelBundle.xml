@@ -34,7 +34,7 @@
       </Flag>
     </resource>
     <request>
-      <method value="POST"/>
+      <method value="PUT"/>
       <url value="Flag"/>
     </request>
   </entry>
@@ -66,7 +66,7 @@
       </Organization>
     </resource>
     <request>
-      <method value="POST"/>
+      <method value="PUT"/>
       <url value="Organization"/>
     </request>
   </entry>
@@ -96,7 +96,7 @@
       </Organization>
     </resource>
     <request>
-      <method value="POST"/>
+      <method value="PUT"/>
       <url value="Organization"/>
     </request>
   </entry>
@@ -121,7 +121,7 @@
           </tag>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="34DDC9EC-E84A-EE11-9852-B0074B014ABB"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;34DDC9EC-E84A-EE11-9852-B0074B014ABB&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hn-basis-appointment.html">hn-basis-appointment</a></p><p style="margin-bottom: 0px">Tags: <span title="{http://helsenorge.no/fhir/varsling http://helsenorge.no/fhir/varsling}">http://helsenorge.no/fhir/varsling</span>, <span title="{http://helsenorge.no/fhir/varsling http://helsenorge.no/fhir/varsling}">http://helsenorge.no/fhir/varsling</span></p></div><p><b>identifier</b>: id: 34DDC9EC-E84A-EE11-9852-B0074B014ABB</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: Specialist Medical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html">Service category</a>#27)</span></p><p><b>appointmentType</b>: Behandling som gjøres uten innleggelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html">New codes proposed as part of Timetype innbyggerportal </a>#Poliklinisktime)</span></p><p><b>description</b>: Utredning</p><p><b>supportingInformation</b>: </p><ul><li><a href="#Organization_833bad1b-e612-4593-9560-c5ea55bce912">See above (Organization/833bad1b-e612-4593-9560-c5ea55bce912)</a></li><li><a href="#Flag_5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8">See above (Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8)</a></li><li><a href="#Flag_5c4fdce8-e90e-4adf-9544-0c6b684a953d">See above (Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d)</a></li><li><a href="#Flag_52469032-561f-4334-b5af-b8b5c8c4c0c6">See above (Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6)</a></li></ul><p><b>start</b>: 3. okt. 2023, 10:30:00</p><p><b>end</b>: 3. okt. 2023, 12:00:00</p><p><b>minutesDuration</b>: 90</p><p><b>patientInstruction</b>: Se innkallingsbrev</p><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <span>id: 1416601476</span></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href="#Location_15878c66-d827-4fb9-8528-e234a0de8835">See above (Location/15878c66-d827-4fb9-8528-e234a0de8835)</a></p><p><b>status</b>: accepted</p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="34DDC9EC-E84A-EE11-9852-B0074B014ABB"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;34DDC9EC-E84A-EE11-9852-B0074B014ABB&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hn-basis-appointment.html">hn-basis-appointment</a></p><p style="margin-bottom: 0px">Tags: <span title="{http://helsenorge.no/fhir/varsling http://helsenorge.no/fhir/varsling}">http://helsenorge.no/fhir/varsling</span>, <span title="{http://helsenorge.no/fhir/varsling http://helsenorge.no/fhir/varsling}">http://helsenorge.no/fhir/varsling</span></p></div><p><b>identifier</b>: id: 34DDC9EC-E84A-EE11-9852-B0074B014ABB</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: Specialist Medical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html">Service category</a>#27)</span></p><p><b>appointmentType</b>: Behandling som gjøres uten innleggelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html">New codes proposed as part of Timetype innbyggerportal </a>#Poliklinisktime)</span></p><p><b>description</b>: Utredning</p><p><b>supportingInformation</b>: </p><ul><li><a href="#Organization_833bad1b-e612-4593-9560-c5ea55bce912">See above (Organization/833bad1b-e612-4593-9560-c5ea55bce912)</a></li><li><a href="#Flag_5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8">See above (Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8)</a></li><li><a href="#Flag_5c4fdce8-e90e-4adf-9544-0c6b684a953d">See above (Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d)</a></li><li><a href="#Flag_52469032-561f-4334-b5af-b8b5c8c4c0c6">See above (Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6)</a></li></ul><p><b>start</b>: 3. okt. 2023, 10:30:00</p><p><b>end</b>: 3. okt. 2023, 12:00:00</p><p><b>minutesDuration</b>: 90</p><p><b>patientInstruction</b>: Se innkallingsbrev</p><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <span>id: 1416601476</span></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href="#Location_ae6a6c66-6b9c-4fa0-bf78-52915e07271f">See above (Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f)</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href="#Location_15878c66-d827-4fb9-8528-e234a0de8835">See above (Location/15878c66-d827-4fb9-8528-e234a0de8835)</a></p><p><b>status</b>: accepted</p></blockquote></div>
         </text>
         <identifier>
           <system value="http://dips.no/fhir/namingsystem/dips-bookingid"/>
@@ -185,6 +185,20 @@
             </coding>
           </type>
           <actor>
+            <reference value="Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f"/>
+            <type value="Location"/>
+          </actor>
+          <status value="accepted"/>
+        </participant>
+        <participant>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+              <code value="PART"/>
+              <display value="Participation"/>
+            </coding>
+          </type>
+          <actor>
             <reference value="Location/15878c66-d827-4fb9-8528-e234a0de8835"/>
             <type value="Location"/>
           </actor>
@@ -193,7 +207,7 @@
       </Appointment>
     </resource>
     <request>
-      <method value="POST"/>
+      <method value="PUT"/>
       <url value="Appointment"/>
     </request>
   </entry>
@@ -222,7 +236,7 @@
       </Location>
     </resource>
     <request>
-      <method value="POST"/>
+      <method value="PUT"/>
       <url value="Location"/>
     </request>
   </entry>
@@ -254,7 +268,7 @@
       </Location>
     </resource>
     <request>
-      <method value="POST"/>
+      <method value="PUT"/>
       <url value="Location"/>
     </request>
   </entry>
@@ -289,7 +303,7 @@
       </Flag>
     </resource>
     <request>
-      <method value="POST"/>
+      <method value="PUT"/>
       <url value="Flag"/>
     </request>
   </entry>
@@ -324,7 +338,7 @@
       </Flag>
     </resource>
     <request>
-      <method value="POST"/>
+      <method value="PUT"/>
       <url value="Flag"/>
     </request>
   </entry>

@@ -10,7 +10,7 @@
   "name" : "HnBasisAppointment",
   "title" : "hn-basis-appointment",
   "status" : "draft",
-  "date" : "2023-09-25T15:44:07+02:00",
+  "date" : "2023-10-05T16:09:33+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -654,8 +654,8 @@
       "path" : "Appointment.identifier",
       "short" : "External Ids for this item",
       "definition" : "This records identifiers associated with this appointment concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).",
-      "min" : 0,
-      "max" : "*",
+      "min" : 1,
+      "max" : "1",
       "base" : {
         "path" : "Appointment.identifier",
         "min" : 0,
@@ -1918,7 +1918,7 @@
       "path" : "Appointment.appointmentType",
       "short" : "The style of appointment or patient that has been booked in the slot (not service type)",
       "definition" : "The style of appointment or patient that has been booked in the slot (not service type).",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "base" : {
         "path" : "Appointment.appointmentType",
@@ -1939,8 +1939,12 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "appointment-type"
+        }],
         "strength" : "preferred",
-        "valueSet" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0276"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2041,12 +2045,12 @@
         }],
         "rules" : "open"
       },
-      "short" : "Recomended code systems for no-basis-Appointment.",
-      "definition" : "Recomended code systems for n-basis-Appointment. The reconmended code systems might not be suficient for defining appointment type and in an implemented profile - some other coding might be needed.",
+      "short" : "Mandatory valueset for hn-basis-Appointment.",
+      "definition" : "Mandatory valueset.",
       "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
       "requirements" : "Allows for alternative encodings within a code system, and translations to other code systems.",
-      "min" : 0,
-      "max" : "*",
+      "min" : 1,
+      "max" : "1",
       "base" : {
         "path" : "CodeableConcept.coding",
         "min" : 0,
@@ -2072,6 +2076,10 @@
       }],
       "isModifier" : false,
       "isSummary" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"
+      },
       "mapping" : [{
         "identity" : "v2",
         "map" : "C*E.1-8, C*E.10-22"
@@ -2094,7 +2102,7 @@
       "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
       "requirements" : "Allows for alternative encodings within a code system, and translations to other code systems.",
       "min" : 0,
-      "max" : "1",
+      "max" : "0",
       "base" : {
         "path" : "CodeableConcept.coding",
         "min" : 0,
@@ -2141,7 +2149,7 @@
       "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
       "requirements" : "Allows for alternative encodings within a code system, and translations to other code systems.",
       "min" : 0,
-      "max" : "1",
+      "max" : "0",
       "base" : {
         "path" : "CodeableConcept.coding",
         "min" : 0,
@@ -2188,7 +2196,7 @@
       "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
       "requirements" : "Allows for alternative encodings within a code system, and translations to other code systems.",
       "min" : 0,
-      "max" : "1",
+      "max" : "0",
       "base" : {
         "path" : "CodeableConcept.coding",
         "min" : 0,
@@ -3917,6 +3925,12 @@
       "mustSupport" : true
     },
     {
+      "id" : "Appointment.identifier",
+      "path" : "Appointment.identifier",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
       "id" : "Appointment.identifier.value",
       "path" : "Appointment.identifier.value",
       "min" : 1
@@ -3988,21 +4002,44 @@
     {
       "id" : "Appointment.appointmentType",
       "path" : "Appointment.appointmentType",
-      "binding" : {
-        "strength" : "preferred",
-        "valueSet" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"
-      }
+      "min" : 1
     },
     {
       "id" : "Appointment.appointmentType.coding",
       "path" : "Appointment.appointmentType.coding",
+      "short" : "Mandatory valueset for hn-basis-Appointment.",
+      "definition" : "Mandatory valueset.",
+      "min" : 1,
+      "max" : "1",
       "constraint" : [{
         "key" : "inv-4",
         "severity" : "error",
         "human" : "If code is used in a codable consept the system and description must be used",
         "expression" : "code > '' implies (system > '' and display > '')",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
-      }]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"
+      }
+    },
+    {
+      "id" : "Appointment.appointmentType.coding:omsorgsNiva",
+      "path" : "Appointment.appointmentType.coding",
+      "sliceName" : "omsorgsNiva",
+      "max" : "0"
+    },
+    {
+      "id" : "Appointment.appointmentType.coding:kontaktType",
+      "path" : "Appointment.appointmentType.coding",
+      "sliceName" : "kontaktType",
+      "max" : "0"
+    },
+    {
+      "id" : "Appointment.appointmentType.coding:innbygger",
+      "path" : "Appointment.appointmentType.coding",
+      "sliceName" : "innbygger",
+      "max" : "0"
     },
     {
       "id" : "Appointment.reasonCode.coding",

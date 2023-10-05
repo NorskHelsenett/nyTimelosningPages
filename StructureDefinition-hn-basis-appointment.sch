@@ -18,8 +18,11 @@
       <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:serviceCategory) &gt;= 1">serviceCategory: minimum cardinality of 'serviceCategory' is 1</sch:assert>
       <sch:assert test="count(f:serviceCategory) &lt;= 1">serviceCategory: maximum cardinality of 'serviceCategory' is 1</sch:assert>
+      <sch:assert test="count(f:appointmentType) &gt;= 1">appointmentType: minimum cardinality of 'appointmentType' is 1</sch:assert>
       <sch:assert test="count(f:supportingInformation) &gt;= 1">supportingInformation: minimum cardinality of 'supportingInformation' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

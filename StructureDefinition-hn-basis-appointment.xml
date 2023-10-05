@@ -10,7 +10,7 @@
   <name value="HnBasisAppointment"/>
   <title value="hn-basis-appointment"/>
   <status value="draft"/>
-  <date value="2023-09-25T15:44:07+02:00"/>
+  <date value="2023-10-05T16:09:33+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -632,8 +632,8 @@
       <path value="Appointment.identifier"/>
       <short value="External Ids for this item"/>
       <definition value="This records identifiers associated with this appointment concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <base>
         <path value="Appointment.identifier"/>
         <min value="0"/>
@@ -1851,7 +1851,7 @@
       <path value="Appointment.appointmentType"/>
       <short value="The style of appointment or patient that has been booked in the slot (not service type)"/>
       <definition value="The style of appointment or patient that has been booked in the slot (not service type)."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Appointment.appointmentType"/>
@@ -1872,8 +1872,11 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="appointment-type"/>
+        </extension>
         <strength value="preferred"/>
-        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0276"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1970,12 +1973,12 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <short value="Recomended code systems for no-basis-Appointment."/>
-      <definition value="Recomended code systems for n-basis-Appointment. The reconmended code systems might not be suficient for defining appointment type and in an implemented profile - some other coding might be needed."/>
+      <short value="Mandatory valueset for hn-basis-Appointment."/>
+      <definition value="Mandatory valueset."/>
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <base>
         <path value="CodeableConcept.coding"/>
         <min value="0"/>
@@ -2001,6 +2004,10 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
+      </binding>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1-8, C*E.10-22"/>
@@ -2022,7 +2029,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="CodeableConcept.coding"/>
         <min value="0"/>
@@ -2068,7 +2075,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="CodeableConcept.coding"/>
         <min value="0"/>
@@ -2114,7 +2121,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="CodeableConcept.coding"/>
         <min value="0"/>
@@ -3785,6 +3792,11 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <element id="Appointment.identifier">
+      <path value="Appointment.identifier"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
     <element id="Appointment.identifier.value">
       <path value="Appointment.identifier.value"/>
       <min value="1"/>
@@ -3849,13 +3861,14 @@
     </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType"/>
-      <binding>
-        <strength value="preferred"/>
-        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
-      </binding>
+      <min value="1"/>
     </element>
     <element id="Appointment.appointmentType.coding">
       <path value="Appointment.appointmentType.coding"/>
+      <short value="Mandatory valueset for hn-basis-Appointment."/>
+      <definition value="Mandatory valueset."/>
+      <min value="1"/>
+      <max value="1"/>
       <constraint>
         <key value="inv-4"/>
         <severity value="error"/>
@@ -3863,6 +3876,25 @@
         <expression value="code &gt; '' implies (system &gt; '' and display &gt; '')"/>
         <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
       </constraint>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
+      </binding>
+    </element>
+    <element id="Appointment.appointmentType.coding:omsorgsNiva">
+      <path value="Appointment.appointmentType.coding"/>
+      <sliceName value="omsorgsNiva"/>
+      <max value="0"/>
+    </element>
+    <element id="Appointment.appointmentType.coding:kontaktType">
+      <path value="Appointment.appointmentType.coding"/>
+      <sliceName value="kontaktType"/>
+      <max value="0"/>
+    </element>
+    <element id="Appointment.appointmentType.coding:innbygger">
+      <path value="Appointment.appointmentType.coding"/>
+      <sliceName value="innbygger"/>
+      <max value="0"/>
     </element>
     <element id="Appointment.reasonCode.coding">
       <path value="Appointment.reasonCode.coding"/>

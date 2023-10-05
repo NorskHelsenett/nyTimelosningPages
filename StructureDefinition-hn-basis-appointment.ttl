@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "HnBasisAppointment"] ; # 
   fhir:title [ fhir:v "hn-basis-appointment"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-25T15:44:07+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-05T16:09:33+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -728,8 +728,8 @@
        fhir:path [ fhir:v "Appointment.identifier" ] ;
        fhir:short [ fhir:v "External Ids for this item" ] ;
        fhir:definition [ fhir:v "This records identifiers associated with this appointment concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Appointment.identifier" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2033,7 +2033,7 @@
        fhir:path [ fhir:v "Appointment.appointmentType" ] ;
        fhir:short [ fhir:v "The style of appointment or patient that has been booked in the slot (not service type)" ] ;
        fhir:definition [ fhir:v "The style of appointment or patient that has been booked in the slot (not service type)." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Appointment.appointmentType" ] ;
@@ -2057,10 +2057,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "appointment-type" ]
+         ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:valueSet [
-           fhir:v "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"^^xsd:anyURI ;
-           fhir:link <http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs>
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0276"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0276>
          ]
        ] ;
        fhir:mapping ( [
@@ -2161,12 +2165,12 @@
          ] ) ;
          fhir:rules [ fhir:v "open" ]
        ] ;
-       fhir:short [ fhir:v "Recomended code systems for no-basis-Appointment." ] ;
-       fhir:definition [ fhir:v "Recomended code systems for n-basis-Appointment. The reconmended code systems might not be suficient for defining appointment type and in an implemented profile - some other coding might be needed." ] ;
+       fhir:short [ fhir:v "Mandatory valueset for hn-basis-Appointment." ] ;
+       fhir:definition [ fhir:v "Mandatory valueset." ] ;
        fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "CodeableConcept.coding" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2197,6 +2201,13 @@
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs>
+         ]
+       ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
@@ -2216,7 +2227,7 @@
        fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:max [ fhir:v "0" ] ;
        fhir:base [
          fhir:path [ fhir:v "CodeableConcept.coding" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2263,7 +2274,7 @@
        fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:max [ fhir:v "0" ] ;
        fhir:base [
          fhir:path [ fhir:v "CodeableConcept.coding" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2310,7 +2321,7 @@
        fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:max [ fhir:v "0" ] ;
        fhir:base [
          fhir:path [ fhir:v "CodeableConcept.coding" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -4112,6 +4123,11 @@
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
+       fhir:id [ fhir:v "Appointment.identifier" ] ;
+       fhir:path [ fhir:v "Appointment.identifier" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ]
+     ] [
        fhir:id [ fhir:v "Appointment.identifier.value" ] ;
        fhir:path [ fhir:v "Appointment.identifier.value" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
@@ -4191,16 +4207,14 @@
      ] [
        fhir:id [ fhir:v "Appointment.appointmentType" ] ;
        fhir:path [ fhir:v "Appointment.appointmentType" ] ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"^^xsd:anyURI ;
-           fhir:link <http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs>
-         ]
-       ]
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "Appointment.appointmentType.coding" ] ;
        fhir:path [ fhir:v "Appointment.appointmentType.coding" ] ;
+       fhir:short [ fhir:v "Mandatory valueset for hn-basis-Appointment." ] ;
+       fhir:definition [ fhir:v "Mandatory valueset." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "inv-4" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -4210,7 +4224,29 @@
            fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
            fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
          ]
-       ] )
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"^^xsd:anyURI ;
+           fhir:link <http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Appointment.appointmentType.coding:omsorgsNiva" ] ;
+       fhir:path [ fhir:v "Appointment.appointmentType.coding" ] ;
+       fhir:sliceName [ fhir:v "omsorgsNiva" ] ;
+       fhir:max [ fhir:v "0" ]
+     ] [
+       fhir:id [ fhir:v "Appointment.appointmentType.coding:kontaktType" ] ;
+       fhir:path [ fhir:v "Appointment.appointmentType.coding" ] ;
+       fhir:sliceName [ fhir:v "kontaktType" ] ;
+       fhir:max [ fhir:v "0" ]
+     ] [
+       fhir:id [ fhir:v "Appointment.appointmentType.coding:innbygger" ] ;
+       fhir:path [ fhir:v "Appointment.appointmentType.coding" ] ;
+       fhir:sliceName [ fhir:v "innbygger" ] ;
+       fhir:max [ fhir:v "0" ]
      ] [
        fhir:id [ fhir:v "Appointment.reasonCode.coding" ] ;
        fhir:path [ fhir:v "Appointment.reasonCode.coding" ] ;
