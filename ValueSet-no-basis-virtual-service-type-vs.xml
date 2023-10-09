@@ -10,7 +10,8 @@
   <name value="NoBasisVirtualServiceTypeVS"/>
   <title value="No Basis VirtualServiceType Value Set"/>
   <status value="draft"/>
-  <date value="2023-10-05T16:09:33+02:00"/>
+  <experimental value="false"/>
+  <date value="2023-10-09T22:41:16+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

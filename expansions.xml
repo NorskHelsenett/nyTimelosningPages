@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="49c77501-64f6-4cd1-a899-0defd7d5d3a0"/>
+  <id value="6883278b-92e5-4336-aba4-6b118d382029"/>
   <meta>
-    <lastUpdated value="2023-10-05T16:09:33.561+02:00"/>
+    <lastUpdated value="2023-10-09T22:41:16.616+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -109,10 +109,11 @@
         <name value="HnAppointmentFlagCodeVS"/>
         <title value="hn-appointment-flag-code-vs"/>
         <status value="draft"/>
-        <date value="2023-10-05T16:09:33+02:00"/>
+        <experimental value="false"/>
+        <date value="2023-10-09T22:41:16+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:4fff69bf-667f-43d9-a298-d008325334e0"/>
-          <timestamp value="2023-10-05T16:10:04+02:00"/>
+          <identifier value="urn:uuid:2f5db104-c214-4eac-b893-e8866068b50c"/>
+          <timestamp value="2023-10-09T22:41:50+02:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
