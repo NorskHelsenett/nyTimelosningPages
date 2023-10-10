@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-09T22:41:16+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-11T00:03:21+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -519,7 +519,7 @@
          fhir:reference [ fhir:v "Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a" ]
        ] ;
        fhir:name [ fhir:v "AppointmentExample" ] ;
-       fhir:description [ fhir:v "Discussion on the results of your recent MRI" ] ;
+       fhir:description [ fhir:v "Appointment example" ] ;
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment>
@@ -534,7 +534,7 @@
          fhir:reference [ fhir:v "Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB" ]
        ] ;
        fhir:name [ fhir:v "AppointmentPolikliniskEksempel" ] ;
-       fhir:description [ fhir:v "Utredning" ] ;
+       fhir:description [ fhir:v "Appointment eksempel" ] ;
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
@@ -549,7 +549,7 @@
          fhir:reference [ fhir:v "Location/15878c66-d827-4fb9-8528-e234a0de8835" ]
        ] ;
        fhir:name [ fhir:v "Avdeling" ] ;
-       fhir:description [ fhir:v "Sognsvannveien 20, Glassgaten, D3b, 1. etg" ] ;
+       fhir:description [ fhir:v "Avdeling example" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -561,6 +561,7 @@
          fhir:reference [ fhir:v "Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8" ]
        ] ;
        fhir:name [ fhir:v "canAcknowledgeFlag" ] ;
+       fhir:description [ fhir:v "Flag Eksempel" ] ;
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag>
@@ -575,6 +576,7 @@
          fhir:reference [ fhir:v "Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d" ]
        ] ;
        fhir:name [ fhir:v "canHaveAppointmentDetails" ] ;
+       fhir:description [ fhir:v "Flag eksempel" ] ;
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag>
@@ -589,6 +591,7 @@
          fhir:reference [ fhir:v "Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6" ]
        ] ;
        fhir:name [ fhir:v "canInitateDialog" ] ;
+       fhir:description [ fhir:v "Flag eksempel" ] ;
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag>
@@ -771,6 +774,7 @@
          fhir:reference [ fhir:v "Organization/833bad1b-e612-4593-9560-c5ea55bce912" ]
        ] ;
        fhir:name [ fhir:v "KommunikasjonspartOrganization" ] ;
+       fhir:description [ fhir:v "Kommunikasjonspart eksempel" ] ;
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization>
@@ -785,6 +789,7 @@
          fhir:reference [ fhir:v "Organization/df89a675-febe-44b9-8fe7-027169cb05a3" ]
        ] ;
        fhir:name [ fhir:v "ManagingOrgHosp" ] ;
+       fhir:description [ fhir:v "Managing Org Hosp example" ] ;
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization>
@@ -924,17 +929,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473> ;
-         fhir:reference [ fhir:v "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473" ]
-       ] ;
-       fhir:name [ fhir:v "PatientExample" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
@@ -942,6 +936,7 @@
          fhir:reference [ fhir:v "Bundle/PolikliniskEksempelBundle" ]
        ] ;
        fhir:name [ fhir:v "PolikliniskEksempelBundle" ] ;
+       fhir:description [ fhir:v "Bundle eksempel" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -953,6 +948,7 @@
          fhir:reference [ fhir:v "Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f" ]
        ] ;
        fhir:name [ fhir:v "Sjukehus" ] ;
+       fhir:description [ fhir:v "Sjukehus example" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [

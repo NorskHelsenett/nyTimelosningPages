@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-10-09T22:41:16+02:00"/>
+  <date value="2023-10-11T00:03:21+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -450,7 +450,7 @@
         <reference value="Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a"/>
       </reference>
       <name value="AppointmentExample"/>
-      <description value="Discussion on the results of your recent MRI"/>
+      <description value="Appointment example"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment"/>
     </resource>
     <resource>
@@ -461,7 +461,7 @@
         <reference value="Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB"/>
       </reference>
       <name value="AppointmentPolikliniskEksempel"/>
-      <description value="Utredning"/>
+      <description value="Appointment eksempel"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
     </resource>
     <resource>
@@ -472,7 +472,7 @@
         <reference value="Location/15878c66-d827-4fb9-8528-e234a0de8835"/>
       </reference>
       <name value="Avdeling"/>
-      <description value="Sognsvannveien 20, Glassgaten, D3b, 1. etg"/>
+      <description value="Avdeling example"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -483,6 +483,7 @@
         <reference value="Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"/>
       </reference>
       <name value="canAcknowledgeFlag"/>
+      <description value="Flag Eksempel"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
     </resource>
     <resource>
@@ -493,6 +494,7 @@
         <reference value="Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d"/>
       </reference>
       <name value="canHaveAppointmentDetails"/>
+      <description value="Flag eksempel"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
     </resource>
     <resource>
@@ -503,6 +505,7 @@
         <reference value="Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6"/>
       </reference>
       <name value="canInitateDialog"/>
+      <description value="Flag eksempel"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
     </resource>
     <resource>
@@ -667,6 +670,7 @@
         <reference value="Organization/833bad1b-e612-4593-9560-c5ea55bce912"/>
       </reference>
       <name value="KommunikasjonspartOrganization"/>
+      <description value="Kommunikasjonspart eksempel"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"/>
     </resource>
     <resource>
@@ -677,6 +681,7 @@
         <reference value="Organization/df89a675-febe-44b9-8fe7-027169cb05a3"/>
       </reference>
       <name value="ManagingOrgHosp"/>
+      <description value="Managing Org Hosp example"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"/>
     </resource>
     <resource>
@@ -802,22 +807,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"/>
-      </reference>
-      <name value="PatientExample"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
         <reference value="Bundle/PolikliniskEksempelBundle"/>
       </reference>
       <name value="PolikliniskEksempelBundle"/>
+      <description value="Bundle eksempel"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -828,6 +824,7 @@
         <reference value="Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f"/>
       </reference>
       <name value="Sjukehus"/>
+      <description value="Sjukehus example"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

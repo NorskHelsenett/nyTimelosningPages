@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-10-09T22:41:16+02:00",
+  "date" : "2023-10-11T00:03:21+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -606,7 +606,7 @@
         "reference" : "Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a"
       },
       "name" : "AppointmentExample",
-      "description" : "Discussion on the results of your recent MRI",
+      "description" : "Appointment example",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment"
     },
     {
@@ -618,7 +618,7 @@
         "reference" : "Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB"
       },
       "name" : "AppointmentPolikliniskEksempel",
-      "description" : "Utredning",
+      "description" : "Appointment eksempel",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
     },
     {
@@ -630,7 +630,7 @@
         "reference" : "Location/15878c66-d827-4fb9-8528-e234a0de8835"
       },
       "name" : "Avdeling",
-      "description" : "Sognsvannveien 20, Glassgaten, D3b, 1. etg",
+      "description" : "Avdeling example",
       "exampleBoolean" : true
     },
     {
@@ -642,6 +642,7 @@
         "reference" : "Flag/5add71e3-1fcb-4c4d-8065-5ce3c83a5cb8"
       },
       "name" : "canAcknowledgeFlag",
+      "description" : "Flag Eksempel",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"
     },
     {
@@ -653,6 +654,7 @@
         "reference" : "Flag/5c4fdce8-e90e-4adf-9544-0c6b684a953d"
       },
       "name" : "canHaveAppointmentDetails",
+      "description" : "Flag eksempel",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"
     },
     {
@@ -664,6 +666,7 @@
         "reference" : "Flag/52469032-561f-4334-b5af-b8b5c8c4c0c6"
       },
       "name" : "canInitateDialog",
+      "description" : "Flag eksempel",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"
     },
     {
@@ -843,6 +846,7 @@
         "reference" : "Organization/833bad1b-e612-4593-9560-c5ea55bce912"
       },
       "name" : "KommunikasjonspartOrganization",
+      "description" : "Kommunikasjonspart eksempel",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"
     },
     {
@@ -854,6 +858,7 @@
         "reference" : "Organization/df89a675-febe-44b9-8fe7-027169cb05a3"
       },
       "name" : "ManagingOrgHosp",
+      "description" : "Managing Org Hosp example",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"
     },
     {
@@ -991,23 +996,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"
-      },
-      "name" : "PatientExample",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
         "reference" : "Bundle/PolikliniskEksempelBundle"
       },
       "name" : "PolikliniskEksempelBundle",
+      "description" : "Bundle eksempel",
       "exampleBoolean" : true
     },
     {
@@ -1019,6 +1014,7 @@
         "reference" : "Location/ae6a6c66-6b9c-4fa0-bf78-52915e07271f"
       },
       "name" : "Sjukehus",
+      "description" : "Sjukehus example",
       "exampleBoolean" : true
     }],
     "page" : {
