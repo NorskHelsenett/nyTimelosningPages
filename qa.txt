@@ -1,13 +1,15 @@
 ﻿NyTimelosingIG : Validation Results
 =========================================
 
-err = 2, warn = 0, info = 10
+err = 2, warn = 0, info = 15
 IG Publisher Version: 1.4.8 Out of date - current version is 1.4.14
-Generated Wed Oct 11 00:04:34 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+Generated Thu Oct 12 00:16:55 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
  Build Errors : 0 / 0 / 0
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-1535dbf2-6246-4a26-9af1-173f7dff5616 : 0 / 2 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-34DDC9EC-E84A-EE11-9852-B0074B014ABB : 1 / 2 / 4
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-cdb19ffe-5d4d-45e0-b8d3-45d24e4c675f : 0 / 2 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Bundle-PolikliniskEksempelBundle : 1 / 6 / 22
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Bundle-PolikliniskEksempelBundle : 1 / 7 / 24
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs : 0 / 2 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs : 0 / 1 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Flag-52469032-561f-4334-b5af-b8b5c8c4c0c6 : 0 / 0 / 1
@@ -15,9 +17,13 @@ Generated Wed Oct 11 00:04:34 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Flag-5c4fdce8-e90e-4adf-9544-0c6b684a953d : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Location-15878c66-d827-4fb9-8528-e234a0de8835 : 0 / 0 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Location-15878c66-d827-4fb9-8528-e234a0dr4535 : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Location-ae6a6c66-6b9c-4fa0-bf78-52915e07271f : 0 / 0 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Organization-175befc3-6f87-4db0-92ee-90e7a8c67960 : 0 / 1 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Organization-833bad1b-e612-4593-9560-c5ea55bce912 : 0 / 1 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Organization-df89a675-febe-44b9-8fe7-027169cb05a3 : 0 / 1 / 2
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Practitioner-8495a9ca-1e0b-452e-a7e1-9f88c75f582e : 0 / 0 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\PractitionerRole-d6325177-bcfb-4d2d-b507-5d5f65066abb : 0 / 2 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Flag : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Recurring : 0 / 1 / 1
@@ -31,11 +37,20 @@ Generated Wed Oct 11 00:04:34 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Address : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Appointment : 0 / 7 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-AppointmentResponse : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Endpoint : 0 / 10 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-HealthcareService : 0 / 11 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-HumanName : 0 / 0 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Location : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Organization : 0 / 4 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Practitioner : 0 / 6 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-PractitionerRole : 0 / 4 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-address-official : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-group : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-middlename : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-municipalitycode : 0 / 3 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-partof : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-shortnotice : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-urban-district : 0 / 3 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-virtual-service : 0 / 3 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs : 0 / 2 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs : 0 / 0 / 2
@@ -43,9 +58,13 @@ Generated Wed Oct 11 00:04:34 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs : 0 / 1 / 1
 </table>
 == n/a ==
+== fsh-generated\resources\Appointment-1535dbf2-6246-4a26-9af1-173f7dff5616.json ==
+INFORMATION: Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment|0.1.0
 == fsh-generated\resources\Appointment-34DDC9EC-E84A-EE11-9852-B0074B014ABB.json ==
 ERROR: Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB: Appointment.meta.tag[0].extension[0]: The extension http://helsenorge.no/fhir/extension/varselorganisasjon is unknown, and not allowed here
 INFORMATION: Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment|0.1.0
+== fsh-generated\resources\Appointment-cdb19ffe-5d4d-45e0-b8d3-45d24e4c675f.json ==
+INFORMATION: Appointment/cdb19ffe-5d4d-45e0-b8d3-45d24e4c675f: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment|0.1.0
 == fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json ==
 INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment|0.1.0
 INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment|0.1.0
@@ -63,10 +82,17 @@ INFORMATION: CodeSystem/hn-appointment-flag-code-cs: CodeSystem: CodeSystems SHO
 == fsh-generated\resources\Flag-5c4fdce8-e90e-4adf-9544-0c6b684a953d.json ==
 == fsh-generated\resources\ImplementationGuide-fhir.example.json ==
 == fsh-generated\resources\Location-15878c66-d827-4fb9-8528-e234a0de8835.json ==
+== fsh-generated\resources\Location-15878c66-d827-4fb9-8528-e234a0dr4535.json ==
 == fsh-generated\resources\Location-ae6a6c66-6b9c-4fa0-bf78-52915e07271f.json ==
+== fsh-generated\resources\Organization-175befc3-6f87-4db0-92ee-90e7a8c67960.json ==
+INFORMATION: Organization/175befc3-6f87-4db0-92ee-90e7a8c67960: Organization.identifier[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization|0.1.0
 == fsh-generated\resources\Organization-833bad1b-e612-4593-9560-c5ea55bce912.json ==
 INFORMATION: Organization/833bad1b-e612-4593-9560-c5ea55bce912: Organization.identifier[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization|0.1.0
 == fsh-generated\resources\Organization-df89a675-febe-44b9-8fe7-027169cb05a3.json ==
+== fsh-generated\resources\Practitioner-8495a9ca-1e0b-452e-a7e1-9f88c75f582e.json ==
+== fsh-generated\resources\PractitionerRole-d6325177-bcfb-4d2d-b507-5d5f65066abb.json ==
+INFORMATION: PractitionerRole/d6325177-bcfb-4d2d-b507-5d5f65066abb: PractitionerRole.code[0].coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.9034' is unknown so the code cannot be validated
+INFORMATION: PractitionerRole/d6325177-bcfb-4d2d-b507-5d5f65066abb: PractitionerRole.specialty[0].coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8451' is unknown so the code cannot be validated
 == fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse.json ==
 == fsh-generated\resources\StructureDefinition-hn-basis-Flag.json ==
 == fsh-generated\resources\StructureDefinition-hn-basis-Recurring.json ==
@@ -80,11 +106,20 @@ INFORMATION: Organization/833bad1b-e612-4593-9560-c5ea55bce912: Organization.ide
 == fsh-generated\resources\StructureDefinition-no-basis-Address.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-Appointment.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-AppointmentResponse.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-Endpoint.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-HealthcareService.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-HumanName.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-Location.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-Organization.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-Practitioner.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-PractitionerRole.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-address-official.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-group.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-middlename.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-municipalitycode.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-partof.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-shortnotice.json ==
+== fsh-generated\resources\StructureDefinition-no-basis-urban-district.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json ==
 == fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs.json ==
 == fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs.json ==

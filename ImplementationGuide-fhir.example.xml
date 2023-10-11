@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-10-11T00:03:21+02:00"/>
+  <date value="2023-10-12T00:15:11+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -444,6 +444,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/8495a9ca-1e0b-452e-a7e1-9f88c75f582e"/>
+      </reference>
+      <name value="AnvarligLegeEksempel"/>
+      <description value="Eksempel på behandlende lege"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Appointment"/>
       </extension>
       <reference>
@@ -466,6 +477,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/cdb19ffe-5d4d-45e0-b8d3-45d24e4c675f"/>
+      </reference>
+      <name value="AppointmentPolikliniskEksempel_2"/>
+      <description value="Appointment eksempel med ansvarlig lege"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616"/>
+      </reference>
+      <name value="AppointmentPolikliniskEksempel_3"/>
+      <description value="Appointment eksempel practitionerole"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -473,7 +506,7 @@
       </reference>
       <name value="Avdeling"/>
       <description value="Avdeling example"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -507,6 +540,39 @@
       <name value="canInitateDialog"/>
       <description value="Flag eksempel"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/d6325177-bcfb-4d2d-b507-5d5f65066abb"/>
+      </reference>
+      <name value="HeartDepartmentPhysicianRole"/>
+      <description value="A role."/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/15878c66-d827-4fb9-8528-e234a0dr4535"/>
+      </reference>
+      <name value="HjertemedisinskAvdelingLocation"/>
+      <description value="Avdeling (Hjertemedisinsk) example"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/175befc3-6f87-4db0-92ee-90e7a8c67960"/>
+      </reference>
+      <name value="HjertemedisinskAvdelingOrganization"/>
+      <description value="Avdeling for Hjertemedisin"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -752,6 +818,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-Endpoint"/>
+      </reference>
+      <name value="no-basis-Endpoint"/>
+      <description value="Basisprofil for Norwegian Endpoint information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Endpoing. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xA;&#xA;Resource profile for definition of electronic endpoints used by healthcare organizations to communicate using different protocols. The norwegian profile use-case is to represent endpoints for electronic communication. Fallback solutions using mail or fax has to be indexed in the norwegian master index for healthcare organizations and are not described using this profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -759,6 +836,61 @@
       </reference>
       <name value="no-basis-group"/>
       <description value="The appointment is a group session."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-HealthcareService"/>
+      </reference>
+      <name value="no-basis-HealthcareService"/>
+      <description value="Basisprofil for Norwegian Healthcare Service information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare Services. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xA;&#xA;The typical use-case is to include information regarding what Healthcare related services, support functions or activities provided by an Organization or awailable at a Location."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-HumanName"/>
+      </reference>
+      <name value="no-basis-HumanName"/>
+      <description value="Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-Location"/>
+      </reference>
+      <name value="no-basis-Location"/>
+      <description value="Basisprofil for Norwegian Location information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific location information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-middlename"/>
+      </reference>
+      <name value="no-basis-middlename"/>
+      <description value="The basis extension defines the Norwegian middlename wich is called &quot;mellomnavn&quot; and defined by Norwegian legislation (Lov om personnavn)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-municipalitycode"/>
+      </reference>
+      <name value="no-basis-municipalitycode"/>
+      <description value="Coded value for municipality/county Norwegian kommune"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -785,6 +917,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-Practitioner"/>
+      </reference>
+      <name value="no-basis-Practitioner"/>
+      <description value="Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xA;&#xA;2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner's education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-PractitionerRole"/>
+      </reference>
+      <name value="no-basis-PractitionerRole"/>
+      <description value="Basisprofil for Norwegian PractitionerRole information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific role information is available. The basis profile is open, but derived profiles should close down the information elements according to specifications relevant to the use-case.&#xA;&#xA;The main use-case of no-basis-PractitionerRole is to represent the role or function of a Practitioner wihtin an organization. The resource can include information about services performed by a Practitioner, a location where the practitioner performes the functions as well as information about the nature of the employment at an organization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -792,6 +946,17 @@
       </reference>
       <name value="no-basis-shortnotice"/>
       <description value="The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-urban-district"/>
+      </reference>
+      <name value="no-basis-urban-district"/>
+      <description value="Simple extension containing information about what part of a norwegian city the patient is a resident. Administrative purpose."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -825,7 +990,7 @@
       </reference>
       <name value="Sjukehus"/>
       <description value="Sjukehus example"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Location"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

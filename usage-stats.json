@@ -60,6 +60,27 @@
       ]
     },
     {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-middlename",
+      "title": "no-basis-middlename",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-municipalitycode",
+      "title": "no-basis-municipalitycode",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
       "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof",
       "title": "no-basis-partof",
       "types": [
@@ -71,6 +92,13 @@
       "title": "no-basis-shortnotice",
       "types": [
         "boolean"
+      ]
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-urban-district",
+      "title": "no-basis-urban-district",
+      "types": [
+        "Coding"
       ]
     },
     {
@@ -168,10 +196,40 @@
         "title": "hn-basis-slot"
       }
     ],
+    "Endpoint": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Endpoint",
+        "title": "no-basis-Endpoint"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-HealthcareService",
+        "title": "no-basis-HealthcareService"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Location",
+        "title": "no-basis-Location"
+      }
+    ],
     "Organization": [
       {
         "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization",
         "title": "no-basis-Organization"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Practitioner",
+        "title": "no-basis-Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole",
+        "title": "no-basis-PractitionerRole"
       }
     ]
   },
@@ -197,6 +255,9 @@
     ],
     "http://helsenorge.no/fhir/StructureDefinition/no-basis-group": [
       "Appointment"
+    ],
+    "http://helsenorge.no/fhir/StructureDefinition/no-basis-middlename": [
+      "HumanName"
     ],
     "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof": [
       "Appointment"
@@ -233,6 +294,9 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [

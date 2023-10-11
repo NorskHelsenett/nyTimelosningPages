@@ -2746,9 +2746,6 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Organization">
-      <path value="Organization"/>
-    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier"/>
       <slicing>

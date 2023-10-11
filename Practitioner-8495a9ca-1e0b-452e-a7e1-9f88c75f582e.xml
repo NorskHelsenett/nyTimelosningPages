@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="8495a9ca-1e0b-452e-a7e1-9f88c75f582e"/>
+  <meta>
+    <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="8495a9ca-1e0b-452e-a7e1-9f88c75f582e"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;8495a9ca-1e0b-452e-a7e1-9f88c75f582e&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-basis-Practitioner.html">no-basis-Practitioner</a></p></div><p><b>identifier</b>: id: HPR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Erik Lars Olsen</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+    <value value="HPR1234567"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="Erik Lars Olsen"/>
+  </name>
+</Practitioner>

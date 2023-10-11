@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="15878c66-d827-4fb9-8528-e234a0dr4535"/>
+  <meta>
+    <profile value="http://helsenorge.no/fhir/StructureDefinition/no-basis-Location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="15878c66-d827-4fb9-8528-e234a0dr4535"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;15878c66-d827-4fb9-8528-e234a0dr4535&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-basis-Location.html">no-basis-Location</a></p></div><p><b>identifier</b>: id: resh11111</p><p><b>name</b>: Hjertemedisinsk avdeling</p><p><b>description</b>: Ullevål sykehus, Medisinsk bygning (bygg 3)</p><p><b>type</b>: Hospital unit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#HU)</span></p><p><b>telecom</b>: ph: 22119101(WORK)</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+    <value value="resh11111"/>
+  </identifier>
+  <name value="Hjertemedisinsk avdeling"/>
+  <description value="Ullevål sykehus, Medisinsk bygning (bygg 3)"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HU"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="22119101"/>
+    <use value="work"/>
+  </telecom>
+</Location>

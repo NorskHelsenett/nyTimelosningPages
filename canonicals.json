@@ -112,11 +112,53 @@
     "name" : "NoBasisAppointmentResponse"
   },
   {
+    "id" : "no-basis-Endpoint",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Endpoint",
+    "version" : "0.1.0",
+    "name" : "NoBasisEndpoint"
+  },
+  {
+    "id" : "no-basis-HealthcareService",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-HealthcareService",
+    "version" : "0.1.0",
+    "name" : "NoBasisHealthcareService"
+  },
+  {
+    "id" : "no-basis-HumanName",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-HumanName",
+    "version" : "0.1.0",
+    "name" : "NoBasisHumanName"
+  },
+  {
+    "id" : "no-basis-Location",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Location",
+    "version" : "0.1.0",
+    "name" : "NoBasisLocation"
+  },
+  {
     "id" : "no-basis-Organization",
     "type" : "StructureDefinition",
     "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization",
     "version" : "0.1.0",
     "name" : "NoBasisOrganization"
+  },
+  {
+    "id" : "no-basis-Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Practitioner",
+    "version" : "0.1.0",
+    "name" : "NoBasisPractitioner"
+  },
+  {
+    "id" : "no-basis-PractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole",
+    "version" : "0.1.0",
+    "name" : "NoBasisPractitionerRole"
   },
   {
     "id" : "no-basis-address-official",
@@ -133,6 +175,20 @@
     "name" : "NoBasisGroup"
   },
   {
+    "id" : "no-basis-middlename",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-middlename",
+    "version" : "0.1.0",
+    "name" : "NoBasisMiddlename"
+  },
+  {
+    "id" : "no-basis-municipalitycode",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-municipalitycode",
+    "version" : "0.1.0",
+    "name" : "NoBasisMunicipalitycode"
+  },
+  {
     "id" : "no-basis-partof",
     "type" : "StructureDefinition",
     "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof",
@@ -145,6 +201,13 @@
     "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice",
     "version" : "0.1.0",
     "name" : "NoBasisShortNotice"
+  },
+  {
+    "id" : "no-basis-urban-district",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-urban-district",
+    "version" : "0.1.0",
+    "name" : "NoBasisUrbanDistrict"
   },
   {
     "id" : "no-basis-virtual-service",

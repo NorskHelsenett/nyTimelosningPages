@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-11T00:03:21+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-12T00:15:11+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -512,6 +512,21 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Practitioner/8495a9ca-1e0b-452e-a7e1-9f88c75f582e> ;
+         fhir:reference [ fhir:v "Practitioner/8495a9ca-1e0b-452e-a7e1-9f88c75f582e" ]
+       ] ;
+       fhir:name [ fhir:v "AnvarligLegeEksempel" ] ;
+       fhir:description [ fhir:v "Eksempel på behandlende lege" ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Practitioner"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Appointment" ]
        ] ) ;
        fhir:reference [
@@ -542,6 +557,36 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Appointment/cdb19ffe-5d4d-45e0-b8d3-45d24e4c675f> ;
+         fhir:reference [ fhir:v "Appointment/cdb19ffe-5d4d-45e0-b8d3-45d24e4c675f" ]
+       ] ;
+       fhir:name [ fhir:v "AppointmentPolikliniskEksempel_2" ] ;
+       fhir:description [ fhir:v "Appointment eksempel med ansvarlig lege" ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616> ;
+         fhir:reference [ fhir:v "Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616" ]
+       ] ;
+       fhir:name [ fhir:v "AppointmentPolikliniskEksempel_3" ] ;
+       fhir:description [ fhir:v "Appointment eksempel practitionerole" ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Location" ]
        ] ) ;
        fhir:reference [
@@ -550,7 +595,10 @@
        ] ;
        fhir:name [ fhir:v "Avdeling" ] ;
        fhir:description [ fhir:v "Avdeling example" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Location"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Location>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -595,6 +643,51 @@
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/PractitionerRole/d6325177-bcfb-4d2d-b507-5d5f65066abb> ;
+         fhir:reference [ fhir:v "PractitionerRole/d6325177-bcfb-4d2d-b507-5d5f65066abb" ]
+       ] ;
+       fhir:name [ fhir:v "HeartDepartmentPhysicianRole" ] ;
+       fhir:description [ fhir:v "A role." ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Location/15878c66-d827-4fb9-8528-e234a0dr4535> ;
+         fhir:reference [ fhir:v "Location/15878c66-d827-4fb9-8528-e234a0dr4535" ]
+       ] ;
+       fhir:name [ fhir:v "HjertemedisinskAvdelingLocation" ] ;
+       fhir:description [ fhir:v "Avdeling (Hjertemedisinsk) example" ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Location"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Organization/175befc3-6f87-4db0-92ee-90e7a8c67960> ;
+         fhir:reference [ fhir:v "Organization/175befc3-6f87-4db0-92ee-90e7a8c67960" ]
+       ] ;
+       fhir:name [ fhir:v "HjertemedisinskAvdelingOrganization" ] ;
+       fhir:description [ fhir:v "Avdeling for Hjertemedisin" ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization>
        ]
      ] [
        fhir:extension ( [
@@ -869,6 +962,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Endpoint> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-Endpoint" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-Endpoint" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Endpoint information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Endpoing. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.\n\nResource profile for definition of electronic endpoints used by healthcare organizations to communicate using different protocols. The norwegian profile use-case is to represent endpoints for electronic communication. Fallback solutions using mail or fax has to be indexed in the norwegian master index for healthcare organizations and are not described using this profile." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -877,6 +982,66 @@
        ] ;
        fhir:name [ fhir:v "no-basis-group" ] ;
        fhir:description [ fhir:v "The appointment is a group session." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-HealthcareService> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-HealthcareService" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-HealthcareService" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Healthcare Service information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare Services. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.\n\nThe typical use-case is to include information regarding what Healthcare related services, support functions or activities provided by an Organization or awailable at a Location." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-HumanName> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-HumanName" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-HumanName" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Location> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-Location" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-Location" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Location information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific location information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-middlename> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-middlename" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-middlename" ] ;
+       fhir:description [ fhir:v "The basis extension defines the Norwegian middlename wich is called \"mellomnavn\" and defined by Norwegian legislation (Lov om personnavn)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-municipalitycode> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-municipalitycode" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-municipalitycode" ] ;
+       fhir:description [ fhir:v "Coded value for municipality/county Norwegian kommune" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -905,6 +1070,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-Practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-Practitioner" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.\n\n2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner's education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-PractitionerRole" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-PractitionerRole" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian PractitionerRole information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific role information is available. The basis profile is open, but derived profiles should close down the information elements according to specifications relevant to the use-case.\n\nThe main use-case of no-basis-PractitionerRole is to represent the role or function of a Practitioner wihtin an organization. The resource can include information about services performed by a Practitioner, a location where the practitioner performes the functions as well as information about the nature of the employment at an organization." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -913,6 +1102,18 @@
        ] ;
        fhir:name [ fhir:v "no-basis-shortnotice" ] ;
        fhir:description [ fhir:v "The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-urban-district> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-urban-district" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-urban-district" ] ;
+       fhir:description [ fhir:v "Simple extension containing information about what part of a norwegian city the patient is a resident. Administrative purpose." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -949,7 +1150,10 @@
        ] ;
        fhir:name [ fhir:v "Sjukehus" ] ;
        fhir:description [ fhir:v "Sjukehus example" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Location"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Location>
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

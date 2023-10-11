@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://helsenorge.no/fhir/PractitionerRole/d6325177-bcfb-4d2d-b507-5d5f65066abb> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "d6325177-bcfb-4d2d-b507-5d5f65066abb"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole"^^xsd:anyURI ;
+       fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"d6325177-bcfb-4d2d-b507-5d5f65066abb\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;d6325177-bcfb-4d2d-b507-5d5f65066abb&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-PractitionerRole.html\">no-basis-PractitionerRole</a></p></div><p><b>organization</b>: <a href=\"Organization-175befc3-6f87-4db0-92ee-90e7a8c67960.html\">Organization/175befc3-6f87-4db0-92ee-90e7a8c67960</a> &quot;Hjertemedisinsk Avdeling&quot;</p><p><b>code</b>: Behandlingsansvarlig lege <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#3)</span></p><p><b>specialty</b>: Hjertesykdommer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#150)</span></p><p><b>location</b>: <a href=\"Location-15878c66-d827-4fb9-8528-e234a0dr4535.html\">Location/15878c66-d827-4fb9-8528-e234a0dr4535</a> &quot;Hjertemedisinsk avdeling&quot;</p></div>"
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://helsenorge.no/fhir/Organization/175befc3-6f87-4db0-92ee-90e7a8c67960> ;
+     fhir:reference [ fhir:v "Organization/175befc3-6f87-4db0-92ee-90e7a8c67960" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.9034"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "Behandlingsansvarlig lege" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.8451"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "150" ] ;
+       fhir:display [ fhir:v "Hjertesykdommer" ]
+     ] )
+  ] ) ; # 
+  fhir:location ( [
+     fhir:link <http://helsenorge.no/fhir/Location/15878c66-d827-4fb9-8528-e234a0dr4535> ;
+     fhir:reference [ fhir:v "Location/15878c66-d827-4fb9-8528-e234a0dr4535" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://helsenorge.no/fhir/Location/15878c66-d827-4fb9-8528-e234a0dr4535> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "15878c66-d827-4fb9-8528-e234a0dr4535"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://helsenorge.no/fhir/StructureDefinition/no-basis-Location"^^xsd:anyURI ;
+       fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"15878c66-d827-4fb9-8528-e234a0dr4535\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;15878c66-d827-4fb9-8528-e234a0dr4535&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-Location.html\">no-basis-Location</a></p></div><p><b>identifier</b>: id: resh11111</p><p><b>name</b>: Hjertemedisinsk avdeling</p><p><b>description</b>: Ullevål sykehus, Medisinsk bygning (bygg 3)</p><p><b>type</b>: Hospital unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HU)</span></p><p><b>telecom</b>: ph: 22119101(WORK)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "resh11111" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Hjertemedisinsk avdeling"] ; # 
+  fhir:description [ fhir:v "Ullevål sykehus, Medisinsk bygning (bygg 3)"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HU" ]
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "22119101" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

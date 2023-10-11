@@ -2925,9 +2925,6 @@
   ] ; # 
   fhir:differential [
      fhir:element ( [
-       fhir:id [ fhir:v "Organization" ] ;
-       fhir:path [ fhir:v "Organization" ]
-     ] [
        fhir:id [ fhir:v "Organization.identifier" ] ;
        fhir:path [ fhir:v "Organization.identifier" ] ;
        fhir:slicing [
