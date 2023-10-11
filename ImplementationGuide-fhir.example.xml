@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-10-12T00:15:11+02:00"/>
+  <date value="2023-10-12T00:46:45+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -469,6 +469,17 @@
         <valueString value="Appointment"/>
       </extension>
       <reference>
+        <reference value="Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616"/>
+      </reference>
+      <name value="AppointmentInnleggelseEksempel_3"/>
+      <description value="Appointment eksempel practitionerole"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
         <reference value="Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB"/>
       </reference>
       <name value="AppointmentPolikliniskEksempel"/>
@@ -484,17 +495,6 @@
       </reference>
       <name value="AppointmentPolikliniskEksempel_2"/>
       <description value="Appointment eksempel med ansvarlig lege"/>
-      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Appointment"/>
-      </extension>
-      <reference>
-        <reference value="Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616"/>
-      </reference>
-      <name value="AppointmentPolikliniskEksempel_3"/>
-      <description value="Appointment eksempel practitionerole"/>
       <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
     </resource>
     <resource>

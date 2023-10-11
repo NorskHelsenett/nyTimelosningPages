@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-12T00:15:11+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-12T00:46:45+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -545,6 +545,21 @@
          fhir:value [ fhir:v "Appointment" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616> ;
+         fhir:reference [ fhir:v "Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616" ]
+       ] ;
+       fhir:name [ fhir:v "AppointmentInnleggelseEksempel_3" ] ;
+       fhir:description [ fhir:v "Appointment eksempel practitionerole" ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://helsenorge.no/fhir/Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB> ;
          fhir:reference [ fhir:v "Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB" ]
        ] ;
@@ -565,21 +580,6 @@
        ] ;
        fhir:name [ fhir:v "AppointmentPolikliniskEksempel_2" ] ;
        fhir:description [ fhir:v "Appointment eksempel med ansvarlig lege" ] ;
-       fhir:example [
-         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616> ;
-         fhir:reference [ fhir:v "Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616" ]
-       ] ;
-       fhir:name [ fhir:v "AppointmentPolikliniskEksempel_3" ] ;
-       fhir:description [ fhir:v "Appointment eksempel practitionerole" ] ;
        fhir:example [
          fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
          fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>

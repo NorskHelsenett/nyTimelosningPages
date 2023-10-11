@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-10-12T00:15:11+02:00",
+  "date" : "2023-10-12T00:46:45+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -627,6 +627,18 @@
         "valueString" : "Appointment"
       }],
       "reference" : {
+        "reference" : "Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616"
+      },
+      "name" : "AppointmentInnleggelseEksempel_3",
+      "description" : "Appointment eksempel practitionerole",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
         "reference" : "Appointment/34DDC9EC-E84A-EE11-9852-B0074B014ABB"
       },
       "name" : "AppointmentPolikliniskEksempel",
@@ -643,18 +655,6 @@
       },
       "name" : "AppointmentPolikliniskEksempel_2",
       "description" : "Appointment eksempel med ansvarlig lege",
-      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
-        "reference" : "Appointment/1535dbf2-6246-4a26-9af1-173f7dff5616"
-      },
-      "name" : "AppointmentPolikliniskEksempel_3",
-      "description" : "Appointment eksempel practitionerole",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
     },
     {

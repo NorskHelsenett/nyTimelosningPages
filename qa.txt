@@ -3,7 +3,7 @@
 
 err = 2, warn = 0, info = 15
 IG Publisher Version: 1.4.8 Out of date - current version is 1.4.14
-Generated Thu Oct 12 00:16:55 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+Generated Thu Oct 12 00:48:32 CEST 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
  Build Errors : 0 / 0 / 0
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-1535dbf2-6246-4a26-9af1-173f7dff5616 : 0 / 2 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-34DDC9EC-E84A-EE11-9852-B0074B014ABB : 1 / 2 / 4
