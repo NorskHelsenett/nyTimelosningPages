@@ -11,7 +11,71 @@ Accept-Charset: UTF-8
 Accept: application/fhir+json
 Content-Type: application/fhir+json;charset=UTF-8
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.1.7617","code":"Vaksine"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"e598b1fe-24bf-46cc-805c-9cbcfa783896"},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.2","code":"HER"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"cdff72b8-a6d2-4294-a37e-090efce630d7"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:509
+content-type:application/fhir+json
+date:Tue, 07 Nov 2023 23:53:21 GMT
+last-modified:Tue, 07 Nov 2023 23:53:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:35-4864497
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.2"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.2 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.2 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+</pre><hr/>
+<a name="l2"> </a><h3>2</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.4.101","code":"ENH"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"cdff72b8-a6d2-4294-a37e-090efce630d7"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:521
+content-type:application/fhir+json
+date:Tue, 07 Nov 2023 23:53:21 GMT
+last-modified:Tue, 07 Nov 2023 23:53:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:35-4864498
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.4.101"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.4.101 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.4.101 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+</pre><hr/>
+<a name="l3"> </a><h3>3</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.1.7617","code":"Vaksine"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"cdff72b8-a6d2-4294-a37e-090efce630d7"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -24,11 +88,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:524
 content-type:application/fhir+json
-date:Wed, 11 Oct 2023 22:46:51 GMT
-last-modified:Wed, 11 Oct 2023 22:46:51 GMT
+date:Tue, 07 Nov 2023 23:53:23 GMT
+last-modified:Tue, 07 Nov 2023 23:53:23 GMT
 pragma:no-cache
 server:nginx
-x-request-id:32-5249263
+x-request-id:35-4864500
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.7617"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown"},"location" : ["Coding.system"]}]}}]}
 
@@ -41,7 +105,67 @@ Accept-Charset: UTF-8
 Accept: application/fhir+json
 Content-Type: application/fhir+json;charset=UTF-8
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.1.7617","code":"Vaksine"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"e598b1fe-24bf-46cc-805c-9cbcfa783896"},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.2","code":"HER"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"cdff72b8-a6d2-4294-a37e-090efce630d7"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:509
+content-type:application/fhir+json
+date:Tue, 07 Nov 2023 23:53:21 GMT
+last-modified:Tue, 07 Nov 2023 23:53:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:35-4864497
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.2"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.2 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.2 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 2 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.4.101","code":"ENH"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"cdff72b8-a6d2-4294-a37e-090efce630d7"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:521
+content-type:application/fhir+json
+date:Tue, 07 Nov 2023 23:53:21 GMT
+last-modified:Tue, 07 Nov 2023 23:53:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:35-4864498
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.4.101"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.4.101 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.4.101 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 3 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.1.7617","code":"Vaksine"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"cdff72b8-a6d2-4294-a37e-090efce630d7"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -54,11 +178,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:524
 content-type:application/fhir+json
-date:Wed, 11 Oct 2023 22:46:51 GMT
-last-modified:Wed, 11 Oct 2023 22:46:51 GMT
+date:Tue, 07 Nov 2023 23:53:23 GMT
+last-modified:Tue, 07 Nov 2023 23:53:23 GMT
 pragma:no-cache
 server:nginx
-x-request-id:32-5249263
+x-request-id:35-4864500
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.7617"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown"},"location" : ["Coding.system"]}]}}]}
 </pre></head></html>

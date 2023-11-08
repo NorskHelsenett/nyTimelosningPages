@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs,0.1.0,draft,,HnAppointmentTypeProposedNewCodesCS,New codes proposed as part of Timetype innbyggerportal.,"New codes proposed as part of Timetype innbyggerportal.",
+http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs,0.1.0,draft,,HnAppointmentFlagCodeCS,hn-appointment-flag-code-cs,"Code system used for Flag codes in nytimeløsing",

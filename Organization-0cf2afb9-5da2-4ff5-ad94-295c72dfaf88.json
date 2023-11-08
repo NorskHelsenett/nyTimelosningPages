@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Organization",
+  "id" : "0cf2afb9-5da2-4ff5-ad94-295c72dfaf88",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"0cf2afb9-5da2-4ff5-ad94-295c72dfaf88\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;0cf2afb9-5da2-4ff5-ad94-295c72dfaf88&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Organization\">no-basis-Organization</a></p></div><p><b>identifier</b>: HER: 12345</p><p><b>name</b>: PartOf kommunicationPart</p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.578.1.12.4.1.2",
+        "code" : "HER"
+      }]
+    },
+    "system" : "urn:oid:2.16.578.1.12.4.1.2",
+    "value" : "12345"
+  }],
+  "name" : "PartOf kommunicationPart"
+}

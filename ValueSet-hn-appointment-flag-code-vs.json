@@ -3,7 +3,7 @@
   "id" : "hn-appointment-flag-code-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-hn-appointment-flag-code-cs.html\"><code>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</code></a></li></ul></div>"
   },
   "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "hn-appointment-flag-code-vs",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-10-12T00:46:45+02:00",
+  "date" : "2023-11-08T00:53:28+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",

@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="hn-appointment-AppointmentType-code-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.7617</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Vaksine</td><td>Vaksine</td></tr><tr><td>Lab</td><td>Lab</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html"><code>http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs</code></a></li></ul></div>
   </text>
   <url value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="hn-appointment-AppointmentType-code-vs"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-10-12T00:46:45+02:00"/>
+  <date value="2023-11-08T00:53:28+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

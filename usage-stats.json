@@ -44,144 +44,25 @@
       "types": [
         "Coding"
       ]
-    },
-    {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-address-official",
-      "title": "no-basis-address-official",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-group",
-      "title": "no-basis-group",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-middlename",
-      "title": "no-basis-middlename",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-municipalitycode",
-      "title": "no-basis-municipalitycode",
-      "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof",
-      "title": "no-basis-partof",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice",
-      "title": "no-basis-shortnotice",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-urban-district",
-      "title": "no-basis-urban-district",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service",
-      "title": "no-basis-Virtual-Service",
-      "types": [
-        "Coding",
-        "string",
-        "url",
-        "ContactPoint",
-        "url",
-        "positiveInt",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
     }
   ],
   "profiles": {
     "AppointmentResponse": [
       {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-AppointmentResponse",
-        "title": "no-basis-AppointmentResponse"
+        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-AppointmentResponse",
+        "title": "hn-basis-AppointmentResponse"
       }
     ],
     "Flag": [
       {
         "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag",
-        "title": "hn-basis-Flag"
+        "title": "hn-basis-flag"
       }
     ],
     "Appointment": [
       {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Appointment",
-        "title": "no-basis-Appointment"
+        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment",
+        "title": "hn-basis-appointment"
       }
     ],
     "Schedule": [
@@ -195,49 +76,9 @@
         "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot",
         "title": "hn-basis-slot"
       }
-    ],
-    "Endpoint": [
-      {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Endpoint",
-        "title": "no-basis-Endpoint"
-      }
-    ],
-    "HealthcareService": [
-      {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-HealthcareService",
-        "title": "no-basis-HealthcareService"
-      }
-    ],
-    "Location": [
-      {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Location",
-        "title": "no-basis-Location"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization",
-        "title": "no-basis-Organization"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Practitioner",
-        "title": "no-basis-Practitioner"
-      }
-    ],
-    "PractitionerRole": [
-      {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole",
-        "title": "no-basis-PractitionerRole"
-      }
     ]
   },
   "usage": {
-    "http://example.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.differential.element.type",
-      "StructureDefinition.snapshot.element.type"
-    ],
     "http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring": [
       "Appointment"
     ],
@@ -253,24 +94,17 @@
     "http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason": [
       "Appointment"
     ],
-    "http://helsenorge.no/fhir/StructureDefinition/no-basis-group": [
+    "http://hl7.no/fhir/StructureDefinition/no-basis-group": [
       "Appointment"
     ],
-    "http://helsenorge.no/fhir/StructureDefinition/no-basis-middlename": [
-      "HumanName"
-    ],
-    "http://helsenorge.no/fhir/StructureDefinition/no-basis-partof": [
+    "http://hl7.no/fhir/StructureDefinition/no-basis-partof": [
       "Appointment"
     ],
-    "http://helsenorge.no/fhir/StructureDefinition/no-basis-shortnotice": [
+    "http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice": [
       "AppointmentResponse"
     ],
-    "http://helsenorge.no/fhir/StructureDefinition/no-basis-virtual-service": [
+    "http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service": [
       "Appointment"
-    ],
-    "http://helsenorge.no/fhir/extension/varselorganisasjon": [
-      "Appointment.meta.tag",
-      "Bundle.entry.resource.meta.tag"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -296,8 +130,11 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.snapshot.element.type"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

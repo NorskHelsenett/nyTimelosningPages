@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="Hn-AppointmentTypeProposed-New-Codes-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Poliklinisktime<a name="Hn-AppointmentTypeProposed-New-Codes-cs-Poliklinisktime"> </a></td><td>Behandling som gjøres uten innleggelse</td></tr><tr><td style="white-space:nowrap">Innleggelse<a name="Hn-AppointmentTypeProposed-New-Codes-cs-Innleggelse"> </a></td><td>Innleggelse</td></tr><tr><td style="white-space:nowrap">Hjemmebesøk<a name="Hn-AppointmentTypeProposed-New-Codes-cs-Hjemmebes.248k"> </a></td><td>Hjemmebesøk</td></tr><tr><td style="white-space:nowrap">Konsultasjon<a name="Hn-AppointmentTypeProposed-New-Codes-cs-Konsultasjon"> </a></td><td>Konsultasjon</td></tr><tr><td style="white-space:nowrap">Bildediagnostikk<a name="Hn-AppointmentTypeProposed-New-Codes-cs-Bildediagnostikk"> </a></td><td>Bildediagnostikk</td></tr></table></div>
   </text>
   <url value="http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"/>
   <version value="0.1.0"/>
   <name value="HnAppointmentTypeProposedNewCodesCS"/>
-  <title value="New codes proposed as part of Timetype innbyggerportal "/>
+  <title value="New codes proposed as part of Timetype innbyggerportal."/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-10-12T00:46:45+02:00"/>
+  <date value="2023-11-08T00:53:28+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -21,6 +21,7 @@
     </telecom>
   </contact>
   <description value="New codes proposed as part of Timetype innbyggerportal."/>
+  <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="5"/>
   <concept>

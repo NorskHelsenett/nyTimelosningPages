@@ -1,177 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8a116ac6-a082-449a-8297-6c6cab30c386"/>
+  <id value="f961ecc4-b6f1-413e-9c66-b2b75846f919"/>
   <meta>
-    <lastUpdated value="2023-10-12T00:46:45.315+02:00"/>
+    <lastUpdated value="2023-11-08T00:53:28.501+01:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 9 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-hn-appointment-flag-code-cs.html">codesystem hn-appointment-flag-code-cs v0.1.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-cancel"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-cancel">cancel</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Innbygger kan kansellere timen</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointmentDialog"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointmentDialog">canChangeAppointmentDialog</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Innbygger kan be om endret time (Dialogmeldinger)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canUseShortNotice"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canUseShortNotice">canUseShortNotice</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Innbygger kan komme på kort varsel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canCancelServiceRequest"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canCancelServiceRequest">canCancelServiceRequest</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Innbygger kan be om at behandlingsløp avsluttes</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeConferenceType"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeConferenceType">canChangeConferenceType</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Innbygger kan be om endret konferanse type</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canAcknowledge"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canAcknowledge">canAcknowledge</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Timen/opphold kan bekreftes av innbygger</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointment"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointment">canChangeAppointment</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Innbygger kan be om endret time</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canHaveAppointmentDetails"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canHaveAppointmentDetails">canHaveAppointmentDetails</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canInitateDialog"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitateDialog">canInitateDialog</a>
-                </td>
-                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
-                <td>Dialog kan inisieres</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs"/>
-        <version value="0.1.0"/>
-        <name value="HnAppointmentFlagCodeVS"/>
-        <title value="hn-appointment-flag-code-vs"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-10-12T00:46:45+02:00"/>
-        <expansion>
-          <identifier value="urn:uuid:f4cbc739-1951-43aa-93b0-dec74c325d1e"/>
-          <timestamp value="2023-10-12T00:47:33+02:00"/>
-          <total value="9"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="cancel"/>
-            <display value="Innbygger kan kansellere timen"/>
-          </contains>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canChangeAppointmentDialog"/>
-            <display value="Innbygger kan be om endret time (Dialogmeldinger)"/>
-          </contains>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canUseShortNotice"/>
-            <display value="Innbygger kan komme på kort varsel"/>
-          </contains>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canCancelServiceRequest"/>
-            <display value="Innbygger kan be om at behandlingsløp avsluttes"/>
-          </contains>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canChangeConferenceType"/>
-            <display value="Innbygger kan be om endret konferanse type"/>
-          </contains>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canAcknowledge"/>
-            <display value="Timen/opphold kan bekreftes av innbygger"/>
-          </contains>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canChangeAppointment"/>
-            <display value="Innbygger kan be om endret time"/>
-          </contains>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canHaveAppointmentDetails"/>
-            <display value="Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes"/>
-          </contains>
-          <contains>
-            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canInitateDialog"/>
-            <display value="Dialog kan inisieres"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
     <resource>
@@ -307,6 +141,172 @@
             <system value="http://terminology.hl7.org/CodeSystem/service-category"/>
             <code value="7"/>
             <display value="Community Health Care"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 9 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-hn-appointment-flag-code-cs.html">codesystem hn-appointment-flag-code-cs v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-cancel"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-cancel">cancel</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan kansellere timen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointmentDialog"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointmentDialog">canChangeAppointmentDialog</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan be om endret time (Dialogmeldinger)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canUseShortNotice"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canUseShortNotice">canUseShortNotice</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan komme på kort varsel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canCancelServiceRequest"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canCancelServiceRequest">canCancelServiceRequest</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan be om at behandlingsløp avsluttes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeConferenceType"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeConferenceType">canChangeConferenceType</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan be om endret konferanse type</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canAcknowledge"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canAcknowledge">canAcknowledge</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Timen/opphold kan bekreftes av innbygger</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointment"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointment">canChangeAppointment</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Innbygger kan be om endret time</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canHaveAppointmentDetails"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canHaveAppointmentDetails">canHaveAppointmentDetails</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canInitateDialog"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitateDialog">canInitateDialog</a>
+                </td>
+                <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
+                <td>Dialog kan inisieres</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs"/>
+        <version value="0.1.0"/>
+        <name value="HnAppointmentFlagCodeVS"/>
+        <title value="hn-appointment-flag-code-vs"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-11-08T00:53:28+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:1040ba38-1ad9-40f9-9672-ebc88c866437"/>
+          <timestamp value="2023-11-08T00:53:57+01:00"/>
+          <total value="9"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="cancel"/>
+            <display value="Innbygger kan kansellere timen"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canChangeAppointmentDialog"/>
+            <display value="Innbygger kan be om endret time (Dialogmeldinger)"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canUseShortNotice"/>
+            <display value="Innbygger kan komme på kort varsel"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canCancelServiceRequest"/>
+            <display value="Innbygger kan be om at behandlingsløp avsluttes"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canChangeConferenceType"/>
+            <display value="Innbygger kan be om endret konferanse type"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canAcknowledge"/>
+            <display value="Timen/opphold kan bekreftes av innbygger"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canChangeAppointment"/>
+            <display value="Innbygger kan be om endret time"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canHaveAppointmentDetails"/>
+            <display value="Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes"/>
+          </contains>
+          <contains>
+            <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
+            <code value="canInitateDialog"/>
+            <display value="Dialog kan inisieres"/>
           </contains>
         </expansion>
       </ValueSet>

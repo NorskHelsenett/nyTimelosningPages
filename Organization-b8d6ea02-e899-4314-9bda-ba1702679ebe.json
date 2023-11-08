@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Organization",
+  "id" : "b8d6ea02-e899-4314-9bda-ba1702679ebe",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"b8d6ea02-e899-4314-9bda-ba1702679ebe\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;b8d6ea02-e899-4314-9bda-ba1702679ebe&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;canonical=http://hl7.no/fhir/StructureDefinition/no-basis-Organization\">no-basis-Organization</a></p></div><p><b>identifier</b>: HER: 12345, ENH: 1212121212</p><p><b>name</b>: Managing Organization (Herid nivå 1)</p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.578.1.12.4.1.2",
+        "code" : "HER"
+      }]
+    },
+    "system" : "urn:oid:2.16.578.1.12.4.1.2",
+    "value" : "12345"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
+        "code" : "ENH"
+      }]
+    },
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
+    "value" : "1212121212"
+  }],
+  "name" : "Managing Organization (Herid nivå 1)"
+}

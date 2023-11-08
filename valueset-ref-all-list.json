@@ -1,0 +1,290 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HnAppointmentAppointmentTypeVS",
+      "title" : "hn-appointment-AppointmentType-code-vs",
+      "description" : "Value set for AppointmentType codes in nytimeløsing - from Timetype innbyggerportal and some new codes",
+      "systems" : [
+        "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
+        "urn:oid:2.16.578.1.12.4.1.1.7617"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+    },
+    {
+      "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HnAppointmentServiceCategoryVS",
+      "title" : "hn-appointment-ServiceCategory-code-vs",
+      "description" : "Value set for ServiceCategory codes in nytimeløsing",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+    },
+    {
+      "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HnAppointmentFlagCodeVS",
+      "title" : "hn-appointment-flag-code-vs",
+      "description" : "Value set for Flag codes in nytimeløsing",
+      "systems" : [
+        "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag"
+    },
+    {
+      "url" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "NoBasisVirtualServiceTypeVS",
+      "title" : "No Basis VirtualServiceType Value Set.",
+      "description" : "Example codes for possible virtual service connection types.",
+      "systems" : [
+        "http://hl7.org/fhir/contact-point-system",
+        "urn:oid:2.16.840.1.113883.4.642.4.1809"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-changeConferenceType.html" : "hn-basis-changeConferenceType",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AppointmentStatus",
+      "title" : "AppointmentStatus",
+      "description" : "The free/busy status of an appointment.",
+      "systems" : ["http://hl7.org/fhir/appointmentstatus"],
+      "oids" : ["2.16.840.1.113883.4.642.3.484"],
+      "sources" : ["2.16.840.1.113883.4.642.3.484"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/flag-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FlagCategory",
+      "title" : "Flag Category",
+      "description" : "Example list of general categories for flagged issues. (Not complete or necessarily appropriate.)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/flag-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.122"],
+      "sources" : ["2.16.840.1.113883.4.642.3.122"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/flag-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FlagStatus",
+      "title" : "FlagStatus",
+      "description" : "Indicates whether this flag is active and needs to be displayed to a user, or whether it is no longer needed or was entered in error.",
+      "systems" : ["http://hl7.org/fhir/flag-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.120"],
+      "sources" : ["2.16.840.1.113883.4.642.3.120"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participantrequired",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRequired",
+      "title" : "ParticipantRequired",
+      "description" : "Is the Participant required to attend the appointment.",
+      "systems" : ["http://hl7.org/fhir/participantrequired"],
+      "oids" : ["2.16.840.1.113883.4.642.3.488"],
+      "sources" : ["2.16.840.1.113883.4.642.3.488"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participationstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipationStatus",
+      "title" : "ParticipationStatus",
+      "description" : "The Participation status of an appointment.",
+      "systems" : ["http://hl7.org/fhir/participationstatus"],
+      "oids" : ["2.16.840.1.113883.4.642.3.486"],
+      "sources" : ["2.16.840.1.113883.4.642.3.486"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "Resource Types",
+      "description" : "Concrete FHIR Resource Types",
+      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/slotstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SlotStatus",
+      "title" : "SlotStatus",
+      "description" : "The free/busy status of the slot.",
+      "systems" : ["http://hl7.org/fhir/slotstatus"],
+      "oids" : ["2.16.840.1.113883.4.642.3.482"],
+      "sources" : ["2.16.840.1.113883.4.642.3.482"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0276",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAppointmentReasonCodes",
+      "title" : "hl7VS-appointmentReasonCodes",
+      "description" : "Value Set of codes that describe the kind of appointment or the reason why an appointment has been scheduled.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"],
+      "oids" : ["2.16.840.1.113883.21.181"],
+      "sources" : ["2.16.840.1.113883.21.181"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+    }
+  ]
+}

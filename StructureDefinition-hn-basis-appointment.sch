@@ -12,9 +12,8 @@
   <sch:pattern>
     <sch:title>f:Appointment</sch:title>
     <sch:rule context="f:Appointment">
-      <sch:assert test="count(f:contained) &lt;= 0">contained: maximum cardinality of 'contained' is 0</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-group']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-group': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-partof']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/no-basis-partof': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-group']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-group': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/no-basis-partof']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/no-basis-partof': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Recurring': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType']) &lt;= 1">extension with URL = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType': maximum cardinality of 'extension' is 1</sch:assert>
@@ -32,10 +31,12 @@
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
       <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
+      <sch:assert test="count(f:assigner) &gt;= 1">assigner: minimum cardinality of 'assigner' is 1</sch:assert>
       <sch:assert test="count(f:assigner) &lt;= 1">assigner: maximum cardinality of 'assigner' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -77,8 +78,6 @@
   <sch:pattern>
     <sch:title>f:Appointment/f:participant</sch:title>
     <sch:rule context="f:Appointment/f:participant">
-      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:actor) &gt;= 1">actor: minimum cardinality of 'actor' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -86,22 +85,7 @@
     <sch:title>f:Appointment/f:participant/f:type</sch:title>
     <sch:rule context="f:Appointment/f:participant/f:type">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:coding) &gt;= 1">coding: minimum cardinality of 'coding' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Appointment/f:participant/f:type/f:coding</sch:title>
-    <sch:rule context="f:Appointment/f:participant/f:type/f:coding">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
-      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
-      <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
-      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
-      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
-      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
-      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
-      <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

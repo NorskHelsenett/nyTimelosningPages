@@ -1,0 +1,63 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HnAppointmentAppointmentTypeVS",
+      "title" : "hn-appointment-AppointmentType-code-vs",
+      "description" : "Value set for AppointmentType codes in nytimeløsing - from Timetype innbyggerportal and some new codes",
+      "systems" : [
+        "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
+        "urn:oid:2.16.578.1.12.4.1.1.7617"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+    },
+    {
+      "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HnAppointmentServiceCategoryVS",
+      "title" : "hn-appointment-ServiceCategory-code-vs",
+      "description" : "Value set for ServiceCategory codes in nytimeløsing",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+    },
+    {
+      "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HnAppointmentFlagCodeVS",
+      "title" : "hn-appointment-flag-code-vs",
+      "description" : "Value set for Flag codes in nytimeløsing",
+      "systems" : [
+        "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag"
+    },
+    {
+      "url" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "NoBasisVirtualServiceTypeVS",
+      "title" : "No Basis VirtualServiceType Value Set.",
+      "description" : "Example codes for possible virtual service connection types.",
+      "systems" : [
+        "http://hl7.org/fhir/contact-point-system",
+        "urn:oid:2.16.840.1.113883.4.642.4.1809"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-changeConferenceType.html" : "hn-basis-changeConferenceType"
+    }
+  ]
+}

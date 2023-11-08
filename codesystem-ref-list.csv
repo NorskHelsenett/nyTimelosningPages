@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs,0.1.0,draft,,HnAppointmentTypeProposedNewCodesCS,New codes proposed as part of Timetype innbyggerportal.,"New codes proposed as part of Timetype innbyggerportal.","ValueSet/hn-appointment-AppointmentType-code-vs"
+http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs,0.1.0,draft,,HnAppointmentFlagCodeCS,hn-appointment-flag-code-cs,"Code system used for Flag codes in nytimeløsing","ValueSet/hn-appointment-flag-code-vs"
+http://hl7.org/fhir/contact-point-system,4.0.1,active,"2.16.840.1.113883.4.642.4.72",ContactPointSystem,ContactPointSystem,"Telecommunications form for contact point.","ValueSet/no-basis-virtual-service-type-vs"
+http://terminology.hl7.org/CodeSystem/service-category,0.1.0,draft,"2.16.840.1.113883.4.642.1.1144",ServiceCategory,Service category,"This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.","ValueSet/hn-appointment-ServiceCategory-code-vs"

@@ -1,0 +1,50 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HnAppointmentTypeProposedNewCodesCS",
+      "title" : "New codes proposed as part of Timetype innbyggerportal.",
+      "description" : "New codes proposed as part of Timetype innbyggerportal.",
+      "uses" : {
+      },
+      "ValueSet-hn-appointment-AppointmentType-code-vs.html" : "hn-appointment-AppointmentType-code-vs"
+    },
+    {
+      "url" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HnAppointmentFlagCodeCS",
+      "title" : "hn-appointment-flag-code-cs",
+      "description" : "Code system used for Flag codes in nytimeløsing",
+      "uses" : {
+      },
+      "ValueSet-hn-appointment-flag-code-vs.html" : "hn-appointment-flag-code-vs"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.72"],
+      "uses" : {
+      },
+      "ValueSet-no-basis-virtual-service-type-vs.html" : "No Basis VirtualServiceType Value Set."
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ServiceCategory",
+      "title" : "Service category",
+      "description" : "This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1144"],
+      "uses" : {
+      },
+      "ValueSet-hn-appointment-ServiceCategory-code-vs.html" : "hn-appointment-ServiceCategory-code-vs"
+    }
+  ]
+}
