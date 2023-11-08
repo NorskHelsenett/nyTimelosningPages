@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e000e406-e9e4-4258-aa97-f55ab87dde97"/>
+  <id value="abe017bd-8b8c-4c78-9078-c374f4bd0a4d"/>
   <meta>
-    <lastUpdated value="2023-11-08T01:12:56.474+01:00"/>
+    <lastUpdated value="2023-11-08T15:53:02.337+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -235,8 +235,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canInitateDialog"> </a>  
-                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitateDialog">canInitateDialog</a>
+                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canInitiateDialog"> </a>  
+                  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitiateDialog">canInitiateDialog</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
                 <td>Dialog kan inisieres</td>
@@ -250,10 +250,10 @@
         <title value="hn-appointment-flag-code-vs"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-08T01:12:56+01:00"/>
+        <date value="2023-11-08T15:53:02+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:dcd7e4da-22dc-448e-9bdb-f7cf5464383f"/>
-          <timestamp value="2023-11-08T01:13:25+01:00"/>
+          <identifier value="urn:uuid:c2c519f3-49b9-4dcf-ace9-b8e89002b738"/>
+          <timestamp value="2023-11-08T15:53:32+01:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -305,7 +305,7 @@
           </contains>
           <contains>
             <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
-            <code value="canInitateDialog"/>
+            <code value="canInitiateDialog"/>
             <display value="Dialog kan inisieres"/>
           </contains>
         </expansion>

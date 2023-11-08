@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-11-08T01:12:56+01:00",
+  "date" : "2023-11-08T15:53:02+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -613,6 +613,18 @@
       },
       "name" : "AppointmentEksempel",
       "description" : "Enkelt eksempel for timeavtale. Timeavtalen inneholder diverse ressurser som er contained.",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/AppointmentEksempelDIPS"
+      },
+      "name" : "AppointmentEksempelDIPS",
+      "description" : "Eksempel fra DIPS",
       "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
     },
     {

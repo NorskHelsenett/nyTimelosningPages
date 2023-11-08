@@ -10,7 +10,7 @@
   "name" : "HnBasisAppointment",
   "title" : "hn-basis-appointment",
   "status" : "draft",
-  "date" : "2023-11-08T01:12:56+01:00",
+  "date" : "2023-11-08T15:53:02+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -3870,14 +3870,14 @@
       },
       {
         "key" : "appointment-participant-actor-patient-reference-identifier",
-        "severity" : "error",
+        "severity" : "warning",
         "human" : "When actor is a Patient logical reference MUST be used",
         "expression" : "actor.type = 'Patient' implies actor.identifier.exists()",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       },
       {
         "key" : "appointment-participant-actor-patient-reference-reference",
-        "severity" : "error",
+        "severity" : "warning",
         "human" : "When actor is a Patient literal reference (relative, internal or absolute) reference MUST not be used",
         "expression" : "(actor.type = 'Patient') implies actor.reference.exists().not()",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
@@ -4841,14 +4841,14 @@
       "path" : "Appointment.participant",
       "constraint" : [{
         "key" : "appointment-participant-actor-patient-reference-identifier",
-        "severity" : "error",
+        "severity" : "warning",
         "human" : "When actor is a Patient logical reference MUST be used",
         "expression" : "actor.type = 'Patient' implies actor.identifier.exists()",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
       },
       {
         "key" : "appointment-participant-actor-patient-reference-reference",
-        "severity" : "error",
+        "severity" : "warning",
         "human" : "When actor is a Patient literal reference (relative, internal or absolute) reference MUST not be used",
         "expression" : "(actor.type = 'Patient') implies actor.reference.exists().not()",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
