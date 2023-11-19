@@ -91,6 +91,20 @@
     "name" : "HnBasisSlot"
   },
   {
+    "id" : "kommunikasjonspart-Organization",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization",
+    "version" : "0.1.0",
+    "name" : "KommunikasjonspartOrganization"
+  },
+  {
+    "id" : "tba-organizationcoverage",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/tba-organizationcoverage",
+    "version" : "0.1.0",
+    "name" : "TbaOrganizationcoverage"
+  },
+  {
     "id" : "hn-appointment-AppointmentType-code-vs",
     "type" : "ValueSet",
     "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs",
@@ -112,10 +126,10 @@
     "name" : "HnAppointmentFlagCodeVS"
   },
   {
-    "id" : "no-basis-virtual-service-type-vs",
+    "id" : "hn-basis-virtual-service-type.valueset",
     "type" : "ValueSet",
-    "url" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs",
+    "url" : "http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset",
     "version" : "0.1.0",
-    "name" : "NoBasisVirtualServiceTypeVS"
+    "name" : "HnBasisVirtualServiceType"
   }
 ]

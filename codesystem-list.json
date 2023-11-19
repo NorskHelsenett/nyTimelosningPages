@@ -5,8 +5,8 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "HnAppointmentTypeProposedNewCodesCS",
-      "title" : "New codes proposed as part of Timetype innbyggerportal.",
-      "description" : "New codes proposed as part of Timetype innbyggerportal."
+      "title" : "New codes that shold be used as default for appointmentType.",
+      "description" : "New codes that shold be used as default for appointmentType."
     },
     {
       "url" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",

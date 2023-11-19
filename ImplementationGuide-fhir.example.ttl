@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-08T15:53:02+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-19T21:48:09+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -523,21 +523,6 @@
          fhir:value [ fhir:v "Appointment" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13> ;
-         fhir:reference [ fhir:v "Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13" ]
-       ] ;
-       fhir:name [ fhir:v "AppointmentEksempel" ] ;
-       fhir:description [ fhir:v "Enkelt eksempel for timeavtale. Timeavtalen inneholder diverse ressurser som er contained." ] ;
-       fhir:example [
-         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://helsenorge.no/fhir/Appointment/AppointmentEksempelDIPS> ;
          fhir:reference [ fhir:v "Appointment/AppointmentEksempelDIPS" ]
        ] ;
@@ -553,11 +538,23 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset> ;
+         fhir:reference [ fhir:v "ValueSet/hn-basis-virtual-service-type.valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Hn Basis VirtualServiceType Value Set" ] ;
+       fhir:description [ fhir:v "Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs> ;
          fhir:reference [ fhir:v "ValueSet/hn-appointment-AppointmentType-code-vs" ]
        ] ;
        fhir:name [ fhir:v "hn-appointment-AppointmentType-code-vs" ] ;
-       fhir:description [ fhir:v "Value set for AppointmentType codes in nytimeløsing - from Timetype innbyggerportal and some new codes" ] ;
+       fhir:description [ fhir:v "Value set for AppointmentType codes in nytimeløsing that includes set of codes from diferent code systems" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -718,63 +715,54 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/kommunikasjonspart-Organization" ]
+       ] ;
+       fhir:name [ fhir:v "kommunikasjonspart-Organization" ] ;
+       fhir:description [ fhir:v "Use case specific profile for Norwegian services defined in the Norwegian address register, kommunikasjonspart-Organization. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare services as defined in the Norwegian adress register. The use-case profile is specific for the use case of identifying relevant services defined in the address register for electronic communication." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
          fhir:link <http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs> ;
          fhir:reference [ fhir:v "CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs" ]
        ] ;
-       fhir:name [ fhir:v "New codes proposed as part of Timetype innbyggerportal." ] ;
-       fhir:description [ fhir:v "New codes proposed as part of Timetype innbyggerportal." ] ;
+       fhir:name [ fhir:v "New codes that shold be used as default for appointmentType." ] ;
+       fhir:description [ fhir:v "New codes that shold be used as default for appointmentType." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs> ;
-         fhir:reference [ fhir:v "ValueSet/no-basis-virtual-service-type-vs" ]
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/tba-organizationcoverage> ;
+         fhir:reference [ fhir:v "StructureDefinition/tba-organizationcoverage" ]
        ] ;
-       fhir:name [ fhir:v "No Basis VirtualServiceType Value Set." ] ;
-       fhir:description [ fhir:v "Example codes for possible virtual service connection types." ] ;
+       fhir:name [ fhir:v "TbaOrganizationcoverage" ] ;
+       fhir:description [ fhir:v "The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Organization" ]
+         fhir:value [ fhir:v "Appointment" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Organization/86e32d26-1418-4a43-b6be-59c56042479f> ;
-         fhir:reference [ fhir:v "Organization/86e32d26-1418-4a43-b6be-59c56042479f" ]
+         fhir:link <http://helsenorge.no/fhir/Appointment/VideoAppointmentEksempel> ;
+         fhir:reference [ fhir:v "Appointment/VideoAppointmentEksempel" ]
        ] ;
-       fhir:name [ fhir:v "OrganizationEksempel_1" ] ;
-       fhir:description [ fhir:v "Dette er ett minimum eksempel på organisasjon som er en del av identifier. Organisasjonen brukes i appointment eksempel som assigner av identifier." ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Organization" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Organization/0cf2afb9-5da2-4ff5-ad94-295c72dfaf88> ;
-         fhir:reference [ fhir:v "Organization/0cf2afb9-5da2-4ff5-ad94-295c72dfaf88" ]
-       ] ;
-       fhir:name [ fhir:v "OrganizationEksempel_2" ] ;
-       fhir:description [ fhir:v "Kommunikasjonspart er del av en organisasjon. Orrganisasjon skal når den er del av appointment profilen identifiseres med HER-Id på nivå 2" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Organization" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe> ;
-         fhir:reference [ fhir:v "Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe" ]
-       ] ;
-       fhir:name [ fhir:v "OrganizationEksempel_3" ] ;
-       fhir:description [ fhir:v "Organisasjon som er referert fra Location. I appointment profilen skal Location av type/rolle HOSP peke på Managing Organization. Managing Organization skal ha 2 identifikatorer HER-id på nivå 1 og organisasjonsnummer." ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:name [ fhir:v "VideoAppointmentEksempel" ] ;
+       fhir:description [ fhir:v "An example showing usage of virtual service. In this case video appointment." ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

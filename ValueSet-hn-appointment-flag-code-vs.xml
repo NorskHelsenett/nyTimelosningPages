@@ -10,8 +10,8 @@
   <name value="HnAppointmentFlagCodeVS"/>
   <title value="hn-appointment-flag-code-vs"/>
   <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2023-11-08T15:53:02+01:00"/>
+  <experimental value="true"/>
+  <date value="2023-11-19T21:48:09+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

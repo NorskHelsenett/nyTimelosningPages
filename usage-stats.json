@@ -44,6 +44,13 @@
       "types": [
         "Coding"
       ]
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/tba-organizationcoverage",
+      "title": "TbaOrganizationcoverage",
+      "types": [
+        "Reference"
+      ]
     }
   ],
   "profiles": {
@@ -76,6 +83,12 @@
         "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot",
         "title": "hn-basis-slot"
       }
+    ],
+    "Organization": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization",
+        "title": "kommunikasjonspart-Organization"
+      }
     ]
   },
   "usage": {
@@ -93,6 +106,9 @@
     ],
     "http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason": [
       "Appointment"
+    ],
+    "http://helsenorge.no/fhir/StructureDefinition/tba-organizationcoverage": [
+      "Organization"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-group": [
       "Appointment"
@@ -113,6 +129,7 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
@@ -128,6 +145,9 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [

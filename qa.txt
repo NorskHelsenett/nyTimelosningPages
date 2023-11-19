@@ -1,44 +1,33 @@
 ﻿NyTimelosingIG : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 30
-IG Publisher Version: 1.5.1 Out of date - current version is 1.5.2
-Generated Wed Nov 08 15:54:14 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+err = 0, warn = 0, info = 26
+IG Publisher Version: 1.5.1 Out of date - current version is 1.5.4
+Generated Sun Nov 19 21:49:25 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
  Build Errors : 0 / 0 / 0
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-92346bce-fef0-4e76-ada8-026d2b98ec13 : 0 / 9 / 28
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS : 0 / 15 / 31
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS : 0 / 15 / 30
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-VideoAppointmentEksempel : 0 / 13 / 26
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example : 0 / 0 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Organization-0cf2afb9-5da2-4ff5-ad94-295c72dfaf88 : 0 / 0 / 3
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Organization-86e32d26-1418-4a43-b6be-59c56042479f : 0 / 0 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Organization-b8d6ea02-e899-4314-9bda-ba1702679ebe : 0 / 0 / 4
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse : 0 / 1 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Flag : 0 / 0 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Recurring : 0 / 1 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-appointment : 0 / 6 / 5
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-appointment : 0 / 6 / 4
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-changeConferenceType : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-consultationType : 0 / 3 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-flagStatusPeriod : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-postponementreason : 0 / 2 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-schedule : 0 / 1 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-slot : 0 / 1 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs : 0 / 2 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization : 0 / 6 / 8
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-tba-organizationcoverage : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs : 0 / 7 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs : 0 / 0 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-flag-code-vs : 0 / 0 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-basis-virtual-service-type.valueset : 0 / 1 / 1
 </table>
 == n/a ==
-== fsh-generated\resources\Appointment-92346bce-fef0-4e76-ada8-026d2b98ec13.json ==
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.contained[0]/*Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe*/.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.2' is unknown so the code cannot be validated
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.contained[0]/*Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe*/.identifier[1].type.coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.4.101' is unknown so the code cannot be validated
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.contained[0]/*Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe*/.identifier[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.contained[1]/*Organization/0cf2afb9-5da2-4ff5-ad94-295c72dfaf88*/.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.2' is unknown so the code cannot be validated
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.contained[1]/*Organization/0cf2afb9-5da2-4ff5-ad94-295c72dfaf88*/.identifier[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.contained[4]/*Organization/833bad1b-e612-4593-9560-c5ea55bce912*/.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.2' is unknown so the code cannot be validated
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.contained[4]/*Organization/833bad1b-e612-4593-9560-c5ea55bce912*/.type[0].coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.contained[4]/*Organization/833bad1b-e612-4593-9560-c5ea55bce912*/.identifier[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15
-INFORMATION: Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment|0.1.0
 == fsh-generated\resources\Appointment-AppointmentEksempelDIPS.json ==
 INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.meta.tag[0]: Code System URI 'http://helsenorge.no/fhir/paminnelse' is unknown so the code cannot be validated
 INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[0]/*Organization/45c4b733-c3c9-4b66-bf66-2d8001f19d6b*/.identifier[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15
@@ -46,18 +35,13 @@ INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[2]/*Appo
 INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[5]/*Organization/f3f5da36-ab2d-44f1-a78a-64f69351df62*/.type[0].coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated
 INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8446' is unknown so the code cannot be validated
 INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.cancelationReason.coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.9179' is unknown so the code cannot be validated
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment|0.1.0
+== fsh-generated\resources\Appointment-VideoAppointmentEksempel.json ==
+INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.meta.tag[0]: Code System URI 'http://helsenorge.no/fhir/paminnelse' is unknown so the code cannot be validated
+INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.contained[2]/*Appointment/null*/.identifier[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15
+INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.contained[4]/*Organization/aaf5da36-ab2d-44f1-a78a-64f69351df62*/.type[0].coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated
 == fsh-generated\resources\CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.json ==
 == fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs.json ==
 == fsh-generated\resources\ImplementationGuide-fhir.example.json ==
-== fsh-generated\resources\Organization-0cf2afb9-5da2-4ff5-ad94-295c72dfaf88.json ==
-INFORMATION: Organization/0cf2afb9-5da2-4ff5-ad94-295c72dfaf88: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15
-INFORMATION: Organization/0cf2afb9-5da2-4ff5-ad94-295c72dfaf88: Organization.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.2' is unknown so the code cannot be validated
-== fsh-generated\resources\Organization-86e32d26-1418-4a43-b6be-59c56042479f.json ==
-== fsh-generated\resources\Organization-b8d6ea02-e899-4314-9bda-ba1702679ebe.json ==
-INFORMATION: Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15
-INFORMATION: Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe: Organization.identifier[0].type.coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.2' is unknown so the code cannot be validated
-INFORMATION: Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe: Organization.identifier[1].type.coding[0]: Code System URI 'urn:oid:2.16.578.1.12.4.1.4.101' is unknown so the code cannot be validated
 == fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse.json ==
 INFORMATION: StructureDefinition/hn-basis-AppointmentResponse: StructureDefinition.snapshot.element[26].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/hn-basis-AppointmentResponse: StructureDefinition.snapshot.element[58].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
@@ -66,10 +50,9 @@ INFORMATION: StructureDefinition/hn-basis-Flag: StructureDefinition.snapshot.ele
 INFORMATION: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated\resources\StructureDefinition-hn-basis-Recurring.json ==
 == fsh-generated\resources\StructureDefinition-hn-basis-appointment.json ==
-INFORMATION: StructureDefinition.snapshot.element[48]: The slice definition for Appointment.appointmentType.coding has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
-INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[22].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[82].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[83].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[51].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[112].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[113].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated\resources\StructureDefinition-hn-basis-changeConferenceType.json ==
 == fsh-generated\resources\StructureDefinition-hn-basis-consultationType.json ==
 == fsh-generated\resources\StructureDefinition-hn-basis-flagStatusPeriod.json ==
@@ -77,7 +60,18 @@ INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snaps
 == fsh-generated\resources\StructureDefinition-hn-basis-schedule.json ==
 INFORMATION: StructureDefinition/hn-basis-schedule: StructureDefinition.snapshot.element[33].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated\resources\StructureDefinition-hn-basis-slot.json ==
+== fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization.json ==
+INFORMATION: StructureDefinition.snapshot.element[10]: The slice definition for Organization.identifier has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
+INFORMATION: StructureDefinition.snapshot.element[47]: The slice definition for Organization.type has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
+INFORMATION: StructureDefinition/kommunikasjonspart-Organization: StructureDefinition.snapshot.element[17].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/kommunikasjonspart-Organization: StructureDefinition.snapshot.element[26].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/kommunikasjonspart-Organization: StructureDefinition.snapshot.element[35].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/kommunikasjonspart-Organization: StructureDefinition.snapshot.element[44].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated\resources\StructureDefinition-tba-organizationcoverage.json ==
 == fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs.json ==
+INFORMATION: ValueSet/hn-appointment-AppointmentType-code-vs: ValueSet.compose.include[0].concept[0]: Error reading Http Response from http://tx.fhir.org/r4: Error parsing JSON source: Unexpected char 'A' in json stream at Line 1 (path=[null])
+INFORMATION: ValueSet/hn-appointment-AppointmentType-code-vs: ValueSet.compose.include[1].concept[0]: Error reading Http Response from http://tx.fhir.org/r4: Error parsing JSON source: Unexpected char 'A' in json stream at Line 1 (path=[null])
 == fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs.json ==
 == fsh-generated\resources\ValueSet-hn-appointment-flag-code-vs.json ==
-== fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json ==
+== fsh-generated\resources\ValueSet-hn-basis-virtual-service-type.valueset.json ==

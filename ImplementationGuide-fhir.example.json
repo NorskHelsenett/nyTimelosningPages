@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-11-08T15:53:02+01:00",
+  "date" : "2023-11-19T21:48:09+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -609,18 +609,6 @@
         "valueString" : "Appointment"
       }],
       "reference" : {
-        "reference" : "Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13"
-      },
-      "name" : "AppointmentEksempel",
-      "description" : "Enkelt eksempel for timeavtale. Timeavtalen inneholder diverse ressurser som er contained.",
-      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
         "reference" : "Appointment/AppointmentEksempelDIPS"
       },
       "name" : "AppointmentEksempelDIPS",
@@ -633,10 +621,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/hn-basis-virtual-service-type.valueset"
+      },
+      "name" : "Hn Basis VirtualServiceType Value Set",
+      "description" : "Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/hn-appointment-AppointmentType-code-vs"
       },
       "name" : "hn-appointment-AppointmentType-code-vs",
-      "description" : "Value set for AppointmentType codes in nytimeløsing - from Timetype innbyggerportal and some new codes",
+      "description" : "Value set for AppointmentType codes in nytimeløsing that includes set of codes from diferent code systems",
       "exampleBoolean" : false
     },
     {
@@ -798,62 +798,50 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/kommunikasjonspart-Organization"
+      },
+      "name" : "kommunikasjonspart-Organization",
+      "description" : "Use case specific profile for Norwegian services defined in the Norwegian address register, kommunikasjonspart-Organization. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare services as defined in the Norwegian adress register. The use-case profile is specific for the use case of identifying relevant services defined in the address register for electronic communication.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
         "reference" : "CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"
       },
-      "name" : "New codes proposed as part of Timetype innbyggerportal.",
-      "description" : "New codes proposed as part of Timetype innbyggerportal.",
+      "name" : "New codes that shold be used as default for appointmentType.",
+      "description" : "New codes that shold be used as default for appointmentType.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "ValueSet/no-basis-virtual-service-type-vs"
+        "reference" : "StructureDefinition/tba-organizationcoverage"
       },
-      "name" : "No Basis VirtualServiceType Value Set.",
-      "description" : "Example codes for possible virtual service connection types.",
+      "name" : "TbaOrganizationcoverage",
+      "description" : "The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
+        "valueString" : "Appointment"
       }],
       "reference" : {
-        "reference" : "Organization/86e32d26-1418-4a43-b6be-59c56042479f"
+        "reference" : "Appointment/VideoAppointmentEksempel"
       },
-      "name" : "OrganizationEksempel_1",
-      "description" : "Dette er ett minimum eksempel på organisasjon som er en del av identifier. Organisasjonen brukes i appointment eksempel som assigner av identifier.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/0cf2afb9-5da2-4ff5-ad94-295c72dfaf88"
-      },
-      "name" : "OrganizationEksempel_2",
-      "description" : "Kommunikasjonspart er del av en organisasjon. Orrganisasjon skal når den er del av appointment profilen identifiseres med HER-Id på nivå 2",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe"
-      },
-      "name" : "OrganizationEksempel_3",
-      "description" : "Organisasjon som er referert fra Location. I appointment profilen skal Location av type/rolle HOSP peke på Managing Organization. Managing Organization skal ha 2 identifikatorer HER-id på nivå 1 og organisasjonsnummer.",
-      "exampleBoolean" : true
+      "name" : "VideoAppointmentEksempel",
+      "description" : "An example showing usage of virtual service. In this case video appointment.",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
     }],
     "page" : {
       "extension" : [{

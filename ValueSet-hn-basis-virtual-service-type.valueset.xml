@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hn-basis-virtual-service-type.valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.4.642.4.1809</code></li><li>Include all codes defined in <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html"><code>http://hl7.org/fhir/contact-point-system</code></a></li></ul></div>
+  </text>
+  <url value="http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset"/>
+  <version value="0.1.0"/>
+  <name value="HnBasisVirtualServiceType"/>
+  <title value="Hn Basis VirtualServiceType Value Set"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-11-19T21:48:09+01:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.4.642.4.1809"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/contact-point-system"/>
+    </include>
+  </compose>
+</ValueSet>

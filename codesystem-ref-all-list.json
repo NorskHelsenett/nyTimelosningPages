@@ -5,8 +5,8 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "HnAppointmentTypeProposedNewCodesCS",
-      "title" : "New codes proposed as part of Timetype innbyggerportal.",
-      "description" : "New codes proposed as part of Timetype innbyggerportal.",
+      "title" : "New codes that shold be used as default for appointmentType.",
+      "description" : "New codes that shold be used as default for appointmentType.",
       "uses" : {
       },
       "ValueSet-hn-appointment-AppointmentType-code-vs.html" : "hn-appointment-AppointmentType-code-vs"
@@ -44,7 +44,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.72"],
       "uses" : {
       },
-      "ValueSet-no-basis-virtual-service-type-vs.html" : "No Basis VirtualServiceType Value Set."
+      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set",
+      "ValueSet-hn-basis-virtual-service-type.valueset.html" : "Hn Basis VirtualServiceType Value Set"
     },
     {
       "url" : "http://hl7.org/fhir/fhir-types",
@@ -128,8 +129,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "version" : "0.5.0",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/flag-category",
@@ -142,6 +155,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-flag-category.html" : "Flag Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/participant-type",

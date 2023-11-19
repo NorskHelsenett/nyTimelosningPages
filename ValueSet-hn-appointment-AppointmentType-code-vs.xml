@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="hn-appointment-AppointmentType-code-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.7617</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Vaksine</td><td>Vaksine</td></tr><tr><td>Lab</td><td>Lab</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html"><code>http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.7617</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Vaksine</td><td>Vaksine time</td></tr><tr><td>Lab</td><td>Lab time</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.578.1.12.4.1.1.8406</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Innleggelse</td></tr><tr><td>2</td><td>Dagbehandling</td></tr><tr><td>3</td><td>Poliklinisk time</td></tr><tr><td>8</td><td>Poliklinisk time</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html"><code>http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs</code></a></li></ul></div>
   </text>
   <url value="http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs"/>
   <version value="0.1.0"/>
   <name value="HnAppointmentAppointmentTypeVS"/>
   <title value="hn-appointment-AppointmentType-code-vs"/>
   <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2023-11-08T15:53:02+01:00"/>
+  <experimental value="true"/>
+  <date value="2023-11-19T21:48:09+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -20,17 +20,36 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <description value="Value set for AppointmentType codes in nytimeløsing - from Timetype innbyggerportal and some new codes"/>
+  <description value="Value set for AppointmentType codes in nytimeløsing that includes set of codes from diferent code systems"/>
   <compose>
     <include>
       <system value="urn:oid:2.16.578.1.12.4.1.1.7617"/>
       <concept>
         <code value="Vaksine"/>
-        <display value="Vaksine"/>
+        <display value="Vaksine time"/>
       </concept>
       <concept>
         <code value="Lab"/>
-        <display value="Lab"/>
+        <display value="Lab time"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8406"/>
+      <concept>
+        <code value="1"/>
+        <display value="Innleggelse"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Dagbehandling"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Poliklinisk time"/>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="Poliklinisk time"/>
       </concept>
     </include>
     <include>

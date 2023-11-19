@@ -6,15 +6,16 @@
       "status" : "draft",
       "name" : "HnAppointmentAppointmentTypeVS",
       "title" : "hn-appointment-AppointmentType-code-vs",
-      "description" : "Value set for AppointmentType codes in nytimeløsing - from Timetype innbyggerportal and some new codes",
+      "description" : "Value set for AppointmentType codes in nytimeløsing that includes set of codes from diferent code systems",
       "systems" : [
         "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
-        "urn:oid:2.16.578.1.12.4.1.1.7617"
+        "urn:oid:2.16.578.1.12.4.1.1.7617",
+        "urn:oid:2.16.578.1.12.4.1.1.8406"
       ],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
@@ -26,9 +27,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot",
       "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
@@ -45,12 +46,27 @@
       "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag"
     },
     {
-      "url" : "http://helsenorge.no/fhir/ValueSet/no-basis-virtual-service-type-vs",
+      "url" : "http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "NoBasisVirtualServiceTypeVS",
-      "title" : "No Basis VirtualServiceType Value Set.",
-      "description" : "Example codes for possible virtual service connection types.",
+      "name" : "HnBasisVirtualServiceType",
+      "title" : "Hn Basis VirtualServiceType Value Set",
+      "description" : "Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet",
+      "systems" : [
+        "http://hl7.org/fhir/contact-point-system",
+        "urn:oid:2.16.840.1.113883.4.642.4.1809"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+    },
+    {
+      "url" : "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "NoBasisVirtualServiceType",
+      "title" : "No Basis VirtualServiceType Value Set",
+      "description" : "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet",
       "systems" : [
         "http://hl7.org/fhir/contact-point-system",
         "urn:oid:2.16.840.1.113883.4.642.4.1809"
@@ -58,6 +74,20 @@
       "uses" : {
       },
       "StructureDefinition-hn-basis-changeConferenceType.html" : "hn-basis-changeConferenceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     }
   ]
 }

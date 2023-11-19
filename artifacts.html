@@ -197,6 +197,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Profile used for Slot in HN. Based on FHIR Slot (R4)</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kommunikasjonspart-Organization.html"
+                  title="StructureDefinition/kommunikasjonspart-Organization">kommunikasjonspart-Organization</a>
+            </td>
+            <td>
+<p>Use case specific profile for Norwegian services defined in the Norwegian address register, kommunikasjonspart-Organization. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare services as defined in the Norwegian adress register. The use-case profile is specific for the use case of identifying relevant services defined in the address register for electronic communication.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="2"> </a>
@@ -205,6 +214,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tba-organizationcoverage.html"
+                  title="StructureDefinition/tba-organizationcoverage">TbaOrganizationcoverage</a>
+            </td>
+            <td>
+<p>The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-hn-basis-changeConferenceType.html"
@@ -260,11 +278,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-no-basis-virtual-service-type-vs.html"
-                  title="ValueSet/no-basis-virtual-service-type-vs">No Basis VirtualServiceType Value Set.</a>
+               <a href="ValueSet-hn-basis-virtual-service-type.valueset.html"
+                  title="ValueSet/hn-basis-virtual-service-type.valueset">Hn Basis VirtualServiceType Value Set</a>
             </td>
             <td>
-<p>Example codes for possible virtual service connection types.</p>
+<p>Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet</p>
 </td>
          </tr>
          <tr>
@@ -273,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/hn-appointment-AppointmentType-code-vs">hn-appointment-AppointmentType-code-vs</a>
             </td>
             <td>
-<p>Value set for AppointmentType codes in nytimeløsing - from Timetype innbyggerportal and some new codes</p>
+<p>Value set for AppointmentType codes in nytimeløsing that includes set of codes from diferent code systems</p>
 </td>
          </tr>
          <tr>
@@ -305,10 +323,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html"
-                  title="CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs">New codes proposed as part of Timetype innbyggerportal.</a>
+                  title="CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs">New codes that shold be used as default for appointmentType.</a>
             </td>
             <td>
-<p>New codes proposed as part of Timetype innbyggerportal.</p>
+<p>New codes that shold be used as default for appointmentType.</p>
 </td>
          </tr>
          <tr>
@@ -330,15 +348,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Appointment-92346bce-fef0-4e76-ada8-026d2b98ec13.html"
-                  title="Appointment/92346bce-fef0-4e76-ada8-026d2b98ec13">AppointmentEksempel</a>
-            </td>
-            <td>
-<p>Enkelt eksempel for timeavtale. Timeavtalen inneholder diverse ressurser som er contained.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Appointment-AppointmentEksempelDIPS.html"
                   title="Appointment/AppointmentEksempelDIPS">AppointmentEksempelDIPS</a>
             </td>
@@ -348,29 +357,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-86e32d26-1418-4a43-b6be-59c56042479f.html"
-                  title="Organization/86e32d26-1418-4a43-b6be-59c56042479f">OrganizationEksempel_1</a>
+               <a href="Appointment-VideoAppointmentEksempel.html"
+                  title="Appointment/VideoAppointmentEksempel">VideoAppointmentEksempel</a>
             </td>
             <td>
-<p>Dette er ett minimum eksempel på organisasjon som er en del av identifier. Organisasjonen brukes i appointment eksempel som assigner av identifier.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-0cf2afb9-5da2-4ff5-ad94-295c72dfaf88.html"
-                  title="Organization/0cf2afb9-5da2-4ff5-ad94-295c72dfaf88">OrganizationEksempel_2</a>
-            </td>
-            <td>
-<p>Kommunikasjonspart er del av en organisasjon. Orrganisasjon skal når den er del av appointment profilen identifiseres med HER-Id på nivå 2</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-b8d6ea02-e899-4314-9bda-ba1702679ebe.html"
-                  title="Organization/b8d6ea02-e899-4314-9bda-ba1702679ebe">OrganizationEksempel_3</a>
-            </td>
-            <td>
-<p>Organisasjon som er referert fra Location. I appointment profilen skal Location av type/rolle HOSP peke på Managing Organization. Managing Organization skal ha 2 identifikatorer HER-id på nivå 1 og organisasjonsnummer.</p>
+<p>An example showing usage of virtual service. In this case video appointment.</p>
 </td>
          </tr>
       </tbody>
@@ -399,7 +390,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 8, 2023 15:53+0100">2023-11-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 19, 2023 21:48+0100">2023-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
