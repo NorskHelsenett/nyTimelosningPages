@@ -217,7 +217,7 @@
         
           Draft
           
-            as of 2023-11-19
+            as of 2023-11-27
           
         
       </td>
@@ -361,8 +361,8 @@
 <tr><td>appointment-participant-actor-patient-reference-reference</td><td>warning</td><td>Appointment.participant</td><td>When actor is a Patient literal reference (relative, internal or absolute) reference MUST not be used<br/>: (actor.type = 'Patient') implies actor.reference.exists().not()</td><td></td></tr>
 <tr><td>cancelationReason-inv</td><td>error</td><td>Appointment</td><td>Cancelation reason MUST be set when status=cancelled and serviceCategory=27 (that is Specialist Medical)<br/>: (status='canceled' and serviceCategory.coding.code='27') implies cancelationReason.exists()</td><td></td></tr>
 <tr><td>inv-4</td><td>error</td><td>Appointment.cancelationReason.coding, Appointment.serviceCategory.coding, Appointment.serviceType.coding, Appointment.specialty.coding, Appointment.appointmentType.coding, Appointment.reasonCode.coding, Appointment.participant.type.coding</td><td>If code is used in a codable consept the system must be used<br/>: code &gt; '' implies (system &gt; '' )</td><td></td></tr>
-<tr><td>should-be-max-100-chars</td><td>warning</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
-<tr><td>should-be-max-500-chars</td><td>warning</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
+<tr><td>should-be-max-100-chars</td><td>error</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
+<tr><td>should-be-max-500-chars</td><td>error</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
 </table>
 
           
@@ -470,8 +470,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>inv-4</td><td>error</td><td>Appointment.cancelationReason.coding, Appointment.serviceCategory.coding, Appointment.appointmentType.coding</td><td>If code is used in a codable consept the system must be used<br/>: code &gt; '' implies (system &gt; '' )</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Appointment.identifier.assigner, Appointment.supportingInformation, Appointment.participant.actor</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
-<tr><td>should-be-max-100-chars</td><td>warning</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
-<tr><td>should-be-max-500-chars</td><td>warning</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
+<tr><td>should-be-max-100-chars</td><td>error</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
+<tr><td>should-be-max-500-chars</td><td>error</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
 </table>
 
           
@@ -671,8 +671,8 @@ The duration (usually in minutes) could also be provided to indicate the length 
 <tr><td>inv-4</td><td>error</td><td>Appointment.cancelationReason.coding, Appointment.serviceCategory.coding, Appointment.serviceType.coding, Appointment.specialty.coding, Appointment.appointmentType.coding, Appointment.reasonCode.coding, Appointment.participant.type.coding</td><td>If code is used in a codable consept the system must be used<br/>: code &gt; '' implies (system &gt; '' )</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Appointment.identifier.period, Appointment.participant.period, Appointment.requestedPeriod</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Appointment.identifier.assigner, Appointment.reasonReference, Appointment.supportingInformation, Appointment.slot, Appointment.basedOn, Appointment.participant.actor</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
-<tr><td>should-be-max-100-chars</td><td>warning</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
-<tr><td>should-be-max-500-chars</td><td>warning</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
+<tr><td>should-be-max-100-chars</td><td>error</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
+<tr><td>should-be-max-500-chars</td><td>error</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
 </table>
 
           
@@ -951,8 +951,8 @@ Summary
 <tr><td>appointment-participant-actor-patient-reference-reference</td><td>warning</td><td>Appointment.participant</td><td>When actor is a Patient literal reference (relative, internal or absolute) reference MUST not be used<br/>: (actor.type = 'Patient') implies actor.reference.exists().not()</td><td></td></tr>
 <tr><td>cancelationReason-inv</td><td>error</td><td>Appointment</td><td>Cancelation reason MUST be set when status=cancelled and serviceCategory=27 (that is Specialist Medical)<br/>: (status='canceled' and serviceCategory.coding.code='27') implies cancelationReason.exists()</td><td></td></tr>
 <tr><td>inv-4</td><td>error</td><td>Appointment.cancelationReason.coding, Appointment.serviceCategory.coding, Appointment.serviceType.coding, Appointment.specialty.coding, Appointment.appointmentType.coding, Appointment.reasonCode.coding, Appointment.participant.type.coding</td><td>If code is used in a codable consept the system must be used<br/>: code &gt; '' implies (system &gt; '' )</td><td></td></tr>
-<tr><td>should-be-max-100-chars</td><td>warning</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
-<tr><td>should-be-max-500-chars</td><td>warning</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
+<tr><td>should-be-max-100-chars</td><td>error</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
+<tr><td>should-be-max-500-chars</td><td>error</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
 </table>
 
           
@@ -1060,8 +1060,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>inv-4</td><td>error</td><td>Appointment.cancelationReason.coding, Appointment.serviceCategory.coding, Appointment.appointmentType.coding</td><td>If code is used in a codable consept the system must be used<br/>: code &gt; '' implies (system &gt; '' )</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Appointment.identifier.assigner, Appointment.supportingInformation, Appointment.participant.actor</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
-<tr><td>should-be-max-100-chars</td><td>warning</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
-<tr><td>should-be-max-500-chars</td><td>warning</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
+<tr><td>should-be-max-100-chars</td><td>error</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
+<tr><td>should-be-max-500-chars</td><td>error</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
 </table>
 
           
@@ -1261,8 +1261,8 @@ The duration (usually in minutes) could also be provided to indicate the length 
 <tr><td>inv-4</td><td>error</td><td>Appointment.cancelationReason.coding, Appointment.serviceCategory.coding, Appointment.serviceType.coding, Appointment.specialty.coding, Appointment.appointmentType.coding, Appointment.reasonCode.coding, Appointment.participant.type.coding</td><td>If code is used in a codable consept the system must be used<br/>: code &gt; '' implies (system &gt; '' )</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Appointment.identifier.period, Appointment.participant.period, Appointment.requestedPeriod</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Appointment.identifier.assigner, Appointment.reasonReference, Appointment.supportingInformation, Appointment.slot, Appointment.basedOn, Appointment.participant.actor</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
-<tr><td>should-be-max-100-chars</td><td>warning</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
-<tr><td>should-be-max-500-chars</td><td>warning</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
+<tr><td>should-be-max-100-chars</td><td>error</td><td>Appointment.description</td><td>Length SHOULD be &lt;=100.<br/>: $this.length() &lt;= 100</td><td></td></tr>
+<tr><td>should-be-max-500-chars</td><td>error</td><td>Appointment.patientInstruction</td><td>Length SHOULD be &lt;= 500<br/>: $this.length() &lt;= 500</td><td></td></tr>
 </table>
 
           
@@ -1522,7 +1522,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 19, 2023 21:48+0100">2023-11-19</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 27, 2023 12:35+0100">2023-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

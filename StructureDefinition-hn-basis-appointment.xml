@@ -50,7 +50,7 @@
   <name value="HnBasisAppointment"/>
   <title value="hn-basis-appointment"/>
   <status value="draft"/>
-  <date value="2023-11-19T21:48:09+01:00"/>
+  <date value="2023-11-27T12:35:55+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -4477,7 +4477,7 @@
       </constraint>
       <constraint>
         <key value="should-be-max-100-chars"/>
-        <severity value="warning"/>
+        <severity value="error"/>
         <human value="Length SHOULD be &lt;=100."/>
         <expression value="$this.length() &lt;= 100"/>
         <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
@@ -4892,7 +4892,7 @@
       </constraint>
       <constraint>
         <key value="should-be-max-500-chars"/>
-        <severity value="warning"/>
+        <severity value="error"/>
         <human value="Length SHOULD be &lt;= 500"/>
         <expression value="$this.length() &lt;= 500"/>
         <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
@@ -5925,7 +5925,7 @@
       <path value="Appointment.description"/>
       <constraint>
         <key value="should-be-max-100-chars"/>
-        <severity value="warning"/>
+        <severity value="error"/>
         <human value="Length SHOULD be &lt;=100."/>
         <expression value="$this.length() &lt;= 100"/>
         <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
@@ -5941,7 +5941,7 @@
       <path value="Appointment.patientInstruction"/>
       <constraint>
         <key value="should-be-max-500-chars"/>
-        <severity value="warning"/>
+        <severity value="error"/>
         <human value="Length SHOULD be &lt;= 500"/>
         <expression value="$this.length() &lt;= 500"/>
         <source value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>

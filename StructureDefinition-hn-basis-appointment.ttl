@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "HnBasisAppointment"] ; # 
   fhir:title [ fhir:v "hn-basis-appointment"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-19T21:48:09+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-27T12:35:55+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -4617,7 +4617,7 @@
          ]
        ] [
          fhir:key [ fhir:v "should-be-max-100-chars" ] ;
-         fhir:severity [ fhir:v "warning" ] ;
+         fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Length SHOULD be <=100." ] ;
          fhir:expression [ fhir:v "$this.length() <= 100" ] ;
          fhir:source [
@@ -5044,7 +5044,7 @@
          ]
        ] [
          fhir:key [ fhir:v "should-be-max-500-chars" ] ;
-         fhir:severity [ fhir:v "warning" ] ;
+         fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Length SHOULD be <= 500" ] ;
          fhir:expression [ fhir:v "$this.length() <= 500" ] ;
          fhir:source [
@@ -6189,7 +6189,7 @@
        fhir:path [ fhir:v "Appointment.description" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "should-be-max-100-chars" ] ;
-         fhir:severity [ fhir:v "warning" ] ;
+         fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Length SHOULD be <=100." ] ;
          fhir:expression [ fhir:v "$this.length() <= 100" ] ;
          fhir:source [
@@ -6208,7 +6208,7 @@
        fhir:path [ fhir:v "Appointment.patientInstruction" ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "should-be-max-500-chars" ] ;
-         fhir:severity [ fhir:v "warning" ] ;
+         fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Length SHOULD be <= 500" ] ;
          fhir:expression [ fhir:v "$this.length() <= 500" ] ;
          fhir:source [

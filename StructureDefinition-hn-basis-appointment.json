@@ -10,7 +10,7 @@
   "name" : "HnBasisAppointment",
   "title" : "hn-basis-appointment",
   "status" : "draft",
-  "date" : "2023-11-19T21:48:09+01:00",
+  "date" : "2023-11-27T12:35:55+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -4655,7 +4655,7 @@
       },
       {
         "key" : "should-be-max-100-chars",
-        "severity" : "warning",
+        "severity" : "error",
         "human" : "Length SHOULD be <=100.",
         "expression" : "$this.length() <= 100",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
@@ -5090,7 +5090,7 @@
       },
       {
         "key" : "should-be-max-500-chars",
-        "severity" : "warning",
+        "severity" : "error",
         "human" : "Length SHOULD be <= 500",
         "expression" : "$this.length() <= 500",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
@@ -6190,7 +6190,7 @@
       "path" : "Appointment.description",
       "constraint" : [{
         "key" : "should-be-max-100-chars",
-        "severity" : "warning",
+        "severity" : "error",
         "human" : "Length SHOULD be <=100.",
         "expression" : "$this.length() <= 100",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
@@ -6208,7 +6208,7 @@
       "path" : "Appointment.patientInstruction",
       "constraint" : [{
         "key" : "should-be-max-500-chars",
-        "severity" : "warning",
+        "severity" : "error",
         "human" : "Length SHOULD be <= 500",
         "expression" : "$this.length() <= 500",
         "source" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
