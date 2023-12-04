@@ -734,24 +734,24 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"hn-basis-appointment","Appointment.appointmentType.coding","Appointment.appointmentType.coding","","","",0,*,"","","Y","Coding {[]} {[]}
+"hn-basis-appointment","Appointment.appointmentType.coding","Appointment.appointmentType.coding","","","",1,*,"","","Y","Coding {[]} {[]}
 ","Recomended code systems for no-basis-Appointment.","Recomended code systems for no-basis-Appointment. The recomended code systems might not be suficient for defining appointment type and in an implemented profile - some other coding might be needed.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
 ","",,"open","CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-4:If code is used in a codable consept the system must be used {code > '' implies (system > '' )}"
-"hn-basis-appointment","Appointment.appointmentType.coding:omsorgsNiva","Appointment.appointmentType.coding","omsorgsNiva","","",0,0,"","","Y","Coding {[]} {[]}
+"hn-basis-appointment","Appointment.appointmentType.coding:omsorgsNiva","Appointment.appointmentType.coding","omsorgsNiva","","",0,1,"","","Y","Coding {[]} {[]}
 ","Volven 8406","Omsorgsnivå (OID=8406).","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","Volven","urn:oid:2.16.578.1.12.4.1.1.8406","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hn-basis-appointment","Appointment.appointmentType.coding:kontaktType","Appointment.appointmentType.coding","kontaktType","","",0,0,"","","Y","Coding {[]} {[]}
+"hn-basis-appointment","Appointment.appointmentType.coding:kontaktType","Appointment.appointmentType.coding","kontaktType","","",0,1,"","","Y","Coding {[]} {[]}
 ","Volven 8432","Kontakttype (OID=8432)","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","Volven","urn:oid:2.16.578.1.12.4.1.1.8432","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hn-basis-appointment","Appointment.appointmentType.coding:innbygger","Appointment.appointmentType.coding","innbygger","","",0,0,"","","Y","Coding {[]} {[]}
+"hn-basis-appointment","Appointment.appointmentType.coding:innbygger","Appointment.appointmentType.coding","innbygger","","",0,1,"","","Y","Coding {[]} {[]}
 ","Volven 7617","Timetype innbyggerportal (OID=7617)","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","Volven","urn:oid:2.16.578.1.12.4.1.1.7617","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hn-basis-appointment","Appointment.appointmentType.coding:helsenorge","Appointment.appointmentType.coding","helsenorge","","",0,1,"","","Y","Coding {[]} {[]}
+"hn-basis-appointment","Appointment.appointmentType.coding:helsenorge","Appointment.appointmentType.coding","helsenorge","","",1,1,"","","Y","Coding {[]} {[]}
 ","Codes from value set","Codes from value set","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","","http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1254,6 +1254,22 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
 "hn-basis-slot","Slot.serviceCategory","Slot.serviceCategory","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","A broad categorization of the service that is to be performed during this appointment","A broad categorization of the service that is to be performed during this appointment.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs","",,,,"Slot.serviceCategory",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"hn-basis-slot","Slot.serviceCategory.id","Slot.serviceCategory.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"hn-basis-slot","Slot.serviceCategory.extension","Slot.serviceCategory.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"hn-basis-slot","Slot.serviceCategory.coding","Slot.serviceCategory.coding","","","",0,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+inv-4:If code is used in a codable consept the system must be used {code > '' implies (system > '' )}"
+"hn-basis-slot","Slot.serviceCategory.text","Slot.serviceCategory.text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hn-basis-slot","Slot.serviceType","Slot.serviceType","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
