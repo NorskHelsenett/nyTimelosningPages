@@ -3,7 +3,7 @@
 
 err = 0, warn = 0, info = 28
 IG Publisher Version: 1.5.1 Out of date - current version is 1.5.5
-Generated Mon Dec 04 09:10:01 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+Generated Thu Dec 07 13:26:06 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
  Build Errors : 0 / 0 / 0
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS : 0 / 15 / 30
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-VideoAppointmentEksempel : 0 / 13 / 26
