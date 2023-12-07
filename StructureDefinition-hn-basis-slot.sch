@@ -14,6 +14,8 @@
     <sch:rule context="f:Slot">
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:serviceCategory) &gt;= 1">serviceCategory: minimum cardinality of 'serviceCategory' is 1</sch:assert>
+      <sch:assert test="count(f:serviceCategory) &lt;= 1">serviceCategory: maximum cardinality of 'serviceCategory' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

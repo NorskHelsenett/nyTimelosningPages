@@ -1252,7 +1252,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
-"hn-basis-slot","Slot.serviceCategory","Slot.serviceCategory","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
+"hn-basis-slot","Slot.serviceCategory","Slot.serviceCategory","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","A broad categorization of the service that is to be performed during this appointment","A broad categorization of the service that is to be performed during this appointment.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs","",,,,"Slot.serviceCategory",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
