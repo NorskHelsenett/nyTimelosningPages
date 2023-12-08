@@ -32,4 +32,4 @@ NyTimelosingIG : Validation Results
 
 err = 0, warn = 0, info = 28
 IG Publisher Version: 1.5.1 Out of date - current version is 1.5.5
-Generated Fri Dec 08 13:00:04 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+Generated Fri Dec 08 15:32:42 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)

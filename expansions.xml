@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cf55d244-da71-48ac-8d80-2b271077377f"/>
+  <id value="d6271647-b679-4f3c-8cc7-2deb550c9697"/>
   <meta>
-    <lastUpdated value="2023-12-08T12:58:44.992+01:00"/>
+    <lastUpdated value="2023-12-08T15:31:30.152+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -250,10 +250,10 @@
         <title value="hn-appointment-flag-code-vs"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-12-08T12:58:44+01:00"/>
+        <date value="2023-12-08T15:31:30+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:669f3f87-86bf-4536-b097-044c7bcdcd89"/>
-          <timestamp value="2023-12-08T12:59:20+01:00"/>
+          <identifier value="urn:uuid:d674d189-8df3-4032-8a03-1e001bbc4f82"/>
+          <timestamp value="2023-12-08T15:32:03+01:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -319,7 +319,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html">codesystem ContactPointSystem v4.0.1 (CodeSystem)</a>
             </p>
@@ -352,6 +352,20 @@
                   </div>
                 </td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-contact-point-system-phone"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-phone">phone</a>
+                </td>
+                <td>http://hl7.org/fhir/contact-point-system</td>
+                <td>Phone</td>
+                <td>
+                  <div>
+                    <p>The value is a telephone number used for voice calls. Use of full international numbers starting with + is recommended to enable automatic dialing support but not required.</p>
+
+                  </div>
+                </td>
+              </tr>
             </table>
           </div>
         </text>
@@ -361,11 +375,11 @@
         <title value="Hn Basis VirtualServiceType Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-12-08T12:58:44+01:00"/>
+        <date value="2023-12-08T15:31:30+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:a7b446fc-3777-48f3-ac99-ab5d6ae60591"/>
-          <timestamp value="2023-12-08T12:59:20+01:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:f471abdd-dd65-412a-a831-87bc8886e2c3"/>
+          <timestamp value="2023-12-08T15:32:03+01:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -378,6 +392,11 @@
             <system value="http://hl7.org/fhir/contact-point-system"/>
             <code value="url"/>
             <display value="URL"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/contact-point-system"/>
+            <code value="phone"/>
+            <display value="Phone"/>
           </contains>
         </expansion>
       </ValueSet>
