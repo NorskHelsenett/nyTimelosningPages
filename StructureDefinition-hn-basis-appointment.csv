@@ -313,7 +313,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Appointment.appointmentType.coding","Appointment.appointmentType.coding","","","",1,*,"","","Y","Coding {[]} {[]}
+"Appointment.appointmentType.coding","Appointment.appointmentType.coding","","","",0,*,"","","Y","Coding {[]} {[]}
 ","Recomended code systems for no-basis-Appointment.","Recomended code systems for no-basis-Appointment. The recomended code systems might not be suficient for defining appointment type and in an implemented profile - some other coding might be needed.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
 ","",,"open","CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -330,7 +330,7 @@ inv-4:If code is used in a codable consept the system must be used {code > '' im
 ","Volven 7617","Timetype innbyggerportal (OID=7617)","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","Volven","urn:oid:2.16.578.1.12.4.1.1.7617","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CV","union(., ./translation)","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","C*E.1-8, C*E.10-22"
-"Appointment.appointmentType.coding:helsenorge","Appointment.appointmentType.coding","helsenorge","","",1,1,"","","Y","Coding {[]} {[]}
+"Appointment.appointmentType.coding:helsenorge","Appointment.appointmentType.coding","helsenorge","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","Codes from value set","Codes from value set","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","","http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CV","union(., ./translation)","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","C*E.1-8, C*E.10-22"
