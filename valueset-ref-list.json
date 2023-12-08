@@ -51,11 +51,8 @@
       "status" : "draft",
       "name" : "HnBasisVirtualServiceType",
       "title" : "Hn Basis VirtualServiceType Value Set",
-      "description" : "Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet",
-      "systems" : [
-        "http://hl7.org/fhir/contact-point-system",
-        "urn:oid:2.16.840.1.113883.4.642.4.1809"
-      ],
+      "description" : "Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet. Currently only one code from http://hl7.org/fhir/contact-point-system",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
       "uses" : {
       },
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"

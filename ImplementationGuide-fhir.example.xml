@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-12-08T09:35:25+01:00"/>
+  <date value="2023-12-08T12:58:44+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -467,7 +467,7 @@
         <reference value="ValueSet/hn-basis-virtual-service-type.valueset"/>
       </reference>
       <name value="Hn Basis VirtualServiceType Value Set"/>
-      <description value="Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"/>
+      <description value="Codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet. Currently only one code from http://hl7.org/fhir/contact-point-system"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

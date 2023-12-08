@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="263a3729-2146-4468-9b0c-4449ed8238f0"/>
+  <id value="cf55d244-da71-48ac-8d80-2b271077377f"/>
   <meta>
-    <lastUpdated value="2023-12-08T09:35:25.410+01:00"/>
+    <lastUpdated value="2023-12-08T12:58:44.992+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -250,10 +250,10 @@
         <title value="hn-appointment-flag-code-vs"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-12-08T09:35:25+01:00"/>
+        <date value="2023-12-08T12:58:44+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:9b162fac-3d07-410d-b7c7-1afcd2767fb8"/>
-          <timestamp value="2023-12-08T09:36:01+01:00"/>
+          <identifier value="urn:uuid:669f3f87-86bf-4536-b097-044c7bcdcd89"/>
+          <timestamp value="2023-12-08T12:59:20+01:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -307,6 +307,77 @@
             <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
             <code value="canInitiateDialog"/>
             <display value="Dialog kan inisieres"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html">codesystem ContactPointSystem v4.0.1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-contact-point-system-url"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-url">url</a>
+                </td>
+                <td>http://hl7.org/fhir/contact-point-system</td>
+                <td>URL</td>
+                <td>
+                  <div>
+                    <p>A contact that is not a phone, fax, pager or email address and is expressed as a URL.  This is intended for various institutional or personal contacts including web sites, blogs, Skype, Twitter, Facebook, etc. Do not use for email addresses.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset"/>
+        <version value="0.1.0"/>
+        <name value="HnBasisVirtualServiceType"/>
+        <title value="Hn Basis VirtualServiceType Value Set"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-12-08T12:58:44+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:a7b446fc-3777-48f3-ac99-ab5d6ae60591"/>
+          <timestamp value="2023-12-08T12:59:20+01:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/contact-point-system|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/contact-point-system"/>
+            <code value="url"/>
+            <display value="URL"/>
           </contains>
         </expansion>
       </ValueSet>

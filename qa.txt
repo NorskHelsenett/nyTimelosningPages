@@ -3,7 +3,7 @@
 
 err = 0, warn = 0, info = 28
 IG Publisher Version: 1.5.1 Out of date - current version is 1.5.5
-Generated Fri Dec 08 09:36:45 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+Generated Fri Dec 08 13:00:04 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
  Build Errors : 0 / 0 / 0
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS : 0 / 15 / 30
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-VideoAppointmentEksempel : 0 / 13 / 26
@@ -25,7 +25,7 @@ Generated Fri Dec 08 09:36:45 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs : 0 / 7 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs : 0 / 0 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-flag-code-vs : 0 / 0 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-basis-virtual-service-type.valueset : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-basis-virtual-service-type.valueset : 0 / 0 / 1
 </table>
 == n/a ==
 == fsh-generated\resources\Appointment-AppointmentEksempelDIPS.json ==
