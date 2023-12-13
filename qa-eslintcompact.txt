@@ -14,9 +14,6 @@ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-h
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-appointment.json: line 1, col 145028, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-appointment.json: line 1, col 244371, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-appointment.json: line 1, col 246184, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
-C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-schedule.json: line 1, col 59077, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
-C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-schedule.json: line 1, col 100306, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
-C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-slot.json: line 1, col 55109, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization.json: line 0, col 0, Info - The slice definition for Organization.identifier has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended (VALUE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization.json: line 0, col 0, Info - The slice definition for Organization.type has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended (VALUE)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization.json: line 1, col 62563, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
@@ -30,6 +27,6 @@ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointme
 NyTimelosingIG : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 28
-IG Publisher Version: 1.5.1 Out of date - current version is 1.5.5
-Generated Fri Dec 08 15:32:42 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+err = 0, warn = 0, info = 25
+IG Publisher Version: 1.5.1 Out of date - current version is 1.5.6
+Generated Wed Dec 13 23:53:29 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)

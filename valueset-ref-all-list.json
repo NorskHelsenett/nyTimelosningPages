@@ -14,8 +14,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
@@ -27,9 +26,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
@@ -99,9 +96,7 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -132,8 +127,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -189,11 +184,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -207,11 +200,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -225,12 +216,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag",
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
+      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -272,8 +261,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.486"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -287,8 +276,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule"
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -302,23 +290,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/slotstatus",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SlotStatus",
-      "title" : "SlotStatus",
-      "description" : "The free/busy status of the slot.",
-      "systems" : ["http://hl7.org/fhir/slotstatus"],
-      "oids" : ["2.16.840.1.113883.4.642.3.482"],
-      "sources" : ["2.16.840.1.113883.4.642.3.482"],
-      "uses" : {
-      },
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0276",

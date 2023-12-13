@@ -77,20 +77,6 @@
     "name" : "HnBasisPostponementReason"
   },
   {
-    "id" : "hn-basis-schedule",
-    "type" : "StructureDefinition",
-    "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule",
-    "version" : "0.1.0",
-    "name" : "HnBasisSchedule"
-  },
-  {
-    "id" : "hn-basis-slot",
-    "type" : "StructureDefinition",
-    "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot",
-    "version" : "0.1.0",
-    "name" : "HnBasisSlot"
-  },
-  {
     "id" : "kommunikasjonspart-Organization",
     "type" : "StructureDefinition",
     "url" : "http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization",

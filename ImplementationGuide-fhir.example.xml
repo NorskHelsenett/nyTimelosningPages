@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-12-08T15:31:30+01:00"/>
+  <date value="2023-12-13T23:52:19+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -600,28 +600,6 @@
       </reference>
       <name value="hn-basis-recurring"/>
       <description value="Indicates that this appointment is of recurrence type. In R5 this is handled by own structure."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hn-basis-schedule"/>
-      </reference>
-      <name value="hn-basis-schedule"/>
-      <description value="Profile used for Scheduler in HN. Based on FHIR Schedule (R4)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hn-basis-slot"/>
-      </reference>
-      <name value="hn-basis-slot"/>
-      <description value="Profile used for Slot in HN. Based on FHIR Slot (R4)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

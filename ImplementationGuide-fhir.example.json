@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-12-08T15:31:30+01:00",
+  "date" : "2023-12-13T23:52:19+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -769,30 +769,6 @@
       },
       "name" : "hn-basis-recurring",
       "description" : "Indicates that this appointment is of recurrence type. In R5 this is handled by own structure.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hn-basis-schedule"
-      },
-      "name" : "hn-basis-schedule",
-      "description" : "Profile used for Scheduler in HN. Based on FHIR Schedule (R4)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hn-basis-slot"
-      },
-      "name" : "hn-basis-slot",
-      "description" : "Profile used for Slot in HN. Based on FHIR Slot (R4)",
       "exampleBoolean" : false
     },
     {

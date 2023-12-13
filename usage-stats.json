@@ -72,18 +72,6 @@
         "title": "hn-basis-appointment"
       }
     ],
-    "Schedule": [
-      {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule",
-        "title": "hn-basis-schedule"
-      }
-    ],
-    "Slot": [
-      {
-        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-slot",
-        "title": "hn-basis-slot"
-      }
-    ],
     "Organization": [
       {
         "url": "http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization",

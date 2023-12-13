@@ -14,8 +14,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
@@ -27,9 +26,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-slot.html" : "hn-basis-slot"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
