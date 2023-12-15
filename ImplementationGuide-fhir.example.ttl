@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-13T23:52:19+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-15T20:08:30+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -712,6 +712,21 @@
        fhir:name [ fhir:v "New codes that shold be used as default for appointmentType." ] ;
        fhir:description [ fhir:v "New codes that shold be used as default for appointmentType." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://helsenorge.no/fhir/Appointment/PhoneAppointmentEksempel> ;
+         fhir:reference [ fhir:v "Appointment/PhoneAppointmentEksempel" ]
+       ] ;
+       fhir:name [ fhir:v "PhoneAppointmentEksempel" ] ;
+       fhir:description [ fhir:v "An example showing usage of virtual service. In this case phone appointment." ] ;
+       fhir:example [
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

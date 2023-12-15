@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2023-12-13T23:52:19+01:00",
+  "date" : "2023-12-15T20:08:30+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -794,6 +794,18 @@
       "name" : "New codes that shold be used as default for appointmentType.",
       "description" : "New codes that shold be used as default for appointmentType.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/PhoneAppointmentEksempel"
+      },
+      "name" : "PhoneAppointmentEksempel",
+      "description" : "An example showing usage of virtual service. In this case phone appointment.",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
     },
     {
       "extension" : [{

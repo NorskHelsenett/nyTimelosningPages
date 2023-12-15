@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2023-12-13T23:52:19+01:00"/>
+  <date value="2023-12-15T20:08:30+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -623,6 +623,17 @@
       <name value="New codes that shold be used as default for appointmentType."/>
       <description value="New codes that shold be used as default for appointmentType."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/PhoneAppointmentEksempel"/>
+      </reference>
+      <name value="PhoneAppointmentEksempel"/>
+      <description value="An example showing usage of virtual service. In this case phone appointment."/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

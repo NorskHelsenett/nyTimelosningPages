@@ -4,6 +4,9 @@ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-Appointme
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS.json: line 157, col 14, Info - Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated (UNKNOWN)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS.json: line 313, col 8, Info - Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8446' is unknown so the code cannot be validated (UNKNOWN)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS.json: line 438, col 8, Info - Code System URI 'urn:oid:2.16.578.1.12.4.1.1.9179' is unknown so the code cannot be validated (UNKNOWN)
+C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-PhoneAppointmentEksempel.json: line 6, col 8, Info - Code System URI 'http://helsenorge.no/fhir/paminnelse' is unknown so the code cannot be validated (UNKNOWN)
+C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-PhoneAppointmentEksempel.json: line 74, col 10, Info - This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15 (INFORMATIONAL)
+C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-PhoneAppointmentEksempel.json: line 124, col 14, Info - Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated (UNKNOWN)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-VideoAppointmentEksempel.json: line 6, col 8, Info - Code System URI 'http://helsenorge.no/fhir/paminnelse' is unknown so the code cannot be validated (UNKNOWN)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-VideoAppointmentEksempel.json: line 74, col 10, Info - This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15 (INFORMATIONAL)
 C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-VideoAppointmentEksempel.json: line 124, col 14, Info - Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated (UNKNOWN)
@@ -27,6 +30,6 @@ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointme
 NyTimelosingIG : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 25
-IG Publisher Version: 1.5.1 Out of date - current version is 1.5.6
-Generated Wed Dec 13 23:53:29 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
+err = 0, warn = 0, info = 28
+IG Publisher Version: 1.5.1 Out of date - current version is 1.5.8
+Generated Fri Dec 15 20:10:04 CET 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://helsenorge.no/fhir)
