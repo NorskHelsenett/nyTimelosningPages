@@ -9,6 +9,7 @@
       "description" : "Value set for AppointmentType codes in nytimeløsing that includes set of codes from diferent code systems",
       "systems" : [
         "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
+        "urn:oid:2.16.578.1.12.4.1.1.8432",
         "urn:oid:2.16.578.1.12.4.1.1.7617",
         "urn:oid:2.16.578.1.12.4.1.1.8406"
       ],
