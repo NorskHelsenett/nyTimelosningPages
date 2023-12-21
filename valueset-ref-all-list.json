@@ -9,7 +9,6 @@
       "description" : "Value set for AppointmentType codes in nytimeløsing that includes set of codes from diferent code systems",
       "systems" : [
         "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
-        "urn:oid:2.16.578.1.12.4.1.1.8432",
         "urn:oid:2.16.578.1.12.4.1.1.7617",
         "urn:oid:2.16.578.1.12.4.1.1.8406"
       ],
@@ -27,7 +26,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule"
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
@@ -54,6 +54,21 @@
       "uses" : {
       },
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+    },
+    {
+      "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
+      "version" : "2.0.17",
+      "status" : "active",
+      "name" : "NoBasisConnectionType",
+      "title" : "no-basis-connection-type.valueset",
+      "description" : "ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+        "http://hl7.no/fhir/CodeSystem/no-basis-connection-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint"
     },
     {
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type",
@@ -97,7 +112,10 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole",
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -112,6 +130,21 @@
       "uses" : {
       },
       "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole",
+      "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
@@ -144,6 +177,37 @@
       "uses" : {
       },
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/endpoint-payload-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EndpointPayloadType",
+      "title" : "Endpoint Payload Type",
+      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible payload document types.",
+      "systems" : [
+        "urn:oid:1.3.6.1.4.1.19376.1.2.3",
+        "http://terminology.hl7.org/CodeSystem/endpoint-payload-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.496"],
+      "sources" : ["2.16.840.1.113883.4.642.3.496"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/endpoint-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EndpointStatus",
+      "title" : "EndpointStatus",
+      "description" : "The status of the endpoint.",
+      "systems" : ["http://hl7.org/fhir/endpoint-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.494"],
+      "sources" : ["2.16.840.1.113883.4.642.3.494"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/flag-category",
@@ -186,8 +250,9 @@
       "uses" : {
       },
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -202,8 +267,9 @@
       "uses" : {
       },
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -217,10 +283,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag",
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole",
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint",
+      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag",
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
       "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+      "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -266,6 +336,37 @@
       "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/program",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Program",
+      "title" : "Program",
+      "description" : "This value set defines an example set of codes that could be can be used to classify groupings of service-types/specialties.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/program"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1383"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1383"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
       "version" : "5.0.0",
       "status" : "active",
@@ -277,7 +378,41 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-provision-conditions",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceProvisionConditions",
+      "title" : "ServiceProvisionConditions",
+      "description" : "The code(s) that detail the conditions under which the healthcare service is available/offered.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/service-provision-conditions"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.514"],
+      "sources" : ["2.16.840.1.113883.4.642.3.514"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-referral-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ReferralMethod",
+      "title" : "ReferralMethod",
+      "description" : "The methods of referral can be used when referring to a specific HealthCareService resource.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/service-referral-method"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.510"],
+      "sources" : ["2.16.840.1.113883.4.642.3.510"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -291,7 +426,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0276",

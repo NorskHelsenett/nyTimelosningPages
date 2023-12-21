@@ -72,10 +72,34 @@
         "title": "hn-basis-appointment"
       }
     ],
+    "Schedule": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule",
+        "title": "hn-basis-schedule"
+      }
+    ],
     "Organization": [
       {
         "url": "http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization",
         "title": "kommunikasjonspart-Organization"
+      }
+    ],
+    "Endpoint": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-Endpoint",
+        "title": "no-basis-Endpoint"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-HealthcareService",
+        "title": "no-basis-HealthcareService"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole",
+        "title": "no-basis-PractitionerRole"
       }
     ]
   },

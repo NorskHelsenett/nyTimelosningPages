@@ -77,11 +77,39 @@
     "name" : "HnBasisPostponementReason"
   },
   {
+    "id" : "hn-basis-schedule",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule",
+    "version" : "0.1.0",
+    "name" : "HnBasisSchedule"
+  },
+  {
     "id" : "kommunikasjonspart-Organization",
     "type" : "StructureDefinition",
     "url" : "http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization",
     "version" : "0.1.0",
     "name" : "KommunikasjonspartOrganization"
+  },
+  {
+    "id" : "no-basis-Endpoint",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Endpoint",
+    "version" : "0.1.0",
+    "name" : "NoBasisEndpoint"
+  },
+  {
+    "id" : "no-basis-HealthcareService",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-HealthcareService",
+    "version" : "0.1.0",
+    "name" : "NoBasisHealthcareService"
+  },
+  {
+    "id" : "no-basis-PractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole",
+    "version" : "0.1.0",
+    "name" : "NoBasisPractitionerRole"
   },
   {
     "id" : "tba-organizationcoverage",
