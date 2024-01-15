@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "HnBasisConsultationType"] ; # 
   fhir:title [ fhir:v "hn-basis-consultationType"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-21T10:30:52+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-15T07:10:14+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;

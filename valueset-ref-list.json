@@ -26,8 +26,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule"
+      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
@@ -54,21 +54,6 @@
       "uses" : {
       },
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
-    },
-    {
-      "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
-      "version" : "2.0.17",
-      "status" : "active",
-      "name" : "NoBasisConnectionType",
-      "title" : "no-basis-connection-type.valueset",
-      "description" : "ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-        "http://hl7.no/fhir/CodeSystem/no-basis-connection-type"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint"
     },
     {
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type",

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 28, info = 34-->
+<!-- broken links = 0, errors = 0, warn = 0, info = 30-->
 <head>
   <title>NyTimelosingIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,12 +36,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NyTimelosingIG</h1>
- <p>Generated Thu Dec 21 10:32:19 CET 2023, FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = <a href="http://helsenorge.no/fhir">http://helsenorge.no/fhir</a> (<a href="http://helsenorge.no/fhir/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Mon Jan 15 07:11:45 CET 2024, FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = <a href="http://helsenorge.no/fhir">http://helsenorge.no/fhir</a> (<a href="http://helsenorge.no/fhir/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.5.1, which is out of date. The current version is v1.5.8 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.5.1, which is out of date. The current version is v1.5.11 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.example, Canonical = http://helsenorge.no/fhir</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from https://www.helsenorge.no/fhir/package-list.json?nocache=1703151138428 (Not Found) (content in C:\Users\arman\AppData\Local\Temp\http-log\fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from https://www.helsenorge.no/fhir/package-list.json?nocache=1705299101692 (Not Found) (content in C:\Users\arman\AppData\Local\Temp\http-log\fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
@@ -58,69 +58,57 @@
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
-hl7.fhir.no.basis#2.2.0:     <a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;canonical=http://hl7.no/fhir/ValueSet/no-basis-connection-type">NoBasisConnectionType</a>
- (2 uses)
-  </li>
-  <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
  (15 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice.html">bestpractice</a>
- (8 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
- (8 uses),     <a href="http://hl7.org/fhir/R4/appointmentresponse.html">AppointmentResponse</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/appointmentresponse.html">AppointmentResponse</a>
  (1 uses),     <code>fhir-type</code>
- (87 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html">standards-status</a>
- (311 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-normative-version.html">normative-version</a>
- (311 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
- (9 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bindingname.html">bindingName</a>
- (59 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-iscommonbinding.html">isCommonBinding</a>
- (17 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (9 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
- (32 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (22 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (69 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html">standards-status</a>
+ (204 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-normative-version.html">normative-version</a>
+ (204 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bindingname.html">bindingName</a>
+ (41 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-iscommonbinding.html">isCommonBinding</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (18 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
  (5 uses),     <a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a>
  (11 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-translatable.html">translatable</a>
- (32 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (22 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/flag.html">Flag</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-flag-status.html">FlagStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-flag-category.html">FlagCategory</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
- (9 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
- (7 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/slot.html">Slot</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
- (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-participantrequired.html">ParticipantRequired</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-participantrequired.html">ParticipantRequired</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/schedule.html">Schedule</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
- (7 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-endpoint-status.html">EndpointStatus</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-endpoint-payload-type.html">EndpointPayloadType</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/bodystructure.html">BodyStructure</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-provision-conditions.html">ServiceProvisionConditions</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-program.html">Program</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-referral-method.html">ReferralMethod</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-practitioner-role.html">PractitionerRole</a>
  (1 uses)
   </li>
   <li>
-hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (23 uses)
+hl7.fhir.uv.tools#0.2.0-snapshot:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (20 uses)
   </li>
   <li>
 hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html">ServiceCategory</a>
@@ -129,16 +117,16 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://helsenorge.no/fhir (Problem #1 with package-list.json at http://helsenorge.no/fhir: Invalid HTTP response 404 from https://www.helsenorge.no/fhir/package-list.json?nocache=1703151050661 (Not Found) (content in C:\Users\arman\AppData\Local\Temp\http-log\fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://helsenorge.no/fhir (Problem #1 with package-list.json at http://helsenorge.no/fhir: Invalid HTTP response 404 from https://www.helsenorge.no/fhir/package-list.json?nocache=1705299013470 (Not Found) (content in C:\Users\arman\AppData\Local\Temp\http-log\fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 28, info = 34, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 0, info = 30, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>8</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_Appointment-AppointmentEksempelDIPS"><b>C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>6</b></td>
@@ -189,15 +177,6 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><a href="#C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-kommunikasjonspart-Organization"><b>C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-no-basis-Endpoint"><b>C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-Endpoint</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-no-basis-HealthcareService"><b>C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-HealthcareService</b></a></td><td><b>0</b></td><td><b>10</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-no-basis-PractitionerRole"><b>C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-no-basis-PractitionerRole</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>2</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
      <td><a href="#C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-tba-organizationcoverage"><b>C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-tba-organizationcoverage</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
@@ -218,30 +197,6 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
-   <tr style="background-color: #ffebcc">
-     <td><b>Endpoint.payloadType</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.8279 could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Endpoint.payloadType</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.9999 could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>HealthcareService.category</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.9040 could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>HealthcareService.specialty.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.8655 could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>HealthcareService.specialty.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.8654 could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>HealthcareService.specialty.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.9151 could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>HealthcareService.specialty.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.8451 could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>PractitionerRole.code</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.9034 could not be resolved</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_Appointment-AppointmentEksempelDIPS"> </a>
@@ -256,10 +211,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Appointment.meta.tag[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://helsenorge.no/fhir/paminnelse' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Appointment&#8203;.contained[0]&#8203;/*Organization&#8203;/45c4b733-c3c9-4b66-bf66-2d8001f19d6b*&#8203;/&#8203;.identifier[1] (l29&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15</b> <span id="sl9" class="flip" onclick="flip('l9')">Show Reasoning</span><div id="l9" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15<ul><li>Appointment.contained[0]/*Organization/45c4b733-c3c9-4b66-bf66-2d8001f19d6b*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.101' in system)</li>, <li>Appointment.contained[0]/*Organization/45c4b733-c3c9-4b66-bf66-2d8001f19d6b*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.102' in system)</li></ul></div></td>
+     <td><b><a href="">Appointment&#8203;.contained[0]&#8203;/*Organization&#8203;/45c4b733-c3c9-4b66-bf66-2d8001f19d6b*&#8203;/&#8203;.identifier[1] (l29&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15</b> <span id="sl1" class="flip" onclick="flip('l1')">Show Reasoning</span><div id="l1" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15<ul><li>Appointment.contained[0]/*Organization/45c4b733-c3c9-4b66-bf66-2d8001f19d6b*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.101' in system)</li>, <li>Appointment.contained[0]/*Organization/45c4b733-c3c9-4b66-bf66-2d8001f19d6b*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.102' in system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Appointment&#8203;.contained[2]&#8203;/*Appointment&#8203;/null*&#8203;/&#8203;.identifier[1] (l78&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15</b> <span id="sl10" class="flip" onclick="flip('l10')">Show Reasoning</span><div id="l10" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15<ul><li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.101' in system)</li>, <li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.102' in system)</li></ul></div></td>
+     <td><b><a href="">Appointment&#8203;.contained[2]&#8203;/*Appointment&#8203;/null*&#8203;/&#8203;.identifier[1] (l78&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15</b> <span id="sl2" class="flip" onclick="flip('l2')">Show Reasoning</span><div id="l2" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15<ul><li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.101' in system)</li>, <li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.102' in system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Appointment&#8203;.contained[5]&#8203;/*Organization&#8203;/f3f5da36-ab2d-44f1-a78a-64f69351df62*&#8203;/&#8203;.type[0]&#8203;.coding[0] (l157&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated</b></td>
@@ -284,10 +239,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Appointment.meta.tag[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://helsenorge.no/fhir/paminnelse' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Appointment&#8203;.contained[2]&#8203;/*Appointment&#8203;/null*&#8203;/&#8203;.identifier[1] (l74&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15</b> <span id="sl15" class="flip" onclick="flip('l15')">Show Reasoning</span><div id="l15" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15<ul><li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.101' in system)</li>, <li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.102' in system)</li></ul></div></td>
+     <td><b><a href="">Appointment&#8203;.contained[2]&#8203;/*Appointment&#8203;/null*&#8203;/&#8203;.identifier[1] (l74&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15</b> <span id="sl7" class="flip" onclick="flip('l7')">Show Reasoning</span><div id="l7" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15<ul><li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.101' in system)</li>, <li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.102' in system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Appointment&#8203;.contained[4]&#8203;/*Organization&#8203;/aaf5da36-ab2d-44f1-a78a-64f69351df62*&#8203;/&#8203;.type[0]&#8203;.coding[0] (l124&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated</b></td>
+     <td><b>Appointment&#8203;.contained[4]&#8203;/*Organization&#8203;/aaf5da36-ab2d-44f1-a78a-64f69351df62*&#8203;/&#8203;.type[0]&#8203;.coding[0] (l127&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -303,10 +258,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Appointment.meta.tag[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://helsenorge.no/fhir/paminnelse' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Appointment&#8203;.contained[2]&#8203;/*Appointment&#8203;/null*&#8203;/&#8203;.identifier[1] (l74&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15</b> <span id="sl18" class="flip" onclick="flip('l18')">Show Reasoning</span><div id="l18" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15<ul><li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.101' in system)</li>, <li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.102' in system)</li></ul></div></td>
+     <td><b><a href="">Appointment&#8203;.contained[2]&#8203;/*Appointment&#8203;/null*&#8203;/&#8203;.identifier[1] (l74&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15</b> <span id="sl10" class="flip" onclick="flip('l10')">Show Reasoning</span><div id="l10" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15<ul><li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.101' in system)</li>, <li>Appointment.contained[2]/*Appointment/null*/.identifier[1]: discriminator = true and ('urn:oid:2.16.578.1.12.4.1.4.102' in system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Appointment&#8203;.contained[4]&#8203;/*Organization&#8203;/aaf5da36-ab2d-44f1-a78a-64f69351df62*&#8203;/&#8203;.type[0]&#8203;.coding[0] (l124&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated</b></td>
+     <td><b>Appointment&#8203;.contained[4]&#8203;/*Organization&#8203;/aaf5da36-ab2d-44f1-a78a-64f69351df62*&#8203;/&#8203;.type[0]&#8203;.coding[0] (l127&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:2.16.578.1.12.4.1.1.8624' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -391,13 +346,13 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c144939)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c145338)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[112]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c244289)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[112]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c244410)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[113]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c246102)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[113]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c246223)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
@@ -488,111 +443,9 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-no-basis-Endpoint"> </a>
-<h2><a href="StructureDefinition-no-basis-Endpoint.html">fsh-generated\resources\StructureDefinition-no-basis-Endpoint.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c54618)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8279 on element Endpoint.payloadType could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9999 on element Endpoint.payloadType could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://www.rfc-editor.org/bcp/bcp13.txt on element Endpoint.payloadMimeType could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8279 on element Endpoint.payloadType could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9999 on element Endpoint.payloadType could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://www.rfc-editor.org/bcp/bcp13.txt on element Endpoint.payloadMimeType could not be resolved</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-no-basis-HealthcareService"> </a>
-<h2><a href="StructureDefinition-no-basis-HealthcareService.html">fsh-generated\resources\StructureDefinition-no-basis-HealthcareService.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[89]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c190724)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9040 on element HealthcareService.category could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8655 on element HealthcareService.specialty.coding could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8654 on element HealthcareService.specialty.coding could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9151 on element HealthcareService.specialty.coding could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8451 on element HealthcareService.specialty.coding could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9040 on element HealthcareService.category could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8655 on element HealthcareService.specialty.coding could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8654 on element HealthcareService.specialty.coding could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9151 on element HealthcareService.specialty.coding could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[48]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8451 on element HealthcareService.specialty.coding could not be resolved</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-no-basis-PractitionerRole"> </a>
-<h2><a href="StructureDefinition-no-basis-PractitionerRole.html">fsh-generated\resources\StructureDefinition-no-basis-PractitionerRole.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[11]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c59449)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[56]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c128067)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9034 on element PractitionerRole.code could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8451 on element PractitionerRole.specialty could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9034 on element PractitionerRole.code could not be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8451 on element PractitionerRole.specialty could not be resolved</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_StructureDefinition-tba-organizationcoverage"> </a>
-<h2><a href="StructureDefinition-tba-organizationcoverage.html">fsh-generated\resources\StructureDefinition-tba-organizationcoverage.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-tba-organizationcoverage.html">fsh-generated\resources\StructureDefinition-tba-organizationcoverage.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -601,8 +454,8 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </table>
 <hr/>
 <a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_ValueSet-hn-appointment-AppointmentType-code-vs"> </a>
-<h2><a href="ValueSet-hn-appointment-AppointmentType-code-vs.html">fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-hn-appointment-AppointmentType-code-vs.html">fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -617,8 +470,8 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </table>
 <hr/>
 <a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_ValueSet-hn-appointment-ServiceCategory-code-vs"> </a>
-<h2><a href="ValueSet-hn-appointment-ServiceCategory-code-vs.html">fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-hn-appointment-ServiceCategory-code-vs.html">fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -627,8 +480,8 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </table>
 <hr/>
 <a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_ValueSet-hn-appointment-flag-code-vs"> </a>
-<h2><a href="ValueSet-hn-appointment-flag-code-vs.html">fsh-generated\resources\ValueSet-hn-appointment-flag-code-vs.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-hn-appointment-flag-code-vs.html">fsh-generated\resources\ValueSet-hn-appointment-flag-code-vs.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -637,8 +490,8 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </table>
 <hr/>
 <a name="C__NHIG_hnFHIRTimer_NyTimelosingIG_fsh-generated_resources_ValueSet-hn-basis-virtual-service-type.valueset"> </a>
-<h2><a href="ValueSet-hn-basis-virtual-service-type.valueset.html">fsh-generated\resources\ValueSet-hn-basis-virtual-service-type.valueset.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-hn-basis-virtual-service-type.valueset.html">fsh-generated\resources\ValueSet-hn-basis-virtual-service-type.valueset.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -662,17 +515,17 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
  <li>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.4.642.4.1809 <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #0cf2afb9-5da2-4ff5-ad94-295c72dfaf88 among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #208bcc1c-5ea8-46a3-9c2e-23d353063359 among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: navy">(1 uses)<span></li>
- <li>Found multiple matching profiles for #2ea45fd0-3a85-4549-ad06-09dce6197f93 among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: navy">(1 uses)<span></li>
+ <li>Found multiple matching profiles for #2ea45fd0-3a85-4549-ad06-09dce6197f93 among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #45c4b733-c3c9-4b66-bf66-2d8001f19d6b among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: navy">(1 uses)<span></li>
- <li>Found multiple matching profiles for #49dabd81-457e-4175-8872-ce4ee5db896e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: navy">(1 uses)<span></li>
+ <li>Found multiple matching profiles for #49dabd81-457e-4175-8872-ce4ee5db896e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #84d1254e-2fa5-4b33-a05f-ab744906ff2e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: navy">(1 uses)<span></li>
  <li>Found multiple matching profiles for #86e32d26-1418-4a43-b6be-59c56042479f among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #a51dd946-6971-41ab-a47c-08d753006705 among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #aa120952-a283-4267-b16e-846ca17dc07c among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: navy">(2 uses)<span></li>
- <li>Found multiple matching profiles for #aaa45fd0-3a85-4549-ad06-09dce6197f93 among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: navy">(2 uses)<span></li>
+ <li>Found multiple matching profiles for #aaa45fd0-3a85-4549-ad06-09dce6197f93 among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #aac4b733-c3c9-4b66-bf66-2d8001f19d6b among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: navy">(2 uses)<span></li>
- <li>Found multiple matching profiles for #aad1254e-2fa5-4b33-a05f-ab744906ff2e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: navy">(2 uses)<span></li>
- <li>Found multiple matching profiles for #aadabd81-457e-4175-8872-ce4ee5db896e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: navy">(2 uses)<span></li>
+ <li>Found multiple matching profiles for #aad1254e-2fa5-4b33-a05f-ab744906ff2e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: navy">(4 uses)<span></li>
+ <li>Found multiple matching profiles for #aadabd81-457e-4175-8872-ce4ee5db896e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #ae6a6c66-6b9c-4fa0-bf78-52915e07271f among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Location, http://hl7.org/fhir/StructureDefinition/Location <span style="color: maroon">(0 uses)<span></li>
  <li>Found multiple matching profiles for #b8d6ea02-e899-4314-9bda-ba1702679ebe among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization, http://hl7.org/fhir/StructureDefinition/Organization <span style="color: maroon">(0 uses)<span></li>
  <li>Profile reference 'http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles <span style="color: navy">(1 uses)<span></li>
@@ -680,7 +533,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
  <li>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide <span style="color: navy">(1 uses)<span></li>
  <li>The Implementation Guide contains no examples for this extension <span style="color: navy">(5 uses)<span></li>
  <li>The Implementation Guide contains no examples for this extension <span style="color: maroon">(0 uses)<span></li>
- <li>The Implementation Guide contains no examples for this profile <span style="color: navy">(5 uses)<span></li>
+ <li>The Implementation Guide contains no examples for this profile <span style="color: navy">(2 uses)<span></li>
  <li>The code '1' is not valid in the system urn:oid:2.16.578.1.12.4.1.1.8406 <span style="color: navy">(1 uses)<span></li>
  <li>The code '2' is not valid in the system urn:oid:2.16.578.1.12.4.1.1.8406 <span style="color: navy">(1 uses)<span></li>
  <li>The code '3' is not valid in the system urn:oid:2.16.578.1.12.4.1.1.8406 <span style="color: navy">(1 uses)<span></li>
@@ -759,18 +612,6 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-kommunikasjonspart-Organization.html">fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-no-basis-Endpoint.html">fsh-generated\resources\StructureDefinition-no-basis-Endpoint.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-no-basis-HealthcareService.html">fsh-generated\resources\StructureDefinition-no-basis-HealthcareService.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-no-basis-PractitionerRole.html">fsh-generated\resources\StructureDefinition-no-basis-PractitionerRole.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-no-basis-PractitionerRole.html">fsh-generated\resources\StructureDefinition-no-basis-PractitionerRole.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>

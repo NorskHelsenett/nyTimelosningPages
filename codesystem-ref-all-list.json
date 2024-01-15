@@ -23,17 +23,6 @@
       "ValueSet-hn-appointment-flag-code-vs.html" : "hn-appointment-flag-code-vs"
     },
     {
-      "url" : "http://hl7.no/fhir/CodeSystem/no-basis-connection-type",
-      "version" : "2.0.8",
-      "status" : "active",
-      "name" : "NoBasisConnectionType",
-      "title" : "no-basis-connection-type.codesystem",
-      "description" : "Codes to describe Norwegian message based communication protocols.",
-      "uses" : {
-      },
-      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-connection-type" : "no-basis-connection-type.valueset"
-    },
-    {
       "url" : "http://hl7.org/fhir/appointmentstatus",
       "version" : "4.0.1",
       "status" : "draft",
@@ -55,32 +44,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.72"],
       "uses" : {
       },
-      "ValueSet-hn-basis-virtual-service-type.valueset.html" : "Hn Basis VirtualServiceType Value Set",
-      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set"
-    },
-    {
-      "url" : "http://hl7.org/fhir/days-of-week",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "DaysOfWeek",
-      "title" : "DaysOfWeek",
-      "description" : "The days of the week.",
-      "oids" : ["2.16.840.1.113883.4.642.4.513"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
-    },
-    {
-      "url" : "http://hl7.org/fhir/endpoint-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "EndpointStatus",
-      "title" : "EndpointStatus",
-      "description" : "The status of the endpoint.",
-      "oids" : ["2.16.840.1.113883.4.642.4.495"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-endpoint-status.html" : "EndpointStatus"
+      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set",
+      "ValueSet-hn-basis-virtual-service-type.valueset.html" : "Hn Basis VirtualServiceType Value Set"
     },
     {
       "url" : "http://hl7.org/fhir/fhir-types",
@@ -152,9 +117,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
@@ -167,30 +131,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "EndpointConnectionType",
-      "title" : "Endpoint Connection Type",
-      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible connection type profile values.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1140"],
-      "uses" : {
-      },
-      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-connection-type" : "no-basis-connection-type.valueset"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "EndpointPayloadType",
-      "title" : "Endpoint Payload Type",
-      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible payload document types.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1139"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-endpoint-payload-type.html" : "Endpoint Payload Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/flag-category",
@@ -229,30 +169,6 @@
       "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PractitionerRole",
-      "title" : "Practitioner role",
-      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1132"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/program",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "Program",
-      "title" : "Program",
-      "description" : "This value set defines an example set of codes that could be can be used to classify groupings of service-types/specialties.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1384"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-program.html" : "Program"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/service-category",
       "version" : "0.1.0",
       "status" : "draft",
@@ -263,30 +179,6 @@
       "uses" : {
       },
       "ValueSet-hn-appointment-ServiceCategory-code-vs.html" : "hn-appointment-ServiceCategory-code-vs"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/service-provision-conditions",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ServiceProvisionConditions",
-      "title" : "ServiceProvisionConditions",
-      "description" : "The code(s) that detail the conditions under which the healthcare service is available/offered.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1143"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-service-provision-conditions.html" : "ServiceProvisionConditions"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/service-referral-method",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ReferralMethod",
-      "title" : "ReferralMethod",
-      "description" : "The methods of referral can be used when referring to a specific HealthCareService resource.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1142"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-service-referral-method.html" : "ReferralMethod"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/service-type",

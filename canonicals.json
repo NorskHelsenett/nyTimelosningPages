@@ -91,27 +91,6 @@
     "name" : "KommunikasjonspartOrganization"
   },
   {
-    "id" : "no-basis-Endpoint",
-    "type" : "StructureDefinition",
-    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-Endpoint",
-    "version" : "0.1.0",
-    "name" : "NoBasisEndpoint"
-  },
-  {
-    "id" : "no-basis-HealthcareService",
-    "type" : "StructureDefinition",
-    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-HealthcareService",
-    "version" : "0.1.0",
-    "name" : "NoBasisHealthcareService"
-  },
-  {
-    "id" : "no-basis-PractitionerRole",
-    "type" : "StructureDefinition",
-    "url" : "http://helsenorge.no/fhir/StructureDefinition/no-basis-PractitionerRole",
-    "version" : "0.1.0",
-    "name" : "NoBasisPractitionerRole"
-  },
-  {
     "id" : "tba-organizationcoverage",
     "type" : "StructureDefinition",
     "url" : "http://helsenorge.no/fhir/StructureDefinition/tba-organizationcoverage",

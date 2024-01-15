@@ -11,7 +11,7 @@ Accept-Charset: UTF-8
 Accept: application/fhir+json
 Content-Type: application/fhir+json;charset=UTF-8
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.1.8624","code":"05"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"62f2de12-7b23-4a89-88ea-54ad2ca4bd31"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.1.8624","code":"05"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1c63f0f3-f635-4e13-8477-30621ab234c8"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -22,15 +22,15 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:524
+content-length:874
 content-type:application/fhir+json
-date:Thu, 21 Dec 2023 09:30:55 GMT
-last-modified:Thu, 21 Dec 2023 09:30:55 GMT
+date:Mon, 15 Jan 2024 06:10:18 GMT
+last-modified:Mon, 15 Jan 2024 06:10:18 GMT
 pragma:no-cache
 server:nginx
-x-request-id:57-3159495
+x-request-id:66-4919
 
-{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8624"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8624 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8624 is unknown"},"location" : ["Coding.system"]}]}}]}
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.8624"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8624"},{"name" : "code","valueCode" : "05"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8624' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8624' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
 </pre><hr/>
 <a name="l2"> </a><h3>2</h3>
@@ -54,15 +54,15 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:741
+content-length:1092
 content-type:application/fhir+json
-date:Thu, 21 Dec 2023 09:30:57 GMT
-last-modified:Thu, 21 Dec 2023 09:30:57 GMT
+date:Mon, 15 Jan 2024 06:10:20 GMT
+last-modified:Mon, 15 Jan 2024 06:10:20 GMT
 pragma:no-cache
 server:nginx
-x-request-id:57-3159508
+x-request-id:66-4924
 
-{"resourceType" : "Bundle","id" : "43821226-d350-4849-917b-07a2f7825127","type" : "batch-response","entry" : [{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.7617"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown"},"location" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2023-12-21T09:30:57.972Z"}}]}
+{"resourceType" : "Bundle","id" : "89c664a3-0ca5-4c5b-9e5f-1d74604011e9","type" : "batch-response","entry" : [{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.7617"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.7617"},{"name" : "code","valueCode" : "Lab"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7617' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7617' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2024-01-15T06:10:20.619Z"}}]}
 
 </pre><hr/>
 <a name="l3"> </a><h3>3</h3>
@@ -86,15 +86,15 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:2001
+content-length:3048
 content-type:application/fhir+json
-date:Thu, 21 Dec 2023 09:30:58 GMT
-last-modified:Thu, 21 Dec 2023 09:30:58 GMT
+date:Mon, 15 Jan 2024 06:10:20 GMT
+last-modified:Mon, 15 Jan 2024 06:10:20 GMT
 pragma:no-cache
 server:nginx
-x-request-id:57-3159509
+x-request-id:66-4925
 
-{"resourceType" : "Bundle","id" : "bec99088-734f-4c25-b2a1-e6e466aa093f","type" : "batch-response","entry" : [{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},"location" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2023-12-21T09:30:58.113Z"}},{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},"location" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2023-12-21T09:30:58.128Z"}},{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},"location" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2023-12-21T09:30:58.128Z"}}]}
+{"resourceType" : "Bundle","id" : "3586ba19-377e-48c0-be21-213e5adafae8","type" : "batch-response","entry" : [{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "code","valueCode" : "2"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2024-01-15T06:10:20.760Z"}},{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "code","valueCode" : "3"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2024-01-15T06:10:20.760Z"}},{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "code","valueCode" : "8"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2024-01-15T06:10:20.760Z"}}]}
 
 --- 1 -----------------
 Request: 
@@ -105,7 +105,7 @@ Accept-Charset: UTF-8
 Accept: application/fhir+json
 Content-Type: application/fhir+json;charset=UTF-8
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.1.8624","code":"05"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"62f2de12-7b23-4a89-88ea-54ad2ca4bd31"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.578.1.12.4.1.1.8624","code":"05"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1c63f0f3-f635-4e13-8477-30621ab234c8"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -116,15 +116,15 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:524
+content-length:874
 content-type:application/fhir+json
-date:Thu, 21 Dec 2023 09:30:55 GMT
-last-modified:Thu, 21 Dec 2023 09:30:55 GMT
+date:Mon, 15 Jan 2024 06:10:18 GMT
+last-modified:Mon, 15 Jan 2024 06:10:18 GMT
 pragma:no-cache
 server:nginx
-x-request-id:57-3159495
+x-request-id:66-4919
 
-{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8624"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8624 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8624 is unknown"},"location" : ["Coding.system"]}]}}]}
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.8624"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8624"},{"name" : "code","valueCode" : "05"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8624' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8624' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
 --- 2 -----------------
 Request: 
@@ -146,15 +146,15 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:741
+content-length:1092
 content-type:application/fhir+json
-date:Thu, 21 Dec 2023 09:30:57 GMT
-last-modified:Thu, 21 Dec 2023 09:30:57 GMT
+date:Mon, 15 Jan 2024 06:10:20 GMT
+last-modified:Mon, 15 Jan 2024 06:10:20 GMT
 pragma:no-cache
 server:nginx
-x-request-id:57-3159508
+x-request-id:66-4924
 
-{"resourceType" : "Bundle","id" : "43821226-d350-4849-917b-07a2f7825127","type" : "batch-response","entry" : [{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.7617"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.7617 is unknown"},"location" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2023-12-21T09:30:57.972Z"}}]}
+{"resourceType" : "Bundle","id" : "89c664a3-0ca5-4c5b-9e5f-1d74604011e9","type" : "batch-response","entry" : [{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.7617"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.7617"},{"name" : "code","valueCode" : "Lab"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7617' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7617' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2024-01-15T06:10:20.619Z"}}]}
 
 --- 3 -----------------
 Request: 
@@ -176,13 +176,13 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:2001
+content-length:3048
 content-type:application/fhir+json
-date:Thu, 21 Dec 2023 09:30:58 GMT
-last-modified:Thu, 21 Dec 2023 09:30:58 GMT
+date:Mon, 15 Jan 2024 06:10:20 GMT
+last-modified:Mon, 15 Jan 2024 06:10:20 GMT
 pragma:no-cache
 server:nginx
-x-request-id:57-3159509
+x-request-id:66-4925
 
-{"resourceType" : "Bundle","id" : "bec99088-734f-4c25-b2a1-e6e466aa093f","type" : "batch-response","entry" : [{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},"location" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2023-12-21T09:30:58.113Z"}},{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},"location" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2023-12-21T09:30:58.128Z"}},{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.578.1.12.4.1.1.8406 is unknown"},"location" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2023-12-21T09:30:58.128Z"}}]}
+{"resourceType" : "Bundle","id" : "3586ba19-377e-48c0-be21-213e5adafae8","type" : "batch-response","entry" : [{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "code","valueCode" : "2"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2024-01-15T06:10:20.760Z"}},{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "code","valueCode" : "3"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2024-01-15T06:10:20.760Z"}},{"resource" : {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.578.1.12.4.1.1.8406"},{"name" : "code","valueCode" : "8"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8406' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]},"response" : {"status" : "200","etag" : "W/","lastModified" : "2024-01-15T06:10:20.760Z"}}]}
 </pre></head></html>
