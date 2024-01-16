@@ -125,15 +125,12 @@
      fhir:id [ fhir:v "f3f5da36-ab2d-44f1-a78a-64f69351df6y" ] ;
      fhir:meta [
        fhir:profile ( [
-         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Organization>
-       ] [
-         fhir:v "http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization"^^xsd:anyURI ;
-         fhir:link <http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization>
+         fhir:v "http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization"^^xsd:anyURI ;
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization>
        ] )
      ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.2"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "23461345" ]
      ] ) ;
      fhir:type ( [

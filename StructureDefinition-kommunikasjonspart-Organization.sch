@@ -13,7 +13,6 @@
     <sch:title>f:Organization</sch:title>
     <sch:rule context="f:Organization">
       <sch:assert test="count(f:partOf) &gt;= 1">partOf: minimum cardinality of 'partOf' is 1</sch:assert>
-      <sch:assert test="count(f:endpoint) &lt;= 1">endpoint: maximum cardinality of 'endpoint' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

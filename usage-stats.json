@@ -108,7 +108,8 @@
       "Appointment"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-partof": [
-      "Appointment"
+      "Appointment",
+      "Bundle.entry.resource"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice": [
       "AppointmentResponse"

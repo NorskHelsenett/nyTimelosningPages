@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "HnBasisChangeConferenceType"] ; # 
   fhir:title [ fhir:v "hn-basis-changeConferenceType"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-16T01:24:21+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-16T01:49:14+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;

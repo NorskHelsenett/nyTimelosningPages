@@ -111,11 +111,10 @@
     <Organization>
       <id value="f3f5da36-ab2d-44f1-a78a-64f69351df6y"/>
       <meta>
-        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization"/>
-        <profile value="http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization"/>
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization"/>
       </meta>
       <identifier>
-        <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+        <system value="urn:oid:2.16.578.1.12.4.1.2"/>
         <value value="23461345"/>
       </identifier>
       <type>

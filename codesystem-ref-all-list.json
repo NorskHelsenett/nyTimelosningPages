@@ -44,8 +44,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.72"],
       "uses" : {
       },
-      "ValueSet-hn-basis-virtual-service-type.valueset.html" : "Hn Basis VirtualServiceType Value Set",
-      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set"
+      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set",
+      "ValueSet-hn-basis-virtual-service-type.valueset.html" : "Hn Basis VirtualServiceType Value Set"
     },
     {
       "url" : "http://hl7.org/fhir/fhir-types",
@@ -117,8 +117,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",

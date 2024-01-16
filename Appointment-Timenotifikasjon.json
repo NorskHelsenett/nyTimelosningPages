@@ -110,10 +110,10 @@
     "resourceType" : "Organization",
     "id" : "f3f5da36-ab2d-44f1-a78a-64f69351df6a",
     "meta" : {
-      "profile" : ["http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization"]
+      "profile" : ["http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization"]
     },
     "identifier" : [{
-      "system" : "urn:oid:2.16.578.1.12.4.1.4.102",
+      "system" : "urn:oid:2.16.578.1.12.4.1.2",
       "value" : "23461345"
     }],
     "type" : [{
