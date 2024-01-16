@@ -8,10 +8,10 @@
   "url" : "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
   "version" : "0.1.0",
   "name" : "HnAppointmentTypeProposedNewCodesCS",
-  "title" : "New codes that shold be used as default for appointmentType.",
+  "title" : "Default codes for appointmentType.",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2024-01-15T07:10:14+01:00",
+  "date" : "2024-01-16T01:24:21+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -20,7 +20,7 @@
       "value" : "http://example.org/example-publisher"
     }]
   }],
-  "description" : "New codes that shold be used as default for appointmentType.",
+  "description" : "New codes that should be used as default for appointmentType.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 6,

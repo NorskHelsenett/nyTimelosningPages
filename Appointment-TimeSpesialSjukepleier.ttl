@@ -1,0 +1,248 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://helsenorge.no/fhir/Appointment/TimeSpesialSjukepleier> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TimeSpesialSjukepleier"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
+       fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"TimeSpesialSjukepleier\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;TimeSpesialSjukepleier&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hn-basis-appointment.html\">hn-basis-appointment</a></p></div><p><b>no-basis-partof</b>: <a href=\"Appointment-Timenotifikasjon.html\">Appointment/Timenotifikasjon</a></p><p><b>identifier</b>: id: a24606dd-754a-49b7-aad9-db34dfa30a9x</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: 27 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html\">Service category</a>#27)</span></p><p><b>appointmentType</b>: Poliklinisk time <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html\">Default codes for appointmentType.</a>#Poliklinisktime)</span></p><p><b>description</b>: Time med spesialsjukepleier</p><p><b>supportingInformation</b>: <a name=\"f3f5da36-ab2d-44f1-a78a-64f69351df6x\"> </a></p><blockquote><p/><p><a name=\"f3f5da36-ab2d-44f1-a78a-64f69351df6x\"> </a></p><p><b>identifier</b>: id: 23461345</p><p><b>type</b>: Avdeling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#05)</span></p><p><b>partOf</b>: <a href=\"#7e120952-a283-4267-b16e-846ca17dc07x\">#7e120952-a283-4267-b16e-846ca17dc07x</a></p></blockquote><p><b>start</b>: 3. apr. 2022, 12:10:00</p><p><b>end</b>: 3. apr. 2022, 13:00:00</p><p><b>patientInstruction</b>: Se innkallingsbrev</p><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <span>id: 22067612345</span></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a name=\"49dabd81-457e-4175-8872-ce4ee5db896x\"> </a></p><blockquote><p/><p><a name=\"49dabd81-457e-4175-8872-ce4ee5db896x\"> </a></p><p><b>identifier</b>: id: 13578357</p><p><b>name</b>: Ortopedisk poliklinikk</p><p><b>type</b>: Hospital unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HU)</span></p><p><b>address</b>: Addressen til location poliklinikk</p><p><b>managingOrganization</b>: <a href=\"#208bcc1c-5ea8-46a3-9c2e-23d35306335x\">#208bcc1c-5ea8-46a3-9c2e-23d35306335x</a></p></blockquote><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a name=\"2ea45fd0-3a85-4549-ad06-09dce6197f9x\"> </a></p><blockquote><p/><p><a name=\"2ea45fd0-3a85-4549-ad06-09dce6197f9x\"> </a></p><p><b>identifier</b>: id: 4735683568</p><p><b>name</b>: Rikshospitalet</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>managingOrganization</b>: <a href=\"#84d1254e-2fa5-4b33-a05f-ab744906ff2x\">#84d1254e-2fa5-4b33-a05f-ab744906ff2x</a></p></blockquote><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a name=\"e0cb3919-a7b4-4012-a180-c1ab504cfe95\"> </a></p><blockquote><p/><p><a name=\"e0cb3919-a7b4-4012-a180-c1ab504cfe95\"> </a></p><p><b>identifier</b>: id: HPR12345678</p><p><b>name</b>: Navn på spesial sjukepleier</p></blockquote><p><b>status</b>: accepted</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #45c4b733-c3c9-4b66-bf66-2d8001f19d6x</b><a name=\"45c4b733-c3c9-4b66-bf66-2d8001f19d6x\"> </a></p><p><b>identifier</b>: id: 993467049, id: 546152152</p><p><b>name</b>: Helseforetak</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location #2ea45fd0-3a85-4549-ad06-09dce6197f9x</b><a name=\"2ea45fd0-3a85-4549-ad06-09dce6197f9x\"> </a></p><p><b>identifier</b>: id: 4735683568</p><p><b>name</b>: Rikshospitalet</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>managingOrganization</b>: <a href=\"#84d1254e-2fa5-4b33-a05f-ab744906ff2x\">#84d1254e-2fa5-4b33-a05f-ab744906ff2x</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #84d1254e-2fa5-4b33-a05f-ab744906ff2x</b><a name=\"84d1254e-2fa5-4b33-a05f-ab744906ff2x\"> </a></p><p><b>identifier</b>: id: 993467049, id: 546152152</p><p><b>name</b>: Rikshospitalet</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location #49dabd81-457e-4175-8872-ce4ee5db896x</b><a name=\"49dabd81-457e-4175-8872-ce4ee5db896x\"> </a></p><p><b>identifier</b>: id: 13578357</p><p><b>name</b>: Ortopedisk poliklinikk</p><p><b>type</b>: Hospital unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HU)</span></p><p><b>address</b>: Addressen til location poliklinikk</p><p><b>managingOrganization</b>: <a href=\"#208bcc1c-5ea8-46a3-9c2e-23d35306335x\">#208bcc1c-5ea8-46a3-9c2e-23d35306335x</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #208bcc1c-5ea8-46a3-9c2e-23d35306335x</b><a name=\"208bcc1c-5ea8-46a3-9c2e-23d35306335x\"> </a></p><p><b>identifier</b>: id: 23461345</p><p><b>name</b>: Ortopedisk avdeling, Rikshospitalet</p><p><b>telecom</b>: ph: 23076080(WORK)</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #f3f5da36-ab2d-44f1-a78a-64f69351df6x</b><a name=\"f3f5da36-ab2d-44f1-a78a-64f69351df6x\"> </a></p><p><b>identifier</b>: id: 23461345</p><p><b>type</b>: Avdeling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#05)</span></p><p><b>partOf</b>: <a href=\"#7e120952-a283-4267-b16e-846ca17dc07x\">#7e120952-a283-4267-b16e-846ca17dc07x</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #7e120952-a283-4267-b16e-846ca17dc07x</b><a name=\"7e120952-a283-4267-b16e-846ca17dc07x\"> </a></p><p><b>identifier</b>: id: 993467049</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Practitioner #e0cb3919-a7b4-4012-a180-c1ab504cfe95</b><a name=\"e0cb3919-a7b4-4012-a180-c1ab504cfe95\"> </a></p><p><b>identifier</b>: id: HPR12345678</p><p><b>name</b>: Navn på spesial sjukepleier</p></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "45c4b733-c3c9-4b66-bf66-2d8001f19d6x" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Organization>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "993467049" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.2"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "546152152" ]
+     ] ) ;
+     fhir:name [ fhir:v "Helseforetak" ]
+  ] [
+     a fhir:Location ;
+     fhir:id [ fhir:v "2ea45fd0-3a85-4549-ad06-09dce6197f9x" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Location"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Location>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "4735683568" ]
+     ] ) ;
+     fhir:name [ fhir:v "Rikshospitalet" ] ;
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HOSP" ]
+       ] )
+     ] ) ;
+     fhir:managingOrganization [
+       fhir:reference [ fhir:v "#84d1254e-2fa5-4b33-a05f-ab744906ff2x" ]
+     ]
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "84d1254e-2fa5-4b33-a05f-ab744906ff2x" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Organization>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "993467049" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.2"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "546152152" ]
+     ] ) ;
+     fhir:name [ fhir:v "Rikshospitalet" ]
+  ] [
+     a fhir:Location ;
+     fhir:id [ fhir:v "49dabd81-457e-4175-8872-ce4ee5db896x" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Location"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Location>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "13578357" ]
+     ] ) ;
+     fhir:name [ fhir:v "Ortopedisk poliklinikk" ] ;
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HU" ]
+       ] )
+     ] ) ;
+     fhir:address [
+       fhir:text [ fhir:v "Addressen til location poliklinikk" ]
+     ] ;
+     fhir:managingOrganization [
+       fhir:reference [ fhir:v "#208bcc1c-5ea8-46a3-9c2e-23d35306335x" ]
+     ]
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "208bcc1c-5ea8-46a3-9c2e-23d35306335x" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Organization>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "23461345" ]
+     ] ) ;
+     fhir:name [ fhir:v "Ortopedisk avdeling, Rikshospitalet" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "23076080" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "f3f5da36-ab2d-44f1-a78a-64f69351df6x" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Organization>
+       ] [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "23461345" ]
+     ] ) ;
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.8624"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "05" ]
+       ] ) ;
+       fhir:text [ fhir:v "Avdeling" ]
+     ] ) ;
+     fhir:partOf [
+       fhir:reference [ fhir:v "#7e120952-a283-4267-b16e-846ca17dc07x" ]
+     ]
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "7e120952-a283-4267-b16e-846ca17dc07x" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Organization>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "993467049" ]
+     ] )
+  ] [
+     a fhir:Practitioner ;
+     fhir:id [ fhir:v "e0cb3919-a7b4-4012-a180-c1ab504cfe95" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.4"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "HPR12345678" ]
+     ] ) ;
+     fhir:name ( [
+       fhir:text [ fhir:v "Navn på spesial sjukepleier" ]
+     ] )
+  ] ) ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-partof"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://helsenorge.no/fhir/Appointment/Timenotifikasjon> ;
+       fhir:reference [ fhir:v "Appointment/Timenotifikasjon" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://dips.no/fhir/namingsystem/dips-bookingid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "a24606dd-754a-49b7-aad9-db34dfa30a9x" ] ;
+     fhir:assigner [
+       fhir:reference [ fhir:v "#45c4b733-c3c9-4b66-bf66-2d8001f19d6x" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "booked"] ; # 
+  fhir:serviceCategory ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "27" ]
+     ] )
+  ] ) ; # 
+  fhir:appointmentType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Poliklinisktime" ]
+     ] )
+  ] ; # 
+  fhir:description [ fhir:v "Time med spesialsjukepleier"] ; # 
+  fhir:supportingInformation ( [
+     fhir:reference [ fhir:v "#f3f5da36-ab2d-44f1-a78a-64f69351df6x" ]
+  ] ) ; # 
+  fhir:start [ fhir:v "2022-04-03T12:10:00+02:00"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2022-04-03T13:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:patientInstruction [ fhir:v "Se innkallingsbrev"] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PART" ]
+       ] ) ;
+       fhir:text [ fhir:v "Participation" ]
+     ] ) ;
+     fhir:actor [
+       fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+       fhir:identifier [
+         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "22067612345" ]
+       ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:reference [ fhir:v "#49dabd81-457e-4175-8872-ce4ee5db896x" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:reference [ fhir:v "#2ea45fd0-3a85-4549-ad06-09dce6197f9x" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:reference [ fhir:v "#e0cb3919-a7b4-4012-a180-c1ab504cfe95" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

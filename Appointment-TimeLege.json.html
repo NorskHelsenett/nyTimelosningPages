@@ -1,0 +1,558 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TimeLege - JSON Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.21"}
+    h3,h4,h5,h6{--heading-prefix:"3.21"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>TimeLege</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">NyTimelosingIG - Local Development build (v0.1.0). See the <a href="http://helsenorge.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Appointment-TimeLege.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Appointment-TimeLege.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Appointment-TimeLege.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: TimeLege - JSON Representation</h2>
+
+
+<p><a href="Appointment-TimeLege.json" no-download="true">Raw json</a> | <a href="Appointment-TimeLege.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment">resourceType</a>" : "Appointment",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.id">id</a>" : "TimeLege",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Appointment&lt;/b&gt;&lt;a name=\&quot;TimeLege\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Appointment &amp;quot;TimeLege&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hn-basis-appointment.html\&quot;&gt;hn-basis-appointment&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;no-basis-partof&lt;/b&gt;: &lt;a href=\&quot;Appointment-Timenotifikasjon.html\&quot;&gt;Appointment/Timenotifikasjon&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a0a24606dd-754a-49b7-aad9-db34dfa30a9y&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: booked&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceCategory&lt;/b&gt;: 27 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html\&quot;&gt;Service category&lt;/a&gt;#27)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;appointmentType&lt;/b&gt;: Poliklinisk time &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html\&quot;&gt;Default codes for appointmentType.&lt;/a&gt;#Poliklinisktime)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Time med spesialsjukepleier&lt;/p&gt;&lt;p&gt;&lt;b&gt;supportingInformation&lt;/b&gt;: &lt;a name=\&quot;f3f5da36-ab2d-44f1-a78a-64f69351df6y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p/&gt;&lt;p&gt;&lt;a name=\&quot;f3f5da36-ab2d-44f1-a78a-64f69351df6y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a023461345&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Avdeling &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#05)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;#7e120952-a283-4267-b16e-846ca17dc07y\&quot;&gt;#7e120952-a283-4267-b16e-846ca17dc07y&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: 3. apr. 2022, 13:10:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: 3. apr. 2022, 14:00:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;patientInstruction&lt;/b&gt;: Se innkallingsbrev&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Participation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\&quot;&gt;ParticipationType&lt;/a&gt;#PART)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;span&gt;id:\u00a022067612345&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a name=\&quot;49dabd81-457e-4175-8872-ce4ee5db896y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p/&gt;&lt;p&gt;&lt;a name=\&quot;49dabd81-457e-4175-8872-ce4ee5db896y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a013578357&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Ortopedisk poliklinikk&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Hospital unit &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\&quot;&gt;RoleCode&lt;/a&gt;#HU)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Addressen til location poliklinikk&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;#208bcc1c-5ea8-46a3-9c2e-23d35306335y\&quot;&gt;#208bcc1c-5ea8-46a3-9c2e-23d35306335y&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a name=\&quot;2ea45fd0-3a85-4549-ad06-09dce6197f9y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p/&gt;&lt;p&gt;&lt;a name=\&quot;2ea45fd0-3a85-4549-ad06-09dce6197f9y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a04735683568&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Rikshospitalet&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Hospital &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\&quot;&gt;RoleCode&lt;/a&gt;#HOSP)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;#84d1254e-2fa5-4b33-a05f-ab744906ff2y\&quot;&gt;#84d1254e-2fa5-4b33-a05f-ab744906ff2y&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a name=\&quot;e98ad447-ff6e-45ba-b067-1feb67e9c631\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p/&gt;&lt;p&gt;&lt;a name=\&quot;e98ad447-ff6e-45ba-b067-1feb67e9c631\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a0c9eee3b5-296b-44b3-8129-aa0c0e1d2cee&lt;/p&gt;&lt;p&gt;&lt;b&gt;practitioner&lt;/b&gt;: &lt;a href=\&quot;#a608301d-d999-439a-9b76-0ce1ff475c92\&quot;&gt;#a608301d-d999-439a-9b76-0ce1ff475c92&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Lege &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#1)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization #45c4b733-c3c9-4b66-bf66-2d8001f19d6y&lt;/b&gt;&lt;a name=\&quot;45c4b733-c3c9-4b66-bf66-2d8001f19d6y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a0993467049, id:\u00a0546152152&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Helseforetak&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Location #2ea45fd0-3a85-4549-ad06-09dce6197f9y&lt;/b&gt;&lt;a name=\&quot;2ea45fd0-3a85-4549-ad06-09dce6197f9y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a04735683568&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Rikshospitalet&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Hospital &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\&quot;&gt;RoleCode&lt;/a&gt;#HOSP)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;#84d1254e-2fa5-4b33-a05f-ab744906ff2y\&quot;&gt;#84d1254e-2fa5-4b33-a05f-ab744906ff2y&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization #84d1254e-2fa5-4b33-a05f-ab744906ff2y&lt;/b&gt;&lt;a name=\&quot;84d1254e-2fa5-4b33-a05f-ab744906ff2y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a0993467049, id:\u00a0546152152&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Rikshospitalet&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Location #49dabd81-457e-4175-8872-ce4ee5db896y&lt;/b&gt;&lt;a name=\&quot;49dabd81-457e-4175-8872-ce4ee5db896y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a013578357&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Ortopedisk poliklinikk&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Hospital unit &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\&quot;&gt;RoleCode&lt;/a&gt;#HU)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Addressen til location poliklinikk&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;#208bcc1c-5ea8-46a3-9c2e-23d35306335y\&quot;&gt;#208bcc1c-5ea8-46a3-9c2e-23d35306335y&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization #208bcc1c-5ea8-46a3-9c2e-23d35306335y&lt;/b&gt;&lt;a name=\&quot;208bcc1c-5ea8-46a3-9c2e-23d35306335y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a023461345&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Ortopedisk avdeling, Rikshospitalet&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: 23076080(WORK)&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization #f3f5da36-ab2d-44f1-a78a-64f69351df6y&lt;/b&gt;&lt;a name=\&quot;f3f5da36-ab2d-44f1-a78a-64f69351df6y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a023461345&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Avdeling &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#05)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;#7e120952-a283-4267-b16e-846ca17dc07y\&quot;&gt;#7e120952-a283-4267-b16e-846ca17dc07y&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization #7e120952-a283-4267-b16e-846ca17dc07y&lt;/b&gt;&lt;a name=\&quot;7e120952-a283-4267-b16e-846ca17dc07y\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a0993467049&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Practitioner #a608301d-d999-439a-9b76-0ce1ff475c92&lt;/b&gt;&lt;a name=\&quot;a608301d-d999-439a-9b76-0ce1ff475c92\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a0HPR99889988&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Navn på lege&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: PractitionerRole #e98ad447-ff6e-45ba-b067-1feb67e9c631&lt;/b&gt;&lt;a name=\&quot;e98ad447-ff6e-45ba-b067-1feb67e9c631\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a0c9eee3b5-296b-44b3-8129-aa0c0e1d2cee&lt;/p&gt;&lt;p&gt;&lt;b&gt;practitioner&lt;/b&gt;: &lt;a href=\&quot;#a608301d-d999-439a-9b76-0ce1ff475c92\&quot;&gt;#a608301d-d999-439a-9b76-0ce1ff475c92&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Lege &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#1)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/organization.html#Organization">contained</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "45c4b733-c3c9-4b66-bf66-2d8001f19d6y",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.101",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "993467049"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.2",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "546152152"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "Helseforetak"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/location.html">resourceType</a>" : "Location",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a>" : "2ea45fd0-3a85-4549-ad06-09dce6197f9y",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-Location"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.102",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "4735683568"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a>" : "Rikshospitalet",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.type">type</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "HOSP"
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.managingOrganization">managingOrganization</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#84d1254e-2fa5-4b33-a05f-ab744906ff2y"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "84d1254e-2fa5-4b33-a05f-ab744906ff2y",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.101",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "993467049"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.2",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "546152152"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "Rikshospitalet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/location.html">resourceType</a>" : "Location",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a>" : "49dabd81-457e-4175-8872-ce4ee5db896y",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-Location"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.102",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "13578357"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a>" : "Ortopedisk poliklinikk",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.type">type</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "HU"
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.address">address</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a>" : "Addressen til location poliklinikk"
+      },
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.managingOrganization">managingOrganization</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#208bcc1c-5ea8-46a3-9c2e-23d35306335y"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "208bcc1c-5ea8-46a3-9c2e-23d35306335y",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.102",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "23461345"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "Ortopedisk avdeling, Rikshospitalet",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "23076080",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "f3f5da36-ab2d-44f1-a78a-64f69351df6y",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-Organization",
+          "http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.102",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "23461345"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.type">type</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.1.8624",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "05"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Avdeling"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.partOf">partOf</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#7e120952-a283-4267-b16e-846ca17dc07y"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "7e120952-a283-4267-b16e-846ca17dc07y",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-Organization"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.101",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "993467049"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/practitioner.html">resourceType</a>" : "Practitioner",
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a>" : "a608301d-d999-439a-9b76-0ce1ff475c92",
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.4",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "HPR99889988"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">name</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a>" : "Navn på lege"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html">resourceType</a>" : "PractitionerRole",
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.id">id</a>" : "e98ad447-ff6e-45ba-b067-1feb67e9c631",
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          "http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.3.6.1.4.1.9038.51.1",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "c9eee3b5-296b-44b3-8129-aa0c0e1d2cee"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.practitioner">practitioner</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#a608301d-d999-439a-9b76-0ce1ff475c92"
+      },
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.code">code</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.1.7317",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Lege"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.no/fhir/StructureDefinition/no-basis-partof",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Appointment/Timenotifikasjon"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://dips.no/fhir/namingsystem/dips-bookingid",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "a24606dd-754a-49b7-aad9-db34dfa30a9y",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#45c4b733-c3c9-4b66-bf66-2d8001f19d6y"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.status">status</a>" : "booked",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.serviceCategory">serviceCategory</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/service-category",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "27"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.appointmentType">appointmentType</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Poliklinisktime"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.description">description</a>" : "Time med spesialsjukepleier",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.supportingInformation">supportingInformation</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#f3f5da36-ab2d-44f1-a78a-64f69351df6y"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.start">start</a>" : "2022-04-03T13:10:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.end">end</a>" : "2022-04-03T14:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.patientInstruction">patientInstruction</a>" : "Se innkallingsbrev",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant">participant</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.type">type</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PART"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Participation"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.1",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "22067612345"
+        }
+      },
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a>" : "accepted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#49dabd81-457e-4175-8872-ce4ee5db896y"
+      },
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a>" : "accepted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#2ea45fd0-3a85-4549-ad06-09dce6197f9y"
+      },
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a>" : "accepted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#e98ad447-ff6e-45ba-b067-1feb67e9c631"
+      },
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a>" : "accepted"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 16, 2024 01:24+0100">2024-01-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

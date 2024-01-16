@@ -8,10 +8,10 @@
   <url value="http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"/>
   <version value="0.1.0"/>
   <name value="HnAppointmentTypeProposedNewCodesCS"/>
-  <title value="New codes that shold be used as default for appointmentType."/>
+  <title value="Default codes for appointmentType."/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2024-01-15T07:10:14+01:00"/>
+  <date value="2024-01-16T01:24:21+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -20,7 +20,7 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <description value="New codes that shold be used as default for appointmentType."/>
+  <description value="New codes that should be used as default for appointmentType."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="6"/>

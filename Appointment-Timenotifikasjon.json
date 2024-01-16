@@ -1,0 +1,317 @@
+{
+  "resourceType" : "Appointment",
+  "id" : "Timenotifikasjon",
+  "meta" : {
+    "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"],
+    "tag" : [{
+      "system" : "http://helsenorge.no/fhir/paminnelse",
+      "code" : "1"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"Timenotifikasjon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;Timenotifikasjon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hn-basis-appointment.html\">hn-basis-appointment</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://helsenorge.no/fhir/paminnelse http://helsenorge.no/fhir/paminnelse}\">http://helsenorge.no/fhir/paminnelse</span></p></div><p><b>identifier</b>: id:\u00a0a24606dd-754a-49b7-aad9-db34dfa30a9a</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: 27 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-service-category.html\">Service category</a>#27)</span></p><p><b>appointmentType</b>: Poliklinisk time <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.html\">Default codes for appointmentType.</a>#Poliklinisktime)</span></p><p><b>description</b>: Kontrol</p><p><b>supportingInformation</b>: </p><ul><li><a name=\"f3f5da36-ab2d-44f1-a78a-64f69351df6a\"> </a></li><li><a name=\"85e3d03e-7dd2-46a7-923c-99e9dad3535a\"> </a></li><li><a name=\"3daf1b62-cfd7-4e4d-90b1-113f13565a6a\"> </a></li><li><a name=\"ee9bdb59-6343-4b1b-974b-5d652634c55a\"> </a></li><li><a name=\"bb5c6586-f828-4558-ab87-2ee13cfd43fa\"> </a></li><li><a name=\"6d277876-6677-46cb-b16b-45b633b1977a\"> </a></li></ul><blockquote><p/><p><a name=\"f3f5da36-ab2d-44f1-a78a-64f69351df6a\"> </a></p><p><b>identifier</b>: id:\u00a023461345</p><p><b>type</b>: Avdeling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#05)</span></p><p><b>partOf</b>: <a href=\"#7e120952-a283-4267-b16e-846ca17dc07a\">#7e120952-a283-4267-b16e-846ca17dc07a</a></p></blockquote><blockquote><p/><p><a name=\"85e3d03e-7dd2-46a7-923c-99e9dad3535a\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Innbygger kan be om endret time <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canChangeAppointmentDialog)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><blockquote><p/><p><a name=\"3daf1b62-cfd7-4e4d-90b1-113f13565a6a\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Innbygger kan komme på kort varsel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canUseShortNotice)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><blockquote><p/><p><a name=\"ee9bdb59-6343-4b1b-974b-5d652634c55a\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Timen/opphold kan bekreftes av innbygger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canAcknowledge)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><blockquote><p/><p><a name=\"bb5c6586-f828-4558-ab87-2ee13cfd43fa\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Det finnes ytterlige timedetaljer på time/timeavtale som kan hentes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canHaveAppointmentDetails)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><blockquote><p/><p><a name=\"6d277876-6677-46cb-b16b-45b633b1977a\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Dialog kan initieres <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canInitiateDialog)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><p><b>start</b>: 3. apr. 2022, 12:00:00</p><p><b>end</b>: 3. apr. 2022, 14:00:00</p><p><b>patientInstruction</b>: Se innkallingsbrev</p><blockquote><p><b>participant</b></p><p><b>type</b>: Participation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <span>id:\u00a022067612345</span></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a name=\"49dabd81-457e-4175-8872-ce4ee5db896a\"> </a></p><blockquote><p/><p><a name=\"49dabd81-457e-4175-8872-ce4ee5db896a\"> </a></p><p><b>identifier</b>: id:\u00a013578357</p><p><b>name</b>: Ortopedisk poliklinikk</p><p><b>type</b>: Hospital unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HU)</span></p><p><b>address</b>: Addressen til poliklinikk</p><p><b>managingOrganization</b>: <a href=\"#208bcc1c-5ea8-46a3-9c2e-23d35306335a\">#208bcc1c-5ea8-46a3-9c2e-23d35306335a</a></p></blockquote><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a name=\"2ea45fd0-3a85-4549-ad06-09dce6197f9a\"> </a></p><blockquote><p/><p><a name=\"2ea45fd0-3a85-4549-ad06-09dce6197f9a\"> </a></p><p><b>identifier</b>: id:\u00a04735683568</p><p><b>name</b>: Rikshospitalet</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>managingOrganization</b>: <a href=\"#84d1254e-2fa5-4b33-a05f-ab744906ff2a\">#84d1254e-2fa5-4b33-a05f-ab744906ff2a</a></p></blockquote><p><b>status</b>: accepted</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #45c4b733-c3c9-4b66-bf66-2d8001f19d6a</b><a name=\"45c4b733-c3c9-4b66-bf66-2d8001f19d6a\"> </a></p><p><b>identifier</b>: id:\u00a0993467049, id:\u00a0546152152</p><p><b>name</b>: Helseforetak</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location #2ea45fd0-3a85-4549-ad06-09dce6197f9a</b><a name=\"2ea45fd0-3a85-4549-ad06-09dce6197f9a\"> </a></p><p><b>identifier</b>: id:\u00a04735683568</p><p><b>name</b>: Rikshospitalet</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>managingOrganization</b>: <a href=\"#84d1254e-2fa5-4b33-a05f-ab744906ff2a\">#84d1254e-2fa5-4b33-a05f-ab744906ff2a</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #84d1254e-2fa5-4b33-a05f-ab744906ff2a</b><a name=\"84d1254e-2fa5-4b33-a05f-ab744906ff2a\"> </a></p><p><b>identifier</b>: id:\u00a0993467049, id:\u00a0546152152</p><p><b>name</b>: Rikshospitalet</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location #49dabd81-457e-4175-8872-ce4ee5db896a</b><a name=\"49dabd81-457e-4175-8872-ce4ee5db896a\"> </a></p><p><b>identifier</b>: id:\u00a013578357</p><p><b>name</b>: Ortopedisk poliklinikk</p><p><b>type</b>: Hospital unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HU)</span></p><p><b>address</b>: Addressen til poliklinikk</p><p><b>managingOrganization</b>: <a href=\"#208bcc1c-5ea8-46a3-9c2e-23d35306335a\">#208bcc1c-5ea8-46a3-9c2e-23d35306335a</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #208bcc1c-5ea8-46a3-9c2e-23d35306335a</b><a name=\"208bcc1c-5ea8-46a3-9c2e-23d35306335a\"> </a></p><p><b>identifier</b>: id:\u00a023461345</p><p><b>name</b>: Ortopedisk avdeling, Rikshospitalet</p><p><b>telecom</b>: ph: 23076080(WORK)</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #f3f5da36-ab2d-44f1-a78a-64f69351df6a</b><a name=\"f3f5da36-ab2d-44f1-a78a-64f69351df6a\"> </a></p><p><b>identifier</b>: id:\u00a023461345</p><p><b>type</b>: Avdeling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#05)</span></p><p><b>partOf</b>: <a href=\"#7e120952-a283-4267-b16e-846ca17dc07a\">#7e120952-a283-4267-b16e-846ca17dc07a</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #7e120952-a283-4267-b16e-846ca17dc07a</b><a name=\"7e120952-a283-4267-b16e-846ca17dc07a\"> </a></p><p><b>identifier</b>: id:\u00a0993467049</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Flag #85e3d03e-7dd2-46a7-923c-99e9dad3535a</b><a name=\"85e3d03e-7dd2-46a7-923c-99e9dad3535a\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Innbygger kan be om endret time <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canChangeAppointmentDialog)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Flag #3daf1b62-cfd7-4e4d-90b1-113f13565a6a</b><a name=\"3daf1b62-cfd7-4e4d-90b1-113f13565a6a\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Innbygger kan komme på kort varsel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canUseShortNotice)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Flag #ee9bdb59-6343-4b1b-974b-5d652634c55a</b><a name=\"ee9bdb59-6343-4b1b-974b-5d652634c55a\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Timen/opphold kan bekreftes av innbygger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canAcknowledge)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Flag #bb5c6586-f828-4558-ab87-2ee13cfd43fa</b><a name=\"bb5c6586-f828-4558-ab87-2ee13cfd43fa\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Det finnes ytterlige timedetaljer på time/timeavtale som kan hentes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canHaveAppointmentDetails)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Flag #6d277876-6677-46cb-b16b-45b633b1977a</b><a name=\"6d277876-6677-46cb-b16b-45b633b1977a\"> </a></p><p><b>status</b>: active</p><p><b>code</b>: Dialog kan initieres <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">hn-appointment-flag-code-cs</a>#canInitiateDialog)</span></p><p><b>subject</b>: <span>id:\u00a022067612345</span></p></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "Organization",
+    "id" : "45c4b733-c3c9-4b66-bf66-2d8001f19d6a",
+    "meta" : {
+      "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Organization"]
+    },
+    "identifier" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
+      "value" : "993467049"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.2",
+      "value" : "546152152"
+    }],
+    "name" : "Helseforetak"
+  },
+  {
+    "resourceType" : "Location",
+    "id" : "2ea45fd0-3a85-4549-ad06-09dce6197f9a",
+    "meta" : {
+      "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Location"]
+    },
+    "identifier" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.102",
+      "value" : "4735683568"
+    }],
+    "name" : "Rikshospitalet",
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "code" : "HOSP"
+      }]
+    }],
+    "managingOrganization" : {
+      "reference" : "#84d1254e-2fa5-4b33-a05f-ab744906ff2a"
+    }
+  },
+  {
+    "resourceType" : "Organization",
+    "id" : "84d1254e-2fa5-4b33-a05f-ab744906ff2a",
+    "meta" : {
+      "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Organization"]
+    },
+    "identifier" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
+      "value" : "993467049"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.2",
+      "value" : "546152152"
+    }],
+    "name" : "Rikshospitalet"
+  },
+  {
+    "resourceType" : "Location",
+    "id" : "49dabd81-457e-4175-8872-ce4ee5db896a",
+    "meta" : {
+      "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Location"]
+    },
+    "identifier" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.102",
+      "value" : "13578357"
+    }],
+    "name" : "Ortopedisk poliklinikk",
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "code" : "HU"
+      }]
+    }],
+    "address" : {
+      "text" : "Addressen til poliklinikk"
+    },
+    "managingOrganization" : {
+      "reference" : "#208bcc1c-5ea8-46a3-9c2e-23d35306335a"
+    }
+  },
+  {
+    "resourceType" : "Organization",
+    "id" : "208bcc1c-5ea8-46a3-9c2e-23d35306335a",
+    "meta" : {
+      "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Organization"]
+    },
+    "identifier" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.102",
+      "value" : "23461345"
+    }],
+    "name" : "Ortopedisk avdeling, Rikshospitalet",
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "23076080",
+      "use" : "work"
+    }]
+  },
+  {
+    "resourceType" : "Organization",
+    "id" : "f3f5da36-ab2d-44f1-a78a-64f69351df6a",
+    "meta" : {
+      "profile" : ["http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization"]
+    },
+    "identifier" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.102",
+      "value" : "23461345"
+    }],
+    "type" : [{
+      "coding" : [{
+        "system" : "urn:oid:2.16.578.1.12.4.1.1.8624",
+        "code" : "05"
+      }],
+      "text" : "Avdeling"
+    }],
+    "partOf" : {
+      "reference" : "#7e120952-a283-4267-b16e-846ca17dc07a"
+    }
+  },
+  {
+    "resourceType" : "Organization",
+    "id" : "7e120952-a283-4267-b16e-846ca17dc07a",
+    "meta" : {
+      "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Organization"]
+    },
+    "identifier" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
+      "value" : "993467049"
+    }]
+  },
+  {
+    "resourceType" : "Flag",
+    "id" : "85e3d03e-7dd2-46a7-923c-99e9dad3535a",
+    "meta" : {
+      "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"]
+    },
+    "status" : "active",
+    "code" : {
+      "coding" : [{
+        "system" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
+        "code" : "canChangeAppointmentDialog"
+      }],
+      "text" : "Innbygger kan be om endret time"
+    },
+    "subject" : {
+      "identifier" : {
+        "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+        "value" : "22067612345"
+      }
+    }
+  },
+  {
+    "resourceType" : "Flag",
+    "id" : "3daf1b62-cfd7-4e4d-90b1-113f13565a6a",
+    "meta" : {
+      "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"]
+    },
+    "status" : "active",
+    "code" : {
+      "coding" : [{
+        "system" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
+        "code" : "canUseShortNotice"
+      }],
+      "text" : "Innbygger kan komme på kort varsel"
+    },
+    "subject" : {
+      "identifier" : {
+        "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+        "value" : "22067612345"
+      }
+    }
+  },
+  {
+    "resourceType" : "Flag",
+    "id" : "ee9bdb59-6343-4b1b-974b-5d652634c55a",
+    "meta" : {
+      "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"]
+    },
+    "status" : "active",
+    "code" : {
+      "coding" : [{
+        "system" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
+        "code" : "canAcknowledge"
+      }],
+      "text" : "Timen/opphold kan bekreftes av innbygger"
+    },
+    "subject" : {
+      "identifier" : {
+        "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+        "value" : "22067612345"
+      }
+    }
+  },
+  {
+    "resourceType" : "Flag",
+    "id" : "bb5c6586-f828-4558-ab87-2ee13cfd43fa",
+    "meta" : {
+      "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"]
+    },
+    "status" : "active",
+    "code" : {
+      "coding" : [{
+        "system" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
+        "code" : "canHaveAppointmentDetails"
+      }],
+      "text" : "Det finnes ytterlige timedetaljer på time/timeavtale som kan hentes"
+    },
+    "subject" : {
+      "identifier" : {
+        "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+        "value" : "22067612345"
+      }
+    }
+  },
+  {
+    "resourceType" : "Flag",
+    "id" : "6d277876-6677-46cb-b16b-45b633b1977a",
+    "meta" : {
+      "profile" : ["http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag"]
+    },
+    "status" : "active",
+    "code" : {
+      "coding" : [{
+        "system" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
+        "code" : "canInitiateDialog"
+      }],
+      "text" : "Dialog kan initieres"
+    },
+    "subject" : {
+      "identifier" : {
+        "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+        "value" : "22067612345"
+      }
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/namingsystem/dips-bookingid",
+    "value" : "a24606dd-754a-49b7-aad9-db34dfa30a9a",
+    "assigner" : {
+      "reference" : "#45c4b733-c3c9-4b66-bf66-2d8001f19d6a"
+    }
+  }],
+  "status" : "booked",
+  "serviceCategory" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/service-category",
+      "code" : "27"
+    }]
+  }],
+  "appointmentType" : {
+    "coding" : [{
+      "system" : "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
+      "code" : "Poliklinisktime"
+    }]
+  },
+  "description" : "Kontrol",
+  "supportingInformation" : [{
+    "reference" : "#f3f5da36-ab2d-44f1-a78a-64f69351df6a"
+  },
+  {
+    "reference" : "#85e3d03e-7dd2-46a7-923c-99e9dad3535a"
+  },
+  {
+    "reference" : "#3daf1b62-cfd7-4e4d-90b1-113f13565a6a"
+  },
+  {
+    "reference" : "#ee9bdb59-6343-4b1b-974b-5d652634c55a"
+  },
+  {
+    "reference" : "#bb5c6586-f828-4558-ab87-2ee13cfd43fa"
+  },
+  {
+    "reference" : "#6d277876-6677-46cb-b16b-45b633b1977a"
+  }],
+  "start" : "2022-04-03T12:00:00+02:00",
+  "end" : "2022-04-03T14:00:00+02:00",
+  "patientInstruction" : "Se innkallingsbrev",
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "PART"
+      }],
+      "text" : "Participation"
+    }],
+    "actor" : {
+      "type" : "Patient",
+      "identifier" : {
+        "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+        "value" : "22067612345"
+      }
+    },
+    "status" : "accepted"
+  },
+  {
+    "actor" : {
+      "reference" : "#49dabd81-457e-4175-8872-ce4ee5db896a"
+    },
+    "status" : "accepted"
+  },
+  {
+    "actor" : {
+      "reference" : "#2ea45fd0-3a85-4549-ad06-09dce6197f9a"
+    },
+    "status" : "accepted"
+  }]
+}

@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2024-01-15T07:10:14+01:00",
+  "date" : "2024-01-16T01:24:21+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -618,6 +618,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"
+      },
+      "name" : "Default codes for appointmentType.",
+      "description" : "New codes that should be used as default for appointmentType.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -798,18 +810,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"
-      },
-      "name" : "New codes that shold be used as default for appointmentType.",
-      "description" : "New codes that shold be used as default for appointmentType.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Appointment"
       }],
       "reference" : {
@@ -822,6 +822,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/SearchAllAppointment"
+      },
+      "name" : "SearchAllAppointment",
+      "description" : "Minimum bundle som er levert på grunn av følgende query: Appointment?identifier.value=[value]&identifier.system = [system]&identifier.assigner =Organization/[assigner] &_revinclude=Appointment:partOf",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -830,6 +842,42 @@
       "name" : "TbaOrganizationcoverage",
       "description" : "The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/TimeLege"
+      },
+      "name" : "TimeLege",
+      "description" : "Time med Lege",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/Timenotifikasjon"
+      },
+      "name" : "Timenotifikasjon",
+      "description" : "Timenotifikasjon poliklinisk kontakt på Ortopedisk poliklinikk",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/TimeSpesialSjukepleier"
+      },
+      "name" : "TimeSpesialSjukepleier",
+      "description" : "Time med spesialsjukepleier",
+      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
     },
     {
       "extension" : [{

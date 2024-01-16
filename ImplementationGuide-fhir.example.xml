@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2024-01-15T07:10:14+01:00"/>
+  <date value="2024-01-16T01:24:21+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -461,6 +461,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"/>
+      </reference>
+      <name value="Default codes for appointmentType."/>
+      <description value="New codes that should be used as default for appointmentType."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -626,17 +637,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs"/>
-      </reference>
-      <name value="New codes that shold be used as default for appointmentType."/>
-      <description value="New codes that shold be used as default for appointmentType."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Appointment"/>
       </extension>
       <reference>
@@ -648,6 +648,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/SearchAllAppointment"/>
+      </reference>
+      <name value="SearchAllAppointment"/>
+      <description value="Minimum bundle som er levert på grunn av følgende query: Appointment?identifier.value=[value]&amp;identifier.system = [system]&amp;identifier.assigner =Organization/[assigner] &amp;_revinclude=Appointment:partOf"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -656,6 +667,39 @@
       <name value="TbaOrganizationcoverage"/>
       <description value="The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/TimeLege"/>
+      </reference>
+      <name value="TimeLege"/>
+      <description value="Time med Lege"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/Timenotifikasjon"/>
+      </reference>
+      <name value="Timenotifikasjon"/>
+      <description value="Timenotifikasjon poliklinisk kontakt på Ortopedisk poliklinikk"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/TimeSpesialSjukepleier"/>
+      </reference>
+      <name value="TimeSpesialSjukepleier"/>
+      <description value="Time med spesialsjukepleier"/>
+      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

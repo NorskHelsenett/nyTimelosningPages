@@ -1,3 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs,0.1.0,draft,,HnAppointmentTypeProposedNewCodesCS,New codes that shold be used as default for appointmentType.,"New codes that shold be used as default for appointmentType.",
+http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs,0.1.0,draft,,HnAppointmentTypeProposedNewCodesCS,Default codes for appointmentType.,"New codes that should be used as default for appointmentType.",
 http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs,0.1.0,draft,,HnAppointmentFlagCodeCS,hn-appointment-flag-code-cs,"Code system used for Flag codes in nytimeløsing",
