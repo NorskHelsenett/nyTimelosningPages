@@ -3,11 +3,11 @@
   "name" : "NyTimelosingIG",
   "package-id" : "fhir.example",
   "ig-ver" : "0.1.0",
-  "date" : "Tue, 16 Jan, 2024 01:49:14 +0100",
+  "date" : "Fri, 09 Feb, 2024 14:16:42 +0100",
   "errs" : 0,
-  "warnings" : 30,
+  "warnings" : 4,
   "hints" : 57,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 951859232
+  "maxMemory" : 906243072
 }
