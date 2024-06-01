@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="16da01f4-04c8-4663-ad7b-8bc4b5329acf"/>
+  <id value="4aa4bdec-4ba5-47ef-909c-c22c70317708"/>
   <meta>
-    <lastUpdated value="2024-02-09T14:16:42.006+01:00"/>
+    <lastUpdated value="2024-06-01T10:49:22.008+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -39,7 +39,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-category-10"> </a>  10
+                  <a name="http---terminology.hl7.org-CodeSystem-service-category-10"> </a>  
+                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-10">10</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Dental</td>
@@ -52,7 +53,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-category-27"> </a>  27
+                  <a name="http---terminology.hl7.org-CodeSystem-service-category-27"> </a>  
+                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-27">27</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Specialist Medical</td>
@@ -65,7 +67,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-category-17"> </a>  17
+                  <a name="http---terminology.hl7.org-CodeSystem-service-category-17"> </a>  
+                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-17">17</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>General Practice</td>
@@ -78,7 +81,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-category-7"> </a>  7
+                  <a name="http---terminology.hl7.org-CodeSystem-service-category-7"> </a>  
+                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-7">7</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Community Health Care</td>
@@ -250,10 +254,10 @@
         <title value="hn-appointment-flag-code-vs"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-02-09T14:16:42+01:00"/>
+        <date value="2024-06-01T10:49:22+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:48e56502-978f-44db-bfff-b39849b1988b"/>
-          <timestamp value="2024-02-09T14:17:18+01:00"/>
+          <identifier value="urn:uuid:b3906c0d-46b5-4475-8b61-296d36b2da62"/>
+          <timestamp value="2024-06-01T10:50:12+02:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -375,10 +379,10 @@
         <title value="Hn Basis VirtualServiceType Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-02-09T14:16:42+01:00"/>
+        <date value="2024-06-01T10:49:22+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:540d499f-51ab-4aed-ab91-3a04b98adfe5"/>
-          <timestamp value="2024-02-09T14:17:18+01:00"/>
+          <identifier value="urn:uuid:ace545e4-54c5-4b6e-84c6-33049bffbd1f"/>
+          <timestamp value="2024-06-01T10:50:12+02:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>

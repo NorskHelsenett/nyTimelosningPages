@@ -77,13 +77,6 @@
     "name" : "HnBasisPostponementReason"
   },
   {
-    "id" : "hn-basis-schedule",
-    "type" : "StructureDefinition",
-    "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule",
-    "version" : "0.1.0",
-    "name" : "HnBasisSchedule"
-  },
-  {
     "id" : "kommunikasjonspart-Organization",
     "type" : "StructureDefinition",
     "url" : "http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization",

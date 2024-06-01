@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-09T14:16:42+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-01T10:49:22+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -40,7 +40,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.3.0" ]
+     fhir:version [ fhir:v "5.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -52,7 +52,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "5.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_no_basis" ] ;
      fhir:uri [
@@ -699,18 +699,6 @@
        ] ;
        fhir:name [ fhir:v "hn-basis-recurring" ] ;
        fhir:description [ fhir:v "Indicates that this appointment is of recurrence type. In R5 this is handled by own structure." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-schedule> ;
-         fhir:reference [ fhir:v "StructureDefinition/hn-basis-schedule" ]
-       ] ;
-       fhir:name [ fhir:v "hn-basis-schedule" ] ;
-       fhir:description [ fhir:v "Profile used for Scheduler in HN. Based on FHIR Schedule (R4)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

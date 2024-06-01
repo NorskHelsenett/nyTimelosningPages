@@ -26,7 +26,6 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-schedule.html" : "hn-basis-schedule",
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
