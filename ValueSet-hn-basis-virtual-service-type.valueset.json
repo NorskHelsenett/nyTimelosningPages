@@ -3,7 +3,7 @@
   "id" : "hn-basis-virtual-service-type.valueset",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html\"><code>http://hl7.org/fhir/contact-point-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-url\">url</a></td><td>URL</td><td>A contact that is not a phone, fax, pager or email address and is expressed as a URL.  This is intended for various institutional or personal contacts including web sites, blogs, Skype, Twitter, Facebook, etc. Do not use for email addresses.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-phone\">phone</a></td><td>Phone</td><td>The value is a telephone number used for voice calls. Use of full international numbers starting with + is recommended to enable automatic dialing support but not required.</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet hn-basis-virtual-service-type.valueset</b></p><a name=\"hn-basis-virtual-service-type.valueset\"> </a><a name=\"hchn-basis-virtual-service-type.valueset\"> </a><a name=\"hn-basis-virtual-service-type.valueset-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html\"><code>http://hl7.org/fhir/contact-point-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-url\">url</a></td><td>URL</td><td>A contact that is not a phone, fax, pager or email address and is expressed as a URL.  This is intended for various institutional or personal contacts including web sites, blogs, Skype, Twitter, Facebook, etc. Do not use for email addresses.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-phone\">phone</a></td><td>Phone</td><td>The value is a telephone number used for voice calls. Use of full international numbers starting with + is recommended to enable automatic dialing support but not required.</td></tr></table></li></ul></div>"
   },
   "url" : "http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "Hn Basis VirtualServiceType Value Set",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2024-06-01T10:49:22+02:00",
+  "date" : "2025-01-31T12:01:35+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",

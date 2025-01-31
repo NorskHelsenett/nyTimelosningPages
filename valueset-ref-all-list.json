@@ -99,6 +99,20 @@
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
       "version" : "4.0.1",
       "status" : "draft",
@@ -184,9 +198,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
       "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -200,9 +214,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
       "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -216,10 +230,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
       "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
       "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -266,17 +280,37 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
-      "version" : "5.0.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "ResourceType",
-      "title" : "Resource Types",
-      "description" : "Concrete FHIR Resource Types",
-      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
       "oids" : ["2.16.840.1.113883.4.642.3.27"],
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
       "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",

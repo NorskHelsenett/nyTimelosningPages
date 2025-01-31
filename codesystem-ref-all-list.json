@@ -44,20 +44,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.72"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set",
-      "ValueSet-hn-basis-virtual-service-type.valueset.html" : "Hn Basis VirtualServiceType Value Set"
-    },
-    {
-      "url" : "http://hl7.org/fhir/fhir-types",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "FHIRTypes",
-      "title" : "All FHIR Types",
-      "description" : "One of the types defined as part of this version of FHIR.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
+      "ValueSet-hn-basis-virtual-service-type.valueset.html" : "Hn Basis VirtualServiceType Value Set",
+      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set"
     },
     {
       "url" : "http://hl7.org/fhir/flag-status",
@@ -108,6 +96,17 @@
       "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -119,6 +118,18 @@
       },
       "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
       "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
@@ -134,8 +145,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/flag-category",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "FlagCategory",
       "title" : "Flag Category",
       "description" : "Example list of general categories for flagged issues. (Not complete or necessarily appropriate.)",
@@ -146,8 +157,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
-      "version" : "2.0.0",
-      "status" : "draft",
+      "version" : "2.0.1",
+      "status" : "active",
       "name" : "OrganizationType",
       "title" : "Organization type",
       "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
@@ -158,8 +169,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ParticipantType",
       "title" : "Participant type",
       "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
@@ -170,8 +181,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/service-category",
-      "version" : "1.1.0",
-      "status" : "draft",
+      "version" : "1.1.1",
+      "status" : "active",
       "name" : "ServiceCategory",
       "title" : "Service category",
       "description" : "This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.",
@@ -182,8 +193,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/service-type",
-      "version" : "1.1.0",
-      "status" : "draft",
+      "version" : "1.1.1",
+      "status" : "active",
       "name" : "ServiceType",
       "title" : "Service type",
       "description" : "This value set defines an example set of codes of service-types.",
@@ -214,7 +225,7 @@
       "oids" : ["2.16.840.1.113883.18.169"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
+      "http://terminology.hl7.org/6.2.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",

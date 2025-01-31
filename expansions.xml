@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4aa4bdec-4ba5-47ef-909c-c22c70317708"/>
+  <id value="c1c25237-9757-4031-8bb4-91ccb5ceb7d6"/>
   <meta>
-    <lastUpdated value="2024-06-01T10:49:22.008+02:00"/>
+    <lastUpdated value="2025-01-31T12:01:35.401+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,15 +13,13 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html">codesystem Service category v1.1.1 (CodeSystem)</a>
+            </p>
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on example code system http://terminology.hl7.org/CodeSystem/service-category http://terminology.hl7.org/CodeSystem/service-category version 4.0.1</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>codesystem http://terminology.hl7.org/CodeSystem/service-category version 4.0.1</li>
-                <li>system http://terminology.hl7.org/CodeSystem/service-category version 4.0.1</li>
-              </ul>
-            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -39,8 +37,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-category-10"> </a>  
-                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-10">10</a>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/service-category-10"> </a>  
+                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-10">10</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Dental</td>
@@ -53,8 +51,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-category-27"> </a>  
-                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-27">27</a>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/service-category-27"> </a>  
+                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-27">27</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Specialist Medical</td>
@@ -67,8 +65,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-category-17"> </a>  
-                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-17">17</a>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/service-category-17"> </a>  
+                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-17">17</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>General Practice</td>
@@ -81,8 +79,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-category-7"> </a>  
-                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-7">7</a>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/service-category-7"> </a>  
+                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-7">7</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Community Health Care</td>
@@ -101,30 +99,28 @@
         <name value="HnAppointmentServiceCategoryVS"/>
         <title value="hn-appointment-ServiceCategory-code-vs"/>
         <status value="draft"/>
-        <date value="2023-09-25T00:03:25+02:00"/>
+        <experimental value="true"/>
+        <date value="2025-01-31T12:01:35+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:ee5e8a32-61fe-4ca0-8f5e-2fcc6dc75c1d"/>
-          <timestamp value="2023-09-24T22:04:47.488Z"/>
+          <identifier value="urn:uuid:cd8c5f73-b298-413f-ba66-b650dc5fd005"/>
+          <timestamp value="2025-01-31T12:02:26+01:00"/>
           <total value="4"/>
+          <offset value="0"/>
           <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="example"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/service-category|4.0.1"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/service-category|4.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/service-category|4.0.1"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/service-category|1.1.1"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/service-category"/>
@@ -157,10 +153,13 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 9 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-hn-appointment-flag-code-cs.html">codesystem hn-appointment-flag-code-cs v0.1.0 (CodeSystem)</a>
             </p>
+            <p>This value set contains 9 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -175,7 +174,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-cancel"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-cancel"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-cancel">cancel</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -183,7 +182,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointmentDialog"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeAppointmentDialog"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointmentDialog">canChangeAppointmentDialog</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -191,7 +190,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canUseShortNotice"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canUseShortNotice"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canUseShortNotice">canUseShortNotice</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -199,7 +198,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canCancelServiceRequest"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canCancelServiceRequest"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canCancelServiceRequest">canCancelServiceRequest</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -207,7 +206,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeConferenceType"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeConferenceType"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeConferenceType">canChangeConferenceType</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -215,7 +214,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canAcknowledge"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canAcknowledge"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canAcknowledge">canAcknowledge</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -223,7 +222,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointment"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeAppointment"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointment">canChangeAppointment</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -231,7 +230,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canHaveAppointmentDetails"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canHaveAppointmentDetails"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canHaveAppointmentDetails">canHaveAppointmentDetails</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -239,7 +238,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canInitiateDialog"> </a>  
+                  <a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canInitiateDialog"> </a>  
                   <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitiateDialog">canInitiateDialog</a>
                 </td>
                 <td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td>
@@ -254,11 +253,20 @@
         <title value="hn-appointment-flag-code-vs"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-01T10:49:22+02:00"/>
+        <date value="2025-01-31T12:01:35+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:b3906c0d-46b5-4475-8b61-296d36b2da62"/>
-          <timestamp value="2024-06-01T10:50:12+02:00"/>
+          <identifier value="urn:uuid:d1f40f80-3052-471a-9129-51b9ba3da425"/>
+          <timestamp value="2025-01-31T12:02:26+01:00"/>
           <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -323,10 +331,13 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html">codesystem ContactPointSystem v4.0.1 (CodeSystem)</a>
             </p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -344,7 +355,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-url"> </a>  
+                  <a name="x-http://hl7.org/fhir/contact-point-system-url"> </a>  
                   <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-url">url</a>
                 </td>
                 <td>http://hl7.org/fhir/contact-point-system</td>
@@ -358,7 +369,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-phone"> </a>  
+                  <a name="x-http://hl7.org/fhir/contact-point-system-phone"> </a>  
                   <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-phone">phone</a>
                 </td>
                 <td>http://hl7.org/fhir/contact-point-system</td>
@@ -379,11 +390,20 @@
         <title value="Hn Basis VirtualServiceType Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-01T10:49:22+02:00"/>
+        <date value="2025-01-31T12:01:35+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:ace545e4-54c5-4b6e-84c6-33049bffbd1f"/>
-          <timestamp value="2024-06-01T10:50:12+02:00"/>
+          <identifier value="urn:uuid:02ae0367-155a-46aa-8443-8aae4708110f"/>
+          <timestamp value="2025-01-31T12:02:26+01:00"/>
           <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

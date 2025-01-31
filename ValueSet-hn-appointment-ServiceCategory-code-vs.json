@@ -2,8 +2,8 @@
   "resourceType" : "ValueSet",
   "id" : "hn-appointment-ServiceCategory-code-vs",
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html\"><code>http://terminology.hl7.org/CodeSystem/service-category</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-10\">10</a></td><td>Dental</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-27\">27</a></td><td>Specialist Medical</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-17\">17</a></td><td>General Practice</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-service-category.html#service-category-7\">7</a></td><td>Community Health Care</td></tr></table></li></ul></div>"
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet hn-appointment-ServiceCategory-code-vs</b></p><a name=\"hn-appointment-ServiceCategory-code-vs\"> </a><a name=\"hchn-appointment-ServiceCategory-code-vs\"> </a><a name=\"hn-appointment-ServiceCategory-code-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html\"><code>http://terminology.hl7.org/CodeSystem/service-category</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-10\">10</a></td><td>Dental</td><td>Dental</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-27\">27</a></td><td>Specialist Medical</td><td>Specialist Medical - requires referral</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-17\">17</a></td><td>General Practice</td><td>General Practice/GP (doctor)</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-7\">7</a></td><td>Community Health Care</td><td>Community Health Care</td></tr></table></li></ul></div>"
   },
   "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "hn-appointment-ServiceCategory-code-vs",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2024-06-01T10:49:22+02:00",
+  "date" : "2025-01-31T12:01:35+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",

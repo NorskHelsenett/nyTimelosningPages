@@ -18,6 +18,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -38,11 +39,13 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3.13"}
     h3,h4,h5,h6{--heading-prefix:"3.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 
 
@@ -107,7 +110,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NyTimelosingIG - Local Development build (v0.1.0). See the <a href="http://helsenorge.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">NyTimelosingIG - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://helsenorge.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -175,7 +178,7 @@
         
           Draft
           
-            as of 2024-06-01
+            as of 2025-01-31
           
         
       </td>
@@ -214,13 +217,14 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-hn-appointment-flag-code-cs.html"><code>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</code></a></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet hn-appointment-flag-code-vs</b></p><a name="hn-appointment-flag-code-vs"> </a><a name="hchn-appointment-flag-code-vs"> </a><a name="hn-appointment-flag-code-vs-en-US"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-hn-appointment-flag-code-cs.html"><code>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</code></a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 9 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-hn-appointment-flag-code-cs.html">codesystem hn-appointment-flag-code-cs v0.1.0 (CodeSystem)</a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-cancel"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-cancel">cancel</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan kansellere timen</td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointmentDialog"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointmentDialog">canChangeAppointmentDialog</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret time (Dialogmeldinger)</td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canUseShortNotice"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canUseShortNotice">canUseShortNotice</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan komme på kort varsel</td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canCancelServiceRequest"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canCancelServiceRequest">canCancelServiceRequest</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om at behandlingsløp avsluttes</td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeConferenceType"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeConferenceType">canChangeConferenceType</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret konferanse type</td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canAcknowledge"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canAcknowledge">canAcknowledge</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Timen/opphold kan bekreftes av innbygger</td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canChangeAppointment"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointment">canChangeAppointment</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret time</td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canHaveAppointmentDetails"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canHaveAppointmentDetails">canHaveAppointmentDetails</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes</td></tr><tr><td style="white-space:nowrap"><a name="http---helsenorge.no-fhir-CodeSystem-hn-appointment-flag-code-cs-canInitiateDialog"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitiateDialog">canInitiateDialog</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Dialog kan inisieres</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on <a href="CodeSystem-hn-appointment-flag-code-cs.html">codesystem hn-appointment-flag-code-cs v0.1.0 (CodeSystem)</a></p><p>This value set contains 9 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-cancel"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-cancel">cancel</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan kansellere timen</td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeAppointmentDialog"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointmentDialog">canChangeAppointmentDialog</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret time (Dialogmeldinger)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canUseShortNotice"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canUseShortNotice">canUseShortNotice</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan komme på kort varsel</td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canCancelServiceRequest"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canCancelServiceRequest">canCancelServiceRequest</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om at behandlingsløp avsluttes</td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeConferenceType"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeConferenceType">canChangeConferenceType</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret konferanse type</td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canAcknowledge"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canAcknowledge">canAcknowledge</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Timen/opphold kan bekreftes av innbygger</td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeAppointment"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointment">canChangeAppointment</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret time</td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canHaveAppointmentDetails"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canHaveAppointmentDetails">canHaveAppointmentDetails</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes</td></tr><tr><td style="white-space:nowrap"><a name="x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canInitiateDialog"> </a>  <a href="CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitiateDialog">canInitiateDialog</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Dialog kan inisieres</td></tr></table></div>
 
   <hr/>
   <p>
@@ -279,7 +283,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 1, 2024 10:49+0200">2024-06-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 31, 2025 12:01+0100">2025-01-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -296,7 +300,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -307,7 +311,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

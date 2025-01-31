@@ -3,7 +3,7 @@
   "id" : "hn-appointment-flag-code-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-hn-appointment-flag-code-cs.html\"><code>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet hn-appointment-flag-code-vs</b></p><a name=\"hn-appointment-flag-code-vs\"> </a><a name=\"hchn-appointment-flag-code-vs\"> </a><a name=\"hn-appointment-flag-code-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-hn-appointment-flag-code-cs.html\"><code>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</code></a></li></ul></div>"
   },
   "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "hn-appointment-flag-code-vs",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2024-06-01T10:49:22+02:00",
+  "date" : "2025-01-31T12:01:35+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
