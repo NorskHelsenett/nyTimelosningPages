@@ -1,6 +1,6 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs,0.1.0,draft,,HnAppointmentTypeProposedNewCodesCS,Default codes for appointmentType.,"New codes that should be used as default for appointmentType.","ValueSet/hn-appointment-AppointmentType-code-vs"
-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs,0.1.0,draft,,HnAppointmentFlagCodeCS,hn-appointment-flag-code-cs,"Code system used for Flag codes in nytimeløsing","ValueSet/hn-appointment-flag-code-vs"
+http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs,0.9.0,draft,,HnAppointmentTypeProposedNewCodesCS,Default codes for appointmentType.,"New codes that should be used as default for appointmentType.","ValueSet/hn-appointment-AppointmentType-code-vs"
+http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs,0.9.0,draft,,HnAppointmentFlagCodeCS,hn-appointment-flag-code-cs,"Code system used for Flag codes in nytimeløsing","ValueSet/hn-appointment-flag-code-vs"
 http://hl7.org/fhir/appointmentstatus,4.0.1,draft,"2.16.840.1.113883.4.642.4.485",AppointmentStatus,AppointmentStatus,"The free/busy status of an appointment.","ValueSet/appointmentstatus"
 http://hl7.org/fhir/contact-point-system,4.0.1,active,"2.16.840.1.113883.4.642.4.72",ContactPointSystem,ContactPointSystem,"Telecommunications form for contact point.","ValueSet/no-basis-virtual-service-type.valueset,ValueSet/hn-basis-virtual-service-type.valueset"
 http://hl7.org/fhir/flag-status,4.0.1,draft,"2.16.840.1.113883.4.642.4.121",FlagStatus,FlagStatus,"Indicates whether this flag is active and needs to be displayed to a user, or whether it is no longer needed or was entered in error.","ValueSet/flag-status"

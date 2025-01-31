@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "e792ed68-78b1-4207-855e-834e9cb07177",
+  "id" : "51a562b7-0c4e-491e-8ed3-d8cf1e6f8183",
   "meta" : {
-    "lastUpdated" : "2025-01-31T15:15:59.618+01:00"
+    "lastUpdated" : "2025-01-31T16:07:19.976+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -14,15 +14,15 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html\">codesystem Service category v1.1.1 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/service-category-10\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-10\">10</a></td><td>http://terminology.hl7.org/CodeSystem/service-category</td><td>Dental</td><td><div><p>Dental</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/service-category-27\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-27\">27</a></td><td>http://terminology.hl7.org/CodeSystem/service-category</td><td>Specialist Medical</td><td><div><p>Specialist Medical - requires referral</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/service-category-17\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-17\">17</a></td><td>http://terminology.hl7.org/CodeSystem/service-category</td><td>General Practice</td><td><div><p>General Practice/GP (doctor)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/service-category-7\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-7\">7</a></td><td>http://terminology.hl7.org/CodeSystem/service-category</td><td>Community Health Care</td><td><div><p>Community Health Care</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
-      "version" : "0.1.0",
+      "version" : "0.9.0",
       "name" : "HnAppointmentServiceCategoryVS",
       "title" : "hn-appointment-ServiceCategory-code-vs",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-01-31T15:15:59+01:00",
+      "date" : "2025-01-31T16:07:19+01:00",
       "expansion" : {
-        "identifier" : "urn:uuid:654fffcc-18aa-4fd8-9def-4ed479e00b52",
-        "timestamp" : "2025-01-31T15:16:35+01:00",
+        "identifier" : "urn:uuid:97569390-5c3e-4b26-808c-61d3f5fd7961",
+        "timestamp" : "2025-01-31T16:07:54+01:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -70,18 +70,18 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">codesystem hn-appointment-flag-code-cs v0.1.0 (CodeSystem)</a></p><p>This value set contains 9 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-cancel\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-cancel\">cancel</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan kansellere timen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeAppointmentDialog\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointmentDialog\">canChangeAppointmentDialog</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret time (Dialogmeldinger)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canUseShortNotice\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canUseShortNotice\">canUseShortNotice</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan komme på kort varsel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canCancelServiceRequest\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canCancelServiceRequest\">canCancelServiceRequest</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om at behandlingsløp avsluttes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeConferenceType\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeConferenceType\">canChangeConferenceType</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret konferanse type</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canAcknowledge\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canAcknowledge\">canAcknowledge</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Timen/opphold kan bekreftes av innbygger</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeAppointment\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointment\">canChangeAppointment</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret time</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canHaveAppointmentDetails\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canHaveAppointmentDetails\">canHaveAppointmentDetails</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canInitiateDialog\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitiateDialog\">canInitiateDialog</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Dialog kan inisieres</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-hn-appointment-flag-code-cs.html\">codesystem hn-appointment-flag-code-cs v0.9.0 (CodeSystem)</a></p><p>This value set contains 9 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-cancel\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-cancel\">cancel</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan kansellere timen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeAppointmentDialog\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointmentDialog\">canChangeAppointmentDialog</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret time (Dialogmeldinger)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canUseShortNotice\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canUseShortNotice\">canUseShortNotice</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan komme på kort varsel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canCancelServiceRequest\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canCancelServiceRequest\">canCancelServiceRequest</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om at behandlingsløp avsluttes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeConferenceType\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeConferenceType\">canChangeConferenceType</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret konferanse type</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canAcknowledge\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canAcknowledge\">canAcknowledge</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Timen/opphold kan bekreftes av innbygger</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canChangeAppointment\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canChangeAppointment\">canChangeAppointment</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Innbygger kan be om endret time</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canHaveAppointmentDetails\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canHaveAppointmentDetails\">canHaveAppointmentDetails</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Det finnes ytterlege timedetaljer på time/timeavtale som kan hentes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs-canInitiateDialog\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hn-appointment-flag-code-cs.html#hn-appointment-flag-code-cs-canInitiateDialog\">canInitiateDialog</a></td><td>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</td><td>Dialog kan inisieres</td></tr></table></div>"
       },
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
-      "version" : "0.1.0",
+      "version" : "0.9.0",
       "name" : "HnAppointmentFlagCodeVS",
       "title" : "hn-appointment-flag-code-vs",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-01-31T15:15:59+01:00",
+      "date" : "2025-01-31T16:07:19+01:00",
       "expansion" : {
-        "identifier" : "urn:uuid:5307cf39-49b9-4781-9313-3cf2909333fe",
-        "timestamp" : "2025-01-31T15:16:35+01:00",
+        "identifier" : "urn:uuid:361770bd-1512-4bdd-8a9a-4feb627364d0",
+        "timestamp" : "2025-01-31T16:07:54+01:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -98,7 +98,7 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.1.0"
+          "valueUri" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0"
         }],
         "contains" : [{
           "system" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
@@ -157,15 +157,15 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html\">codesystem ContactPointSystem v4.0.1 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/contact-point-system-url\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-url\">url</a></td><td>http://hl7.org/fhir/contact-point-system</td><td>URL</td><td><div><p>A contact that is not a phone, fax, pager or email address and is expressed as a URL.  This is intended for various institutional or personal contacts including web sites, blogs, Skype, Twitter, Facebook, etc. Do not use for email addresses.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/contact-point-system-phone\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-phone\">phone</a></td><td>http://hl7.org/fhir/contact-point-system</td><td>Phone</td><td><div><p>The value is a telephone number used for voice calls. Use of full international numbers starting with + is recommended to enable automatic dialing support but not required.</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset",
-      "version" : "0.1.0",
+      "version" : "0.9.0",
       "name" : "HnBasisVirtualServiceType",
       "title" : "Hn Basis VirtualServiceType Value Set",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-01-31T15:15:59+01:00",
+      "date" : "2025-01-31T16:07:19+01:00",
       "expansion" : {
-        "identifier" : "urn:uuid:5915b384-6ded-4481-9cdb-adc36916e9ac",
-        "timestamp" : "2025-01-31T15:16:35+01:00",
+        "identifier" : "urn:uuid:5617ebca-fdbb-4aa9-8e4c-8ab7b8315d99",
+        "timestamp" : "2025-01-31T16:07:54+01:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{

@@ -207,7 +207,7 @@ Applications converting a logical reference to a literal reference may choose to
 
 Reference is intended to point to a structure that can potentially be expressed as a FHIR resource, though there is no need for it to exist as an actual FHIR resource instance - except in as much as an application wishes to actual find the target of the reference. The content referred to be the identifier must meet the logical constraints implied by any limitations on what resource types are permitted for the reference.  For example, it would not be legitimate to send the identifier for a drug prescription if the type were Reference(Observation|DiagnosticReport).  One of the use-cases for Reference.identifier is the situation where no FHIR representation exists (where the type is Reference (Any).","","","","","","","","",,,,,"",,,,"Reference.identifier",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-inv-2:Only urn:oid:2.16.578.1.12.4.1.4.1 (FNR) or urn:oid:2.16.578.1.12.4.1.4.2 (DNR) are allowed as systems to identify patient in this profile. {system = 'urn:oid:2.16.578.1.12.4.1.4.1' or system = 'urn:oid:2.16.578.1.12.4.1.4.2'}"
+inv-a:Only urn:oid:2.16.578.1.12.4.1.4.1 (FNR) or urn:oid:2.16.578.1.12.4.1.4.2 (DNR) are allowed as systems to identify patient in this profile. {system = 'urn:oid:2.16.578.1.12.4.1.4.1' or system = 'urn:oid:2.16.578.1.12.4.1.4.2'}"
 "hn-basis-AppointmentResponse","AppointmentResponse.actor.identifier.id","AppointmentResponse.actor.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "hn-basis-AppointmentResponse","AppointmentResponse.actor.identifier.extension","AppointmentResponse.actor.identifier.extension","","extensions
@@ -447,7 +447,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hn-basis-appointment","Appointment.meta.lastUpdated","Appointment.meta.lastUpdated","","","",1,1,"","","Y","instant {[]} {[]}
-","LastUpdated should always be present","LastUpdated should always be present to show when the resource was created or changed","This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http://hl7.org/fhir/R4/http.html#read) interaction.","","","","","","","","",,,,,"",,,,"Meta.lastUpdated",0,1,"ele-1
+","LastUpdated should always be present","LastUpdated should always be present to show when the resource was created or changed","This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a read interaction.","","","","","","","","",,,,,"",,,,"Meta.lastUpdated",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hn-basis-appointment","Appointment.meta.source","Appointment.meta.source","","","",0,1,"","","Y","uri {[]} {[]}

@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><a name=\"fhir.example-en-US\"> </a><h2>NyTimelosingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://helsenorge.no/fhir/ImplementationGuide/fhir.example</pre><div><p>Example Implementation Guide for getting started with SUSHI</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://helsenorge.no/fhir/ImplementationGuide/fhir.example"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.9.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-31T15:15:59+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-31T16:07:19+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -730,18 +730,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Bundle" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Bundle/SearchAllAppointment> ;
-         fhir:reference [ fhir:v "Bundle/SearchAllAppointment" ]
-       ] ;
-       fhir:name [ fhir:v "SearchAllAppointment" ] ;
-       fhir:description [ fhir:v "Minimum bundle som er levert på grunn av følgende query: Appointment?identifier.value=[value]&identifier.system = [system]&identifier.assigner =Organization/[assigner] &_revinclude=Appointment:partOf" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -751,51 +739,6 @@
        fhir:name [ fhir:v "TbaOrganizationcoverage" ] ;
        fhir:description [ fhir:v "The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Appointment/TimeLege> ;
-         fhir:reference [ fhir:v "Appointment/TimeLege" ]
-       ] ;
-       fhir:name [ fhir:v "TimeLege" ] ;
-       fhir:description [ fhir:v "Time med Lege" ] ;
-       fhir:example [
-         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Appointment/Timenotifikasjon> ;
-         fhir:reference [ fhir:v "Appointment/Timenotifikasjon" ]
-       ] ;
-       fhir:name [ fhir:v "Timenotifikasjon" ] ;
-       fhir:description [ fhir:v "Timenotifikasjon poliklinisk kontakt på Ortopedisk poliklinikk" ] ;
-       fhir:example [
-         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Appointment/TimeSpesialSjukepleier> ;
-         fhir:reference [ fhir:v "Appointment/TimeSpesialSjukepleier" ]
-       ] ;
-       fhir:name [ fhir:v "TimeSpesialSjukepleier" ] ;
-       fhir:description [ fhir:v "Time med spesialsjukepleier" ] ;
-       fhir:example [
-         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
-       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

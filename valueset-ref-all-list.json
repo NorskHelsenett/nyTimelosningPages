@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs",
-      "version" : "0.1.0",
+      "version" : "0.9.0",
       "status" : "draft",
       "name" : "HnAppointmentAppointmentTypeVS",
       "title" : "hn-appointment-AppointmentType-code-vs",
@@ -18,7 +18,7 @@
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
-      "version" : "0.1.0",
+      "version" : "0.9.0",
       "status" : "draft",
       "name" : "HnAppointmentServiceCategoryVS",
       "title" : "hn-appointment-ServiceCategory-code-vs",
@@ -30,7 +30,7 @@
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
-      "version" : "0.1.0",
+      "version" : "0.9.0",
       "status" : "draft",
       "name" : "HnAppointmentFlagCodeVS",
       "title" : "hn-appointment-flag-code-vs",
@@ -44,7 +44,7 @@
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset",
-      "version" : "0.1.0",
+      "version" : "0.9.0",
       "status" : "draft",
       "name" : "HnBasisVirtualServiceType",
       "title" : "Hn Basis VirtualServiceType Value Set",
@@ -67,8 +67,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-changeConferenceType.html" : "hn-basis-changeConferenceType"
+      "StructureDefinition-hn-basis-changeConferenceType.html" : "hn-basis-changeConferenceType",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
@@ -141,8 +141,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -198,9 +198,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
       "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -214,9 +214,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
       "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -230,10 +230,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag",
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag"
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -275,8 +275,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.486"],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment"
+      "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
