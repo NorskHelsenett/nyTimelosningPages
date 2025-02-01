@@ -67,8 +67,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-hn-basis-changeConferenceType.html" : "hn-basis-changeConferenceType",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
+      "StructureDefinition-hn-basis-changeConferenceType.html" : "hn-basis-changeConferenceType"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
@@ -199,8 +199,8 @@
       "uses" : {
       },
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -215,8 +215,8 @@
       "uses" : {
       },
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -232,8 +232,8 @@
       },
       "StructureDefinition-hn-basis-Flag.html" : "hn-basis-flag",
       "StructureDefinition-hn-basis-appointment.html" : "hn-basis-appointment",
-      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse",
-      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization"
+      "StructureDefinition-kommunikasjonspart-Organization.html" : "kommunikasjonspart-Organization",
+      "StructureDefinition-hn-basis-AppointmentResponse.html" : "hn-basis-AppointmentResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",

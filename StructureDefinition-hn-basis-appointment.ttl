@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "HnBasisAppointment"] ; # 
   fhir:title [ fhir:v "hn-basis-appointment"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-31T16:07:19+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-01T23:53:20+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -368,7 +368,7 @@
        fhir:path [ fhir:v "Appointment.meta.lastUpdated" ] ;
        fhir:short [ fhir:v "LastUpdated should always be present" ] ;
        fhir:definition [ fhir:v "LastUpdated should always be present to show when the resource was created or changed" ] ;
-       fhir:comment [ fhir:v "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a read interaction." ] ;
+       fhir:comment [ fhir:v "This value is always populated. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a read interaction." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -6092,7 +6092,7 @@
        fhir:path [ fhir:v "Appointment.meta.lastUpdated" ] ;
        fhir:short [ fhir:v "LastUpdated should always be present" ] ;
        fhir:definition [ fhir:v "LastUpdated should always be present to show when the resource was created or changed" ] ;
-       fhir:comment [ fhir:v "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a read interaction." ] ;
+       fhir:comment [ fhir:v "This value is always populated. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a read interaction." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "Appointment.extension:virtualService" ] ;
