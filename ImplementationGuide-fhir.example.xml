@@ -10,7 +10,7 @@
   <version value="0.9.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2025-02-01T23:53:20+01:00"/>
+  <date value="2025-02-15T12:00:41+01:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -37,7 +37,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_no_basis">
     <uri value="http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis"/>
@@ -578,17 +578,6 @@
       </reference>
       <name value="hn-basis-flag"/>
       <description value="Basisprofil for Flag used in 'ny timeløsning."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hn-basis-flagStatusPeriod"/>
-      </reference>
-      <name value="hn-basis-flagStatusPeriod"/>
-      <description value="The basis extension for status period in flag. Creating valid period for flag status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

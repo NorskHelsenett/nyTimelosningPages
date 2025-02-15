@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "hn-appointment-AppointmentType-code-vs"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-02-01T23:53:20+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-15T12:00:41+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;

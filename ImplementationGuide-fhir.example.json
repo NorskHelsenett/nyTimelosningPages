@@ -9,7 +9,7 @@
   "version" : "0.9.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2025-02-01T23:53:20+01:00",
+  "date" : "2025-02-15T12:00:41+01:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -40,7 +40,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.2.0"
   },
   {
     "id" : "hl7_fhir_no_basis",
@@ -745,18 +745,6 @@
       },
       "name" : "hn-basis-flag",
       "description" : "Basisprofil for Flag used in 'ny timeløsning.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hn-basis-flagStatusPeriod"
-      },
-      "name" : "hn-basis-flagStatusPeriod",
-      "description" : "The basis extension for status period in flag. Creating valid period for flag status",
       "exampleBoolean" : false
     },
     {

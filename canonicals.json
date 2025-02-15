@@ -63,13 +63,6 @@
     "name" : "HnBasisConsultationType"
   },
   {
-    "id" : "hn-basis-flagStatusPeriod",
-    "type" : "StructureDefinition",
-    "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-flagStatusPeriod",
-    "version" : "0.9.0",
-    "name" : "HnBasisFlagStatusPeriod"
-  },
-  {
     "id" : "hn-basis-postponementreason",
     "type" : "StructureDefinition",
     "url" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason",

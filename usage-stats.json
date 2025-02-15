@@ -32,13 +32,6 @@
       ]
     },
     {
-      "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-flagStatusPeriod",
-      "title": "hn-basis-flagStatusPeriod",
-      "types": [
-        "Period"
-      ]
-    },
-    {
       "url": "http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason",
       "title": "hn-basis-postponementreason",
       "types": [
@@ -89,9 +82,6 @@
     "http://helsenorge.no/fhir/StructureDefinition/hn-basis-consultationType": [
       "Appointment"
     ],
-    "http://helsenorge.no/fhir/StructureDefinition/hn-basis-flagStatusPeriod": [
-      "Flag.status"
-    ],
     "http://helsenorge.no/fhir/StructureDefinition/hn-basis-postponementreason": [
       "Appointment"
     ],
@@ -125,9 +115,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/regex": [
-      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
