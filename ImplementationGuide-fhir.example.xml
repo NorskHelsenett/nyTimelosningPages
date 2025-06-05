@@ -7,10 +7,10 @@
 </div></div>
   </text>
   <url value="http://helsenorge.no/fhir/ImplementationGuide/fhir.example"/>
-  <version value="0.9.0"/>
+  <version value="1.0.0"/>
   <name value="NyTimelosingIG"/>
   <status value="draft"/>
-  <date value="2025-02-15T12:00:41+01:00"/>
+  <date value="2025-06-05T14:31:57+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -29,7 +29,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="6.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -42,7 +42,7 @@
   <dependsOn id="hl7_fhir_no_basis">
     <uri value="http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis"/>
     <packageId value="hl7.fhir.no.basis"/>
-    <version value="2.2.0"/>
+    <version value="2.2.2"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -450,17 +450,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Appointment"/>
-      </extension>
-      <reference>
-        <reference value="Appointment/AppointmentEksempelDIPS"/>
-      </reference>
-      <name value="AppointmentEksempelDIPS"/>
-      <description value="Eksempel fra DIPS"/>
-      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -615,14 +604,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Appointment"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Appointment/PhoneAppointmentEksempel"/>
+        <reference value="StructureDefinition/no-basis-Organization"/>
       </reference>
-      <name value="PhoneAppointmentEksempel"/>
-      <description value="An example showing usage of virtual service. In this case phone appointment."/>
-      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
+      <name value="no-basis-Organization"/>
+      <description value="Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -634,17 +623,6 @@
       <name value="TbaOrganizationcoverage"/>
       <description value="The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Appointment"/>
-      </extension>
-      <reference>
-        <reference value="Appointment/VideoAppointmentEksempel"/>
-      </reference>
-      <name value="VideoAppointmentEksempel"/>
-      <description value="An example showing usage of virtual service. In this case video appointment."/>
-      <exampleCanonical value="http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

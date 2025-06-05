@@ -1,101 +1,41 @@
 NyTimelosingIG : Validation Results
 =========================================
 
-err = 0, warn = 35, info = 41
+err = 0, warn = 12, info = 5
 $--
 Generated $--. FHIR version $-- for fhir.example#$-- (canonical = http://helsenorge.no/fhir)
  Build Errors : 0 / 1 / 0
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-AppointmentEksempelDIPS : 0 / 13 / 34
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-PhoneAppointmentEksempel : 0 / 11 / 31
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\Appointment-VideoAppointmentEksempel : 0 / 11 / 31
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ImplementationGuide-fhir.example : 0 / 0 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse : 0 / 1 / 4
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Flag : 0 / 2 / 3
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse : 0 / 1 / 2
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Flag : 0 / 3 / 2
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-Recurring : 0 / 1 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-appointment : 0 / 7 / 4
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-appointment : 0 / 8 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-changeConferenceType : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-consultationType : 0 / 1 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-postponementreason : 0 / 0 / 1
- C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization : 0 / 2 / 8
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-hn-basis-postponementreason : 0 / 1 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization : 0 / 1 / 3
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\StructureDefinition-tba-organizationcoverage : 0 / 1 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs : 0 / 3 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-appointment-flag-code-vs : 0 / 0 / 1
  C:\NHIG\hnFHIRTimer\NyTimelosingIG\fsh-generated\resources\ValueSet-hn-basis-virtual-service-type.valueset : 0 / 0 / 1
+ C:\NHIG\hnFHIRTimer\NyTimelosingIG\input\examples\no-basis-Organization : 0 / 1 / 2
 </table>
 == n/a ==
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
-== fsh-generated\resources\Appointment-AppointmentEksempelDIPS.json ==
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.meta.tag[0]: A definition for CodeSystem 'http://helsenorge.no/fhir/paminnelse' could not be found, so the code cannot be validated
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[0]/*Organization/45c4b733-c3c9-4b66-bf66-2d8001f19d6b*/.identifier[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.contained[1]/*Location/2ea45fd0-3a85-4549-ad06-09dce6197f93*/.managingOrganization: Found multiple matching profiles for #84d1254e-2fa5-4b33-a05f-ab744906ff2e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[2]/*Organization/84d1254e-2fa5-4b33-a05f-ab744906ff2e*/.identifier[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.contained[3]/*Location/49dabd81-457e-4175-8872-ce4ee5db896e*/.managingOrganization: Found multiple matching profiles for #208bcc1c-5ea8-46a3-9c2e-23d353063359 among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.contained[5]/*Organization/f3f5da36-ab2d-44f1-a78a-64f69351df62*/.type[0].coding[0]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8624' could not be found, so the code cannot be validated
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.contained[5]/*Organization/f3f5da36-ab2d-44f1-a78a-64f69351df62*/.meta.profile[0]: Profile reference 'http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[7]/*Flag/85e3d03e-7dd2-46a7-923c-99e9dad3535d*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[8]/*Flag/3daf1b62-cfd7-4e4d-90b1-113f13565a6c*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[9]/*Flag/ee9bdb59-6343-4b1b-974b-5d652634c55c*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[10]/*Flag/bb5c6586-f828-4558-ab87-2ee13cfd43fe*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.contained[11]/*Flag/6d277876-6677-46cb-b16b-45b633b19777*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.extension[0].value.ofType(Coding): ValueSet 'urn:oid:2.16.578.1.12.4.1.1.8446' not found
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8446' could not be found, so the code cannot be validated
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.extension[1].extension[0].value.ofType(Coding): ValueSet 'http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs' not found
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.identifier[0].assigner: Found multiple matching profiles for #45c4b733-c3c9-4b66-bf66-2d8001f19d6b among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.cancelationReason: ValueSet 'urn:oid:2.16.578.1.12.4.1.1.8445' not found
-WARNING: Appointment/AppointmentEksempelDIPS: Appointment.cancelationReason.coding[0]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9179' could not be found, so the code cannot be validated
-INFORMATION: Appointment/AppointmentEksempelDIPS: Appointment.appointmentType: Reference to experimental CodeSystem http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs|0.9.0
-== fsh-generated\resources\Appointment-PhoneAppointmentEksempel.json ==
-INFORMATION: Appointment/PhoneAppointmentEksempel: Appointment.meta.tag[0]: A definition for CodeSystem 'http://helsenorge.no/fhir/paminnelse' could not be found, so the code cannot be validated
-WARNING: Appointment/PhoneAppointmentEksempel: Appointment.contained[1]/*Location/aaa45fd0-3a85-4549-ad06-09dce6197f93*/.managingOrganization: Found multiple matching profiles for #aad1254e-2fa5-4b33-a05f-ab744906ff2e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-INFORMATION: Appointment/PhoneAppointmentEksempel: Appointment.contained[2]/*Organization/aad1254e-2fa5-4b33-a05f-ab744906ff2e*/.identifier[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Appointment/PhoneAppointmentEksempel: Appointment.contained[3]/*Location/aadabd81-457e-4175-8872-ce4ee5db896e*/.managingOrganization: Found multiple matching profiles for #aad1254e-2fa5-4b33-a05f-ab744906ff2e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-WARNING: Appointment/PhoneAppointmentEksempel: Appointment.contained[4]/*Organization/aaf5da36-ab2d-44f1-a78a-64f69351df62*/.type[0].coding[0]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8624' could not be found, so the code cannot be validated
-WARNING: Appointment/PhoneAppointmentEksempel: Appointment.contained[4]/*Organization/aaf5da36-ab2d-44f1-a78a-64f69351df62*/.type[0]: ValueSet 'urn:oid:2.16.578.1.12.4.1.1.8624' not found
-WARNING: Appointment/PhoneAppointmentEksempel: Appointment.contained[4]/*Organization/aaf5da36-ab2d-44f1-a78a-64f69351df62*/.partOf: Found multiple matching profiles for #aa120952-a283-4267-b16e-846ca17dc07c among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-INFORMATION: Appointment/PhoneAppointmentEksempel: Appointment.contained[6]/*Flag/aae3d03e-7dd2-46a7-923c-99e9dad3535d*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/PhoneAppointmentEksempel: Appointment.contained[7]/*Flag/aaaf1b62-cfd7-4e4d-90b1-113f13565a6c*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/PhoneAppointmentEksempel: Appointment.contained[8]/*Flag/aa9bdb59-6343-4b1b-974b-5d652634c55c*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/PhoneAppointmentEksempel: Appointment.contained[9]/*Flag/aa5c6586-f828-4558-ab87-2ee13cfd43fe*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/PhoneAppointmentEksempel: Appointment.contained[10]/*Flag/aa277876-6677-46cb-b16b-45b633b19777*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-WARNING: Appointment/PhoneAppointmentEksempel: Appointment.extension[0].extension[0].value.ofType(Coding): ValueSet 'http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs' not found
-WARNING: Appointment/PhoneAppointmentEksempel: Appointment.identifier[0].assigner: Found multiple matching profiles for #aac4b733-c3c9-4b66-bf66-2d8001f19d6b among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-INFORMATION: Appointment/PhoneAppointmentEksempel: Appointment.appointmentType: Reference to experimental CodeSystem http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs|0.9.0
-== fsh-generated\resources\Appointment-VideoAppointmentEksempel.json ==
-INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.meta.tag[0]: A definition for CodeSystem 'http://helsenorge.no/fhir/paminnelse' could not be found, so the code cannot be validated
-WARNING: Appointment/VideoAppointmentEksempel: Appointment.contained[1]/*Location/aaa45fd0-3a85-4549-ad06-09dce6197f93*/.managingOrganization: Found multiple matching profiles for #aad1254e-2fa5-4b33-a05f-ab744906ff2e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.contained[2]/*Organization/aad1254e-2fa5-4b33-a05f-ab744906ff2e*/.identifier[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Appointment/VideoAppointmentEksempel: Appointment.contained[3]/*Location/aadabd81-457e-4175-8872-ce4ee5db896e*/.managingOrganization: Found multiple matching profiles for #aad1254e-2fa5-4b33-a05f-ab744906ff2e among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-WARNING: Appointment/VideoAppointmentEksempel: Appointment.contained[4]/*Organization/aaf5da36-ab2d-44f1-a78a-64f69351df62*/.type[0].coding[0]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8624' could not be found, so the code cannot be validated
-WARNING: Appointment/VideoAppointmentEksempel: Appointment.contained[4]/*Organization/aaf5da36-ab2d-44f1-a78a-64f69351df62*/.type[0]: ValueSet 'urn:oid:2.16.578.1.12.4.1.1.8624' not found
-WARNING: Appointment/VideoAppointmentEksempel: Appointment.contained[4]/*Organization/aaf5da36-ab2d-44f1-a78a-64f69351df62*/.partOf: Found multiple matching profiles for #aa120952-a283-4267-b16e-846ca17dc07c among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.contained[6]/*Flag/aae3d03e-7dd2-46a7-923c-99e9dad3535d*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.contained[7]/*Flag/aaaf1b62-cfd7-4e4d-90b1-113f13565a6c*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.contained[8]/*Flag/aa9bdb59-6343-4b1b-974b-5d652634c55c*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.contained[9]/*Flag/aa5c6586-f828-4558-ab87-2ee13cfd43fe*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.contained[10]/*Flag/aa277876-6677-46cb-b16b-45b633b19777*/.code: Reference to draft CodeSystem http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0
-WARNING: Appointment/VideoAppointmentEksempel: Appointment.extension[0].extension[0].value.ofType(Coding): ValueSet 'http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs' not found
-WARNING: Appointment/VideoAppointmentEksempel: Appointment.identifier[0].assigner: Found multiple matching profiles for #aac4b733-c3c9-4b66-bf66-2d8001f19d6b among choices: http://hl7.no/fhir/StructureDefinition/no-basis-Organization|2.0.15, http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
-INFORMATION: Appointment/VideoAppointmentEksempel: Appointment.appointmentType: Reference to experimental CodeSystem http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs|0.9.0
 == fsh-generated\resources\CodeSystem-Hn-AppointmentTypeProposed-New-Codes-cs.json ==
 == fsh-generated\resources\CodeSystem-hn-appointment-flag-code-cs.json ==
 == fsh-generated\resources\ImplementationGuide-fhir.example.json ==
 == fsh-generated\resources\StructureDefinition-hn-basis-AppointmentResponse.json ==
 INFORMATION: StructureDefinition/hn-basis-AppointmentResponse: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-INFORMATION: StructureDefinition/hn-basis-AppointmentResponse: StructureDefinition.snapshot.element[26].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/hn-basis-AppointmentResponse: StructureDefinition.snapshot.element[58].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated\resources\StructureDefinition-hn-basis-Flag.json ==
-INFORMATION: StructureDefinition/hn-basis-Flag: StructureDefinition.snapshot.element[22].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/hn-basis-Flag: StructureDefinition.differential.element[2].binding: The definition for the element 'Flag.code' binds to the value set 'http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/hn-basis-Flag: StructureDefinition.snapshot.element[16].binding: The definition for the element 'Flag.code' binds to the value set 'http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs' which is experimental, but this structure is not labeled as experimental
-INFORMATION: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/hn-basis-Flag'): The Implementation Guide contains no explicitly linked examples for this profile
+INFORMATION: StructureDefinition/hn-basis-Flag: StructureDefinition.snapshot.element[13].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
+WARNING: StructureDefinition/hn-basis-Flag: StructureDefinition.differential.element[3].binding: The definition for the element 'Flag.code' binds to the value set 'http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/hn-basis-Flag: StructureDefinition.snapshot.element[19].binding: The definition for the element 'Flag.code' binds to the value set 'http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs' which is experimental, but this structure is not labeled as experimental
 == fsh-generated\resources\StructureDefinition-hn-basis-Recurring.json ==
 == fsh-generated\resources\StructureDefinition-hn-basis-appointment.json ==
-INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[59].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[120].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.element[121].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.differential.element[5].binding: The definition for the element 'Appointment.extension.extension.value[x]' binds to the value set 'http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.differential.element[15].binding: The definition for the element 'Appointment.serviceCategory' binds to the value set 'http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.differential.element[21].binding: The definition for the element 'Appointment.appointmentType.coding' binds to the value set 'http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs' which is experimental, but this structure is not labeled as experimental
@@ -108,11 +48,6 @@ WARNING: StructureDefinition/hn-basis-appointment: StructureDefinition.snapshot.
 == fsh-generated\resources\StructureDefinition-kommunikasjonspart-Organization.json ==
 INFORMATION: StructureDefinition.snapshot.element[10]: The slice definition for Organization.identifier has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
 INFORMATION: StructureDefinition.snapshot.element[47]: The slice definition for Organization.type has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
-INFORMATION: StructureDefinition/kommunikasjonspart-Organization: StructureDefinition.snapshot.element[17].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/kommunikasjonspart-Organization: StructureDefinition.snapshot.element[26].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/kommunikasjonspart-Organization: StructureDefinition.snapshot.element[35].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/kommunikasjonspart-Organization: StructureDefinition.snapshot.element[44].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition.where(url = 'http://helsenorge.no/fhir/StructureDefinition/kommunikasjonspart-Organization'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated\resources\StructureDefinition-tba-organizationcoverage.json ==
 == fsh-generated\resources\ValueSet-hn-appointment-AppointmentType-code-vs.json ==
 WARNING: ValueSet/hn-appointment-AppointmentType-code-vs: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.578.1.12.4.1.1.7617' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7617' could not be found, so the code cannot be validated)
@@ -121,3 +56,5 @@ WARNING: ValueSet.where(id = 'hn-appointment-AppointmentType-code-vs'): Error fr
 == fsh-generated\resources\ValueSet-hn-appointment-ServiceCategory-code-vs.json ==
 == fsh-generated\resources\ValueSet-hn-appointment-flag-code-vs.json ==
 == fsh-generated\resources\ValueSet-hn-basis-virtual-service-type.valueset.json ==
+== input\examples\no-basis-Organization.json ==
+INFORMATION: Resource: The resource StructureDefinition/no-basis-Organization could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

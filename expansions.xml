@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="da3b4fcb-ba35-40e3-99ae-a02baa1bb09b"/>
+  <id value="1e0e2802-ed93-4aaa-87c8-ff6007966f85"/>
   <meta>
-    <lastUpdated value="2025-02-15T12:00:41.470+01:00"/>
+    <lastUpdated value="2025-06-05T14:31:57.749+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -17,7 +17,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
-              <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html">codesystem Service category v1.1.1 (CodeSystem)</a>
+              <a href="http://terminology.hl7.org/6.4.0/CodeSystem-service-category.html">codesystem Service category v1.1.1 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
@@ -38,7 +38,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/service-category-10"> </a>  
-                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-10">10</a>
+                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-service-category.html#service-category-10">10</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Dental</td>
@@ -52,7 +52,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/service-category-27"> </a>  
-                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-27">27</a>
+                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-service-category.html#service-category-27">27</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Specialist Medical</td>
@@ -66,7 +66,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/service-category-17"> </a>  
-                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-17">17</a>
+                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-service-category.html#service-category-17">17</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>General Practice</td>
@@ -80,7 +80,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/service-category-7"> </a>  
-                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-service-category.html#service-category-7">7</a>
+                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-service-category.html#service-category-7">7</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/service-category</td>
                 <td>Community Health Care</td>
@@ -95,15 +95,15 @@
           </div>
         </text>
         <url value="http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs"/>
-        <version value="0.9.0"/>
+        <version value="1.0.0"/>
         <name value="HnAppointmentServiceCategoryVS"/>
         <title value="hn-appointment-ServiceCategory-code-vs"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-02-15T12:00:41+01:00"/>
+        <date value="2025-06-05T14:31:57+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:91bcee78-9cca-41e9-8010-07d05d8f6255"/>
-          <timestamp value="2025-02-15T12:01:16+01:00"/>
+          <identifier value="urn:uuid:d1d4337b-42d8-45c9-9b9c-6fc84661d6f0"/>
+          <timestamp value="2025-06-05T14:32:27+02:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -157,7 +157,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
-              <a href="CodeSystem-hn-appointment-flag-code-cs.html">codesystem hn-appointment-flag-code-cs v0.9.0 (CodeSystem)</a>
+              <a href="CodeSystem-hn-appointment-flag-code-cs.html">codesystem hn-appointment-flag-code-cs v1.0.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 9 concepts</p>
             <table class="codes">
@@ -248,15 +248,15 @@
           </div>
         </text>
         <url value="http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs"/>
-        <version value="0.9.0"/>
+        <version value="1.0.0"/>
         <name value="HnAppointmentFlagCodeVS"/>
         <title value="hn-appointment-flag-code-vs"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-02-15T12:00:41+01:00"/>
+        <date value="2025-06-05T14:31:57+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:0c6fda5a-9358-4704-8267-2609dbfd70f5"/>
-          <timestamp value="2025-02-15T12:01:16+01:00"/>
+          <identifier value="urn:uuid:85f31769-5a9f-4a9a-b9fb-725416862022"/>
+          <timestamp value="2025-06-05T14:32:27+02:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -273,7 +273,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|0.9.0"/>
+            <valueUri value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs|1.0.0"/>
           </parameter>
           <contains>
             <system value="http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs"/>
@@ -385,15 +385,15 @@
           </div>
         </text>
         <url value="http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset"/>
-        <version value="0.9.0"/>
+        <version value="1.0.0"/>
         <name value="HnBasisVirtualServiceType"/>
         <title value="Hn Basis VirtualServiceType Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-02-15T12:00:41+01:00"/>
+        <date value="2025-06-05T14:31:57+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:28d6a3a1-5934-4e83-9397-66b671d1b474"/>
-          <timestamp value="2025-02-15T12:01:16+01:00"/>
+          <identifier value="urn:uuid:44994c9e-4faf-443a-adda-a6c19e29f73d"/>
+          <timestamp value="2025-06-05T14:32:27+02:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

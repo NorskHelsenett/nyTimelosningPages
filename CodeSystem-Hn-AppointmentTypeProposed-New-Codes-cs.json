@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Hn-AppointmentTypeProposed-New-Codes-cs</b></p><a name=\"Hn-AppointmentTypeProposed-New-Codes-cs\"> </a><a name=\"hcHn-AppointmentTypeProposed-New-Codes-cs\"> </a><a name=\"Hn-AppointmentTypeProposed-New-Codes-cs-en-US\"> </a><p>This case-sensitive code system <code>http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Poliklinisktime<a name=\"Hn-AppointmentTypeProposed-New-Codes-cs-Poliklinisktime\"> </a></td><td>Poliklinisk time</td></tr><tr><td style=\"white-space:nowrap\">Innleggelse<a name=\"Hn-AppointmentTypeProposed-New-Codes-cs-Innleggelse\"> </a></td><td>Innleggelse</td></tr><tr><td style=\"white-space:nowrap\">Dagbehandling<a name=\"Hn-AppointmentTypeProposed-New-Codes-cs-Dagbehandling\"> </a></td><td>Dagbehandling</td></tr><tr><td style=\"white-space:nowrap\">Hjemmebesøk<a name=\"Hn-AppointmentTypeProposed-New-Codes-cs-Hjemmebes.248k\"> </a></td><td>Hjemmebesøk</td></tr><tr><td style=\"white-space:nowrap\">Konsultasjon<a name=\"Hn-AppointmentTypeProposed-New-Codes-cs-Konsultasjon\"> </a></td><td>Konsultasjon</td></tr><tr><td style=\"white-space:nowrap\">Bildediagnostikk<a name=\"Hn-AppointmentTypeProposed-New-Codes-cs-Bildediagnostikk\"> </a></td><td>Bildediagnostikk</td></tr></table></div>"
   },
   "url" : "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
-  "version" : "0.9.0",
+  "version" : "1.0.0",
   "name" : "HnAppointmentTypeProposedNewCodesCS",
   "title" : "Default codes for appointmentType.",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-02-15T12:00:41+01:00",
+  "date" : "2025-06-05T14:31:57+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",

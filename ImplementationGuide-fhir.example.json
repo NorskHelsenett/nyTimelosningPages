@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><a name=\"fhir.example-en-US\"> </a><h2>NyTimelosingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://helsenorge.no/fhir/ImplementationGuide/fhir.example</pre><div><p>Example Implementation Guide for getting started with SUSHI</p>\n</div></div>"
   },
   "url" : "http://helsenorge.no/fhir/ImplementationGuide/fhir.example",
-  "version" : "0.9.0",
+  "version" : "1.0.0",
   "name" : "NyTimelosingIG",
   "status" : "draft",
-  "date" : "2025-02-15T12:00:41+01:00",
+  "date" : "2025-06-05T14:31:57+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -30,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.2.0"
+    "version" : "6.4.0"
   },
   {
     "id" : "hl7ext",
@@ -46,7 +46,7 @@
     "id" : "hl7_fhir_no_basis",
     "uri" : "http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis",
     "packageId" : "hl7.fhir.no.basis",
-    "version" : "2.2.0"
+    "version" : "2.2.2"
   }],
   "definition" : {
     "extension" : [{
@@ -606,18 +606,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
-        "reference" : "Appointment/AppointmentEksempelDIPS"
-      },
-      "name" : "AppointmentEksempelDIPS",
-      "description" : "Eksempel fra DIPS",
-      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -786,14 +774,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Appointment/PhoneAppointmentEksempel"
+        "reference" : "StructureDefinition/no-basis-Organization"
       },
-      "name" : "PhoneAppointmentEksempel",
-      "description" : "An example showing usage of virtual service. In this case phone appointment.",
-      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
+      "name" : "no-basis-Organization",
+      "description" : "Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -806,18 +794,6 @@
       "name" : "TbaOrganizationcoverage",
       "description" : "The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
-        "reference" : "Appointment/VideoAppointmentEksempel"
-      },
-      "name" : "VideoAppointmentEksempel",
-      "description" : "An example showing usage of virtual service. In this case video appointment.",
-      "exampleCanonical" : "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"
     }],
     "page" : {
       "extension" : [{

@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><a name=\"fhir.example-en-US\"> </a><h2>NyTimelosingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://helsenorge.no/fhir/ImplementationGuide/fhir.example</pre><div><p>Example Implementation Guide for getting started with SUSHI</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://helsenorge.no/fhir/ImplementationGuide/fhir.example"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "NyTimelosingIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-15T12:00:41+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-05T14:31:57+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -40,7 +40,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.2.0" ]
+     fhir:version [ fhir:v "6.4.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -60,7 +60,7 @@
        fhir:link <http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.no.basis" ] ;
-     fhir:version [ fhir:v "2.2.0" ]
+     fhir:version [ fhir:v "2.2.2" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -520,21 +520,6 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Appointment/AppointmentEksempelDIPS> ;
-         fhir:reference [ fhir:v "Appointment/AppointmentEksempelDIPS" ]
-       ] ;
-       fhir:name [ fhir:v "AppointmentEksempelDIPS" ] ;
-       fhir:description [ fhir:v "Eksempel fra DIPS" ] ;
-       fhir:example [
-         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -703,18 +688,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Appointment/PhoneAppointmentEksempel> ;
-         fhir:reference [ fhir:v "Appointment/PhoneAppointmentEksempel" ]
+         fhir:link <http://helsenorge.no/fhir/StructureDefinition/no-basis-Organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-Organization" ]
        ] ;
-       fhir:name [ fhir:v "PhoneAppointmentEksempel" ] ;
-       fhir:description [ fhir:v "An example showing usage of virtual service. In this case phone appointment." ] ;
-       fhir:example [
-         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
-       ]
+       fhir:name [ fhir:v "no-basis-Organization" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -727,21 +709,6 @@
        fhir:name [ fhir:v "TbaOrganizationcoverage" ] ;
        fhir:description [ fhir:v "The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://helsenorge.no/fhir/Appointment/VideoAppointmentEksempel> ;
-         fhir:reference [ fhir:v "Appointment/VideoAppointmentEksempel" ]
-       ] ;
-       fhir:name [ fhir:v "VideoAppointmentEksempel" ] ;
-       fhir:description [ fhir:v "An example showing usage of virtual service. In this case video appointment." ] ;
-       fhir:example [
-         fhir:v "http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment"^^xsd:anyURI ;
-         fhir:link <http://helsenorge.no/fhir/StructureDefinition/hn-basis-appointment>
-       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

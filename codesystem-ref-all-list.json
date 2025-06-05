@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://helsenorge.no/fhir/CodeSystem/Hn-AppointmentTypeProposed-New-Codes-cs",
-      "version" : "0.9.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "HnAppointmentTypeProposedNewCodesCS",
       "title" : "Default codes for appointmentType.",
@@ -13,7 +13,7 @@
     },
     {
       "url" : "http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs",
-      "version" : "0.9.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "HnAppointmentFlagCodeCS",
       "title" : "hn-appointment-flag-code-cs",
@@ -45,7 +45,7 @@
       "uses" : {
       },
       "ValueSet-hn-basis-virtual-service-type.valueset.html" : "Hn Basis VirtualServiceType Value Set",
-      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set"
+      "https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&canonical=http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type" : "No Basis VirtualServiceType Value Set"
     },
     {
       "url" : "http://hl7.org/fhir/flag-status",
@@ -116,8 +116,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -225,7 +225,7 @@
       "oids" : ["2.16.840.1.113883.18.169"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.2.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
+      "http://terminology.hl7.org/6.4.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",

@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet hn-appointment-flag-code-vs</b></p><a name="hn-appointment-flag-code-vs"> </a><a name="hchn-appointment-flag-code-vs"> </a><a name="hn-appointment-flag-code-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-hn-appointment-flag-code-cs.html"><code>http://helsenorge.no/fhir/CodeSystem/hn-appointment-flag-code-cs</code></a></li></ul></div>
   </text>
   <url value="http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs"/>
-  <version value="0.9.0"/>
+  <version value="1.0.0"/>
   <name value="HnAppointmentFlagCodeVS"/>
   <title value="hn-appointment-flag-code-vs"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-02-15T12:00:41+01:00"/>
+  <date value="2025-06-05T14:31:57+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

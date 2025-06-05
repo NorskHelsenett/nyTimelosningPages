@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-AppointmentType-code-vs",
-      "version" : "0.9.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "HnAppointmentAppointmentTypeVS",
       "title" : "hn-appointment-AppointmentType-code-vs",
@@ -15,7 +15,7 @@
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-ServiceCategory-code-vs",
-      "version" : "0.9.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "HnAppointmentServiceCategoryVS",
       "title" : "hn-appointment-ServiceCategory-code-vs",
@@ -24,7 +24,7 @@
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-appointment-flag-code-vs",
-      "version" : "0.9.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "HnAppointmentFlagCodeVS",
       "title" : "hn-appointment-flag-code-vs",
@@ -35,7 +35,7 @@
     },
     {
       "url" : "http://helsenorge.no/fhir/ValueSet/hn-basis-virtual-service-type.valueset",
-      "version" : "0.9.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "HnBasisVirtualServiceType",
       "title" : "Hn Basis VirtualServiceType Value Set",
